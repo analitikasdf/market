@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'San Francisco Text Bold';
+    src: url('fonts/SFUIText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    }
+
+
+@font-face {
+    font-family: 'San Francisco Text Regular';
+    src: url('fonts/SFUIText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('fonts/Roboto-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Fira Sans Regular';
+    src: url('fonts/FiraSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'HouschkaPro-Bold';
+    src: url('fonts/HouschkaPro-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }

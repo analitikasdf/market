@@ -1,0 +1,1787 @@
+@charset "utf-8";
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Конфигурации															*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Анимации																*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/* linear */
+/* linear */
+/* ease */
+/* sine */
+/* quadratic */
+/* cubic */
+/* quartic */
+/* quintic */
+/* exponential */
+/* circular */
+/* backward */
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Умолчания																*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/* Units */
+/* Styles define */
+/* Background define */
+/* Gradient define */
+/* Transition define */
+/* Transform define */
+/* Box shadow define */
+/* Text shadow define */
+/* Flexbox define */
+/* ColumnText define */
+/* Appearance define */
+/* User Select define */
+/* Touch Action define */
+/* Animation define */
+/* Box define */
+/* Grid define */
+/* SizeBox define */
+/* Screen define */
+/* Screen names */
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Цыклы																	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	IsUnitSet																*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.border-radius 															*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.box-sizing	 															*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.opacity		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.gradient		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.sticky		 															*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.transition		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.perspective	(transform)	 											*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.translateX .translateY .translateZ .translate	(transform)	 			*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.scaleX .scaleY .scale	(transform)	 									*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.skewX .skewY .skew	(transform)	 										*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.rotateX .rotateY .rotate	(transform)	 								*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.matrix	(transform)	 													*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.transform-origin	(transform)	 										*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	shadow		 															*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	text-shadow		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	text-shadow3d		 													*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	text-overflow		 													*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	calc				 													*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	flexbox																	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	clear-fix		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	column-text		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Placeholder		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Background image		 												*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Appearance		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	User Select		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Selection	 															*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Touch Action	 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Animation	 															*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Box		 																*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Базовые конструкции														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Сетка																	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+/*	Чистка умолчаний																*/
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+/*	Сетка																			*/
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+.GridTab {
+  padding: 0px 0px 0px 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+  -webkit-flex-flow: wrap row;
+  flex-flow: wrap row;
+}
+.GridTab.ClearPadding {
+  padding: 0px;
+}
+.GridTab.ClearPaddingTop {
+  padding-top: 0px;
+}
+.GridTab.ClearPaddingleft {
+  padding-left: 0px;
+}
+.GridTab.ClearPaddingRight {
+  padding-right: 0px;
+}
+.GridTab.ClearPaddingBottom {
+  padding-bottom: 0px;
+}
+.GridTab > .GridCol {
+  padding: 0px 15px 30px 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.GridTab > .GridCol.ClearPadding {
+  padding: 0px;
+}
+.GridTab > .GridCol.ClearPaddingTop {
+  padding-top: 0px;
+}
+.GridTab > .GridCol.ClearPaddingleft {
+  padding-left: 0px;
+}
+.GridTab > .GridCol.ClearPaddingRight {
+  padding-right: 0px;
+}
+.GridTab > .GridCol.ClearPaddingBottom {
+  padding-bottom: 0px;
+}
+.GridTab > .GridCol.F0 {
+  display: none;
+}
+.GridTab > .GridCol.F_Auto {
+  display: block;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.GridTab > .GridCol.F1 {
+  display: block;
+  width: 8.33333333%;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.GridTab > .GridCol.F2 {
+  display: block;
+  width: 16.66666667%;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.GridTab > .GridCol.F3 {
+  display: block;
+  width: 25%;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.GridTab > .GridCol.F4 {
+  display: block;
+  width: 33.33333333%;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.GridTab > .GridCol.F5 {
+  display: block;
+  width: 41.66666667%;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.GridTab > .GridCol.F6 {
+  display: block;
+  width: 50%;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.GridTab > .GridCol.F7 {
+  display: block;
+  width: 58.33333333%;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.GridTab > .GridCol.F8 {
+  display: block;
+  width: 66.66666667%;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.GridTab > .GridCol.F9 {
+  display: block;
+  width: 75%;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.GridTab > .GridCol.F10 {
+  display: block;
+  width: 83.33333333%;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.GridTab > .GridCol.F11 {
+  display: block;
+  width: 91.66666667%;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.GridTab > .GridCol.F12 {
+  display: block;
+  width: 100%;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+@media all and (max-width: 1399px) {
+  .GridTab > .GridCol.FS0 {
+    display: none;
+  }
+  .GridTab > .GridCol.FS_Auto {
+    display: block;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .GridTab > .GridCol.FS1 {
+    display: block;
+    width: 8.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FS2 {
+    display: block;
+    width: 16.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FS3 {
+    display: block;
+    width: 25%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FS4 {
+    display: block;
+    width: 33.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FS5 {
+    display: block;
+    width: 41.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FS6 {
+    display: block;
+    width: 50%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FS7 {
+    display: block;
+    width: 58.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FS8 {
+    display: block;
+    width: 66.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FS9 {
+    display: block;
+    width: 75%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FS10 {
+    display: block;
+    width: 83.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FS11 {
+    display: block;
+    width: 91.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FS12 {
+    display: block;
+    width: 100%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+@media all and (max-width: 1299px) {
+  .GridTab > .GridCol.FM0 {
+    display: none;
+  }
+  .GridTab > .GridCol.FM_Auto {
+    display: block;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .GridTab > .GridCol.FM1 {
+    display: block;
+    width: 8.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FM2 {
+    display: block;
+    width: 16.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FM3 {
+    display: block;
+    width: 25%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FM4 {
+    display: block;
+    width: 33.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FM5 {
+    display: block;
+    width: 41.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FM6 {
+    display: block;
+    width: 50%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FM7 {
+    display: block;
+    width: 58.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FM8 {
+    display: block;
+    width: 66.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FM9 {
+    display: block;
+    width: 75%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FM10 {
+    display: block;
+    width: 83.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FM11 {
+    display: block;
+    width: 91.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.FM12 {
+    display: block;
+    width: 100%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+@media all and (max-width: 1199px) {
+  .GridTab > .GridCol.D0 {
+    display: none;
+  }
+  .GridTab > .GridCol.D_Auto {
+    display: block;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .GridTab > .GridCol.D1 {
+    display: block;
+    width: 8.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.D2 {
+    display: block;
+    width: 16.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.D3 {
+    display: block;
+    width: 25%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.D4 {
+    display: block;
+    width: 33.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.D5 {
+    display: block;
+    width: 41.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.D6 {
+    display: block;
+    width: 50%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.D7 {
+    display: block;
+    width: 58.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.D8 {
+    display: block;
+    width: 66.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.D9 {
+    display: block;
+    width: 75%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.D10 {
+    display: block;
+    width: 83.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.D11 {
+    display: block;
+    width: 91.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.D12 {
+    display: block;
+    width: 100%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+@media all and (max-width: 1099px) {
+  .GridTab > .GridCol.DS0 {
+    display: none;
+  }
+  .GridTab > .GridCol.DS_Auto {
+    display: block;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .GridTab > .GridCol.DS1 {
+    display: block;
+    width: 8.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DS2 {
+    display: block;
+    width: 16.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DS3 {
+    display: block;
+    width: 25%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DS4 {
+    display: block;
+    width: 33.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DS5 {
+    display: block;
+    width: 41.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DS6 {
+    display: block;
+    width: 50%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DS7 {
+    display: block;
+    width: 58.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DS8 {
+    display: block;
+    width: 66.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DS9 {
+    display: block;
+    width: 75%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DS10 {
+    display: block;
+    width: 83.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DS11 {
+    display: block;
+    width: 91.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DS12 {
+    display: block;
+    width: 100%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+@media all and (max-width: 1049px) {
+  .GridTab > .GridCol.DM0 {
+    display: none;
+  }
+  .GridTab > .GridCol.DM_Auto {
+    display: block;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .GridTab > .GridCol.DM1 {
+    display: block;
+    width: 8.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DM2 {
+    display: block;
+    width: 16.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DM3 {
+    display: block;
+    width: 25%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DM4 {
+    display: block;
+    width: 33.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DM5 {
+    display: block;
+    width: 41.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DM6 {
+    display: block;
+    width: 50%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DM7 {
+    display: block;
+    width: 58.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DM8 {
+    display: block;
+    width: 66.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DM9 {
+    display: block;
+    width: 75%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DM10 {
+    display: block;
+    width: 83.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DM11 {
+    display: block;
+    width: 91.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.DM12 {
+    display: block;
+    width: 100%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+@media all and (max-width: 999px) {
+  .GridTab > .GridCol.L0 {
+    display: none;
+  }
+  .GridTab > .GridCol.L_Auto {
+    display: block;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .GridTab > .GridCol.L1 {
+    display: block;
+    width: 8.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.L2 {
+    display: block;
+    width: 16.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.L3 {
+    display: block;
+    width: 25%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.L4 {
+    display: block;
+    width: 33.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.L5 {
+    display: block;
+    width: 41.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.L6 {
+    display: block;
+    width: 50%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.L7 {
+    display: block;
+    width: 58.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.L8 {
+    display: block;
+    width: 66.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.L9 {
+    display: block;
+    width: 75%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.L10 {
+    display: block;
+    width: 83.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.L11 {
+    display: block;
+    width: 91.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.L12 {
+    display: block;
+    width: 100%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+@media all and (max-width: 899px) {
+  .GridTab > .GridCol.LS0 {
+    display: none;
+  }
+  .GridTab > .GridCol.LS_Auto {
+    display: block;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .GridTab > .GridCol.LS1 {
+    display: block;
+    width: 8.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LS2 {
+    display: block;
+    width: 16.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LS3 {
+    display: block;
+    width: 25%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LS4 {
+    display: block;
+    width: 33.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LS5 {
+    display: block;
+    width: 41.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LS6 {
+    display: block;
+    width: 50%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LS7 {
+    display: block;
+    width: 58.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LS8 {
+    display: block;
+    width: 66.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LS9 {
+    display: block;
+    width: 75%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LS10 {
+    display: block;
+    width: 83.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LS11 {
+    display: block;
+    width: 91.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LS12 {
+    display: block;
+    width: 100%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+@media all and (max-width: 849px) {
+  .GridTab > .GridCol.LM0 {
+    display: none;
+  }
+  .GridTab > .GridCol.LM_Auto {
+    display: block;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .GridTab > .GridCol.LM1 {
+    display: block;
+    width: 8.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LM2 {
+    display: block;
+    width: 16.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LM3 {
+    display: block;
+    width: 25%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LM4 {
+    display: block;
+    width: 33.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LM5 {
+    display: block;
+    width: 41.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LM6 {
+    display: block;
+    width: 50%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LM7 {
+    display: block;
+    width: 58.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LM8 {
+    display: block;
+    width: 66.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LM9 {
+    display: block;
+    width: 75%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LM10 {
+    display: block;
+    width: 83.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LM11 {
+    display: block;
+    width: 91.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.LM12 {
+    display: block;
+    width: 100%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+@media all and (max-width: 799px) {
+  .GridTab > .GridCol.T0 {
+    display: none;
+  }
+  .GridTab > .GridCol.T_Auto {
+    display: block;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .GridTab > .GridCol.T1 {
+    display: block;
+    width: 8.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.T2 {
+    display: block;
+    width: 16.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.T3 {
+    display: block;
+    width: 25%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.T4 {
+    display: block;
+    width: 33.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.T5 {
+    display: block;
+    width: 41.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.T6 {
+    display: block;
+    width: 50%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.T7 {
+    display: block;
+    width: 58.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.T8 {
+    display: block;
+    width: 66.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.T9 {
+    display: block;
+    width: 75%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.T10 {
+    display: block;
+    width: 83.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.T11 {
+    display: block;
+    width: 91.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.T12 {
+    display: block;
+    width: 100%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+@media all and (max-width: 699px) {
+  .GridTab > .GridCol.TS0 {
+    display: none;
+  }
+  .GridTab > .GridCol.TS_Auto {
+    display: block;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .GridTab > .GridCol.TS1 {
+    display: block;
+    width: 8.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TS2 {
+    display: block;
+    width: 16.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TS3 {
+    display: block;
+    width: 25%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TS4 {
+    display: block;
+    width: 33.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TS5 {
+    display: block;
+    width: 41.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TS6 {
+    display: block;
+    width: 50%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TS7 {
+    display: block;
+    width: 58.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TS8 {
+    display: block;
+    width: 66.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TS9 {
+    display: block;
+    width: 75%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TS10 {
+    display: block;
+    width: 83.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TS11 {
+    display: block;
+    width: 91.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TS12 {
+    display: block;
+    width: 100%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+@media all and (max-width: 599px) {
+  .GridTab > .GridCol.TM0 {
+    display: none;
+  }
+  .GridTab > .GridCol.TM_Auto {
+    display: block;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .GridTab > .GridCol.TM1 {
+    display: block;
+    width: 8.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TM2 {
+    display: block;
+    width: 16.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TM3 {
+    display: block;
+    width: 25%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TM4 {
+    display: block;
+    width: 33.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TM5 {
+    display: block;
+    width: 41.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TM6 {
+    display: block;
+    width: 50%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TM7 {
+    display: block;
+    width: 58.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TM8 {
+    display: block;
+    width: 66.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TM9 {
+    display: block;
+    width: 75%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TM10 {
+    display: block;
+    width: 83.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TM11 {
+    display: block;
+    width: 91.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.TM12 {
+    display: block;
+    width: 100%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+@media all and (max-width: 499px) {
+  .GridTab > .GridCol.M0 {
+    display: none;
+  }
+  .GridTab > .GridCol.M_Auto {
+    display: block;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .GridTab > .GridCol.M1 {
+    display: block;
+    width: 8.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.M2 {
+    display: block;
+    width: 16.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.M3 {
+    display: block;
+    width: 25%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.M4 {
+    display: block;
+    width: 33.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.M5 {
+    display: block;
+    width: 41.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.M6 {
+    display: block;
+    width: 50%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.M7 {
+    display: block;
+    width: 58.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.M8 {
+    display: block;
+    width: 66.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.M9 {
+    display: block;
+    width: 75%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.M10 {
+    display: block;
+    width: 83.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.M11 {
+    display: block;
+    width: 91.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.M12 {
+    display: block;
+    width: 100%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+@media all and (max-width: 399px) {
+  .GridTab > .GridCol.MS0 {
+    display: none;
+  }
+  .GridTab > .GridCol.MS_Auto {
+    display: block;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .GridTab > .GridCol.MS1 {
+    display: block;
+    width: 8.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.MS2 {
+    display: block;
+    width: 16.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.MS3 {
+    display: block;
+    width: 25%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.MS4 {
+    display: block;
+    width: 33.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.MS5 {
+    display: block;
+    width: 41.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.MS6 {
+    display: block;
+    width: 50%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.MS7 {
+    display: block;
+    width: 58.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.MS8 {
+    display: block;
+    width: 66.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.MS9 {
+    display: block;
+    width: 75%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.MS10 {
+    display: block;
+    width: 83.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.MS11 {
+    display: block;
+    width: 91.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.MS12 {
+    display: block;
+    width: 100%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+@media all and (max-width: 349px) {
+  .GridTab > .GridCol.ММ0 {
+    display: none;
+  }
+  .GridTab > .GridCol.ММ_Auto {
+    display: block;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .GridTab > .GridCol.ММ1 {
+    display: block;
+    width: 8.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.ММ2 {
+    display: block;
+    width: 16.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.ММ3 {
+    display: block;
+    width: 25%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.ММ4 {
+    display: block;
+    width: 33.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.ММ5 {
+    display: block;
+    width: 41.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.ММ6 {
+    display: block;
+    width: 50%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.ММ7 {
+    display: block;
+    width: 58.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.ММ8 {
+    display: block;
+    width: 66.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.ММ9 {
+    display: block;
+    width: 75%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.ММ10 {
+    display: block;
+    width: 83.33333333%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.ММ11 {
+    display: block;
+    width: 91.66666667%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .GridTab > .GridCol.ММ12 {
+    display: block;
+    width: 100%;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+.Air {
+  display: block;
+  width: 100%;
+  height: 0px;
+  background: none;
+}
+.Air.S5 {
+  height: 5px;
+}
+.Air.S10 {
+  height: 10px;
+}
+.Air.S15 {
+  height: 15px;
+}
+.Air.S20 {
+  height: 20px;
+}
+.Air.S25 {
+  height: 25px;
+}
+.Air.S30 {
+  height: 30px;
+}
+.Air.S35 {
+  height: 35px;
+}
+.Air.S40 {
+  height: 40px;
+}
+.Air.S45 {
+  height: 45px;
+}
+.Air.S50 {
+  height: 50px;
+}
+.Air.S55 {
+  height: 55px;
+}
+.Air.S60 {
+  height: 60px;
+}
+.Air.S65 {
+  height: 65px;
+}
+.Air.S70 {
+  height: 70px;
+}
+.Air.S75 {
+  height: 75px;
+}
+.Air.S80 {
+  height: 80px;
+}
+.Air.S85 {
+  height: 85px;
+}
+.Air.S90 {
+  height: 90px;
+}
+.Air.S95 {
+  height: 95px;
+}
+.Air.S100 {
+  height: 100px;
+}
+.Air.S105 {
+  height: 105px;
+}
+.Air.S110 {
+  height: 110px;
+}
+.Air.S115 {
+  height: 115px;
+}
+.Air.S120 {
+  height: 120px;
+}
+.Air.S125 {
+  height: 125px;
+}
+.Air.S130 {
+  height: 130px;
+}
+.Air.S135 {
+  height: 135px;
+}
+.Air.S140 {
+  height: 140px;
+}
+.Air.S145 {
+  height: 145px;
+}
+.Air.S150 {
+  height: 150px;
+}
+.Air.S155 {
+  height: 155px;
+}
+.Air.S160 {
+  height: 160px;
+}
+.Air.S165 {
+  height: 165px;
+}
+.Air.S170 {
+  height: 170px;
+}
+.Air.S175 {
+  height: 175px;
+}
+.Air.S180 {
+  height: 180px;
+}
+.Air.S185 {
+  height: 185px;
+}
+.Air.S190 {
+  height: 190px;
+}
+.Air.S195 {
+  height: 195px;
+}
+.Air.S200 {
+  height: 200px;
+}
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+/*	Документ																		*/
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  line-height: 1.6em;
+  background: #ffffff;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #19242E;
+}
+h2 {
+  font-family: "San Francisco Text Bold";
+  font-weight: 700;
+  color: #19191D;
+  font-size: 35px;
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+h6 {
+  font-family: "San Francisco Text Regular";
+  font-weight: 400;
+  color: #797979;
+  font-size: 16px;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+}
+.container {
+  width: 1410px;
+  margin: 0 auto;
+}
+.content-card {
+  position: relative;
+  width: 330px;
+  height: 544px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07);
+  margin-bottom: 70px;
+}
+.content-card__label-wrapp {
+  display: flex;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 20px;
+}
+.content-card__label {
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-family: "HouschkaPro-Bold";
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 50px;
+}
+.content-card__label_1 {
+  background-color: #919191;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+.content-card__label_2 {
+  background-color: #504E4E;
+}
+.content-card__img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 96px;
+}
+.content-card__img-wrapp {
+  width: 330px;
+  height: 320px;
+  background: linear-gradient(0deg, #C2C2C2, #C2C2C2);
+  border-radius: 10px;
+}
+.content-card__title {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #161616;
+  margin-top: 20px;
+}
+.content-card__article {
+  margin-top: 5px;
+  text-align: center;
+  line-height: 150%;
+  font-family: "San Francisco Text Regular";
+  font-size: 16px;
+  color: #797979;
+}
+.content-card__price {
+  display: flex;
+  margin-top: 18px;
+  justify-content: center;
+}
+.content-card__price_old {
+  font-family: "Roboto Medium";
+  font-size: 13px;
+  text-decoration: line-through;
+  margin-right: 24px;
+}
+.content-card__price_new {
+  font-family: "Roboto Medium";
+  font-size: 18px;
+}
+.content-card .button_content-card {
+  display: block;
+  margin-top: 17px;
+  width: 161px;
+  height: 48px;
+  border-radius: 50px;
+  border: none;
+  background-color: #5E5E5E;
+  color: #ffffff;
+  font-family: "Fira Sans Regular";
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.category-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  justify-content: space-around;
+}

@@ -1,0 +1,197 @@
+@charset "utf-8";
+@import 'mixins.less';
+
+
+
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+/*	Чистка умолчаний																*/
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+	margin:								0;
+	padding:							0;
+	border:								0;
+	outline:							none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
+
+
+
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+/*	Сетка																			*/
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+.GridTab{
+	padding: @JasetKit-GridTabPadding;
+	.box-sizing(border-box);
+	.flexbox(stretch; flex-start; flex-start; wrap row);
+	&.ClearPadding{padding:0px;}
+	&.ClearPaddingTop{padding-top:0px;}
+	&.ClearPaddingleft{padding-left:0px;}
+	&.ClearPaddingRight{padding-right:0px;}
+	&.ClearPaddingBottom{padding-bottom:0px;}
+	&>.GridCol{
+		padding: @JasetKit-GridColPadding;
+		.box-sizing();
+		.flex(0; 0; auto);
+		&.ClearPadding{padding:0px;}
+		&.ClearPaddingTop{padding-top:0px;}
+		&.ClearPaddingleft{padding-left:0px;}
+		&.ClearPaddingRight{padding-right:0px;}
+		&.ClearPaddingBottom{padding-bottom:0px;}
+	}
+}
+.Foreach-GridTab(1; @JasetKit-GridCount; @FullSize-Name);
+@media all and (max-width: (@FullSizeSmall - 1px)){.Foreach-GridTab(1; @JasetKit-GridCount; @FullSizeSmall-Name);}
+@media all and (max-width: (@FullSizeMini - 1px)){.Foreach-GridTab(1; @JasetKit-GridCount; @FullSizeMini-Name);}
+@media all and (max-width: (@Desktop - 1px)){.Foreach-GridTab(1; @JasetKit-GridCount; @Desktop-Name);}
+@media all and (max-width: (@DesktopSmall - 1px)){.Foreach-GridTab(1; @JasetKit-GridCount; @DesktopSmall-Name);}
+@media all and (max-width: (@DesktopMini - 1px)){.Foreach-GridTab(1; @JasetKit-GridCount; @DesktopMini-Name);}
+@media all and (max-width: (@Laptop - 1px)){.Foreach-GridTab(1; @JasetKit-GridCount; @Laptop-Name);}
+@media all and (max-width: (@LaptopSmall - 1px)){.Foreach-GridTab(1; @JasetKit-GridCount; @LaptopSmall-Name);}
+@media all and (max-width: (@LaptopMini - 1px)){.Foreach-GridTab(1; @JasetKit-GridCount; @LaptopMini-Name);}
+@media all and (max-width: (@Tablet - 1px)){.Foreach-GridTab(1; @JasetKit-GridCount; @Tablet-Name);}
+@media all and (max-width: (@TabletSmall - 1px)){.Foreach-GridTab(1; @JasetKit-GridCount; @TabletSmall-Name);}
+@media all and (max-width: (@TabletMini - 1px)){.Foreach-GridTab(1; @JasetKit-GridCount; @TabletMini-Name);}
+@media all and (max-width: (@Mobile - 1px)){.Foreach-GridTab(1; @JasetKit-GridCount; @Mobile-Name);}
+@media all and (max-width: (@MobileSmall - 1px)){.Foreach-GridTab(1; @JasetKit-GridCount; @MobileSmall-Name);}
+@media all and (max-width: (@MobileMini - 1px)){.Foreach-GridTab(1; @JasetKit-GridCount; @MobileMini-Name);}
+.set-air(5; 200; 5);
+
+
+
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+/*	Документ																		*/
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+html,body{
+	width:								100%;
+	min-height:							100vh;
+	line-height:						@LineHeight;
+	background:							@ColorWhite;
+	font-family:						@FontFamily;
+	font-size:							@FontSize;
+	font-weight:						@FontRegular;
+	color: 								@ColorDark3;
+}
+
+h2 {
+	font-family: @FontFamilySFProTextBold;
+	font-weight: @FontBold;
+	color: @ColorGray;
+	font-size: @H2Size;
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+}
+
+h6 {
+	font-family: @FontFamilySFProTextRegular;
+	font-weight: @FontRegular;
+	color: @ColorGray2;
+	font-size: @H6Size;
+	margin-top: 20px;
+	display: block;
+	text-align: center;
+}
+
+.container	{
+	width: @ContainerWidth;
+	margin: 0 auto;
+}
+
+.content-card {
+	position: relative;
+	width: 330px;
+	height: 544px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: @ColorWhite;
+	.border-radius(10px);
+	box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07);
+	margin-bottom: 70px;
+	&__label-wrapp {
+		display: flex;
+		position: absolute;	
+		transform: translateY(-50%);
+		left: 20px;
+		
+	}
+	&__label {
+		.box(50px; 50px);
+		.border-radius(100px);
+		font-family: @FontFamilyHouschkaProBold;
+		color: @ColorWhite;
+		font-size: 15px;
+		text-align: center;
+		line-height: 50px;
+		&_1 {
+			background-color: @ColorGray4;
+			margin-right: 20px;
+			text-transform: uppercase;
+		}
+		&_2 {
+			background-color: @ColorDark8;
+		}
+	} 
+	&__img {
+		display: block;
+		margin: 0 auto;
+		padding-top: 96px;
+	}
+	&__img-wrapp {
+		width: 330px;
+		height: 320px;
+		background: linear-gradient(0deg, @ColorGray3, @ColorGray3);
+		.border-radius(10px);
+	}
+	&__title {
+		font-family: @FontFamilyRobotoRegular;
+		font-size: 18px;
+		color: @ColorDark6;
+		margin-top: 20px;
+	}
+	&__article {
+		margin-top: 5px;
+		text-align: center;
+		line-height: 150%;
+		font-family: @FontFamilySFProTextRegular;
+		font-size: 16px;
+		color: @ColorGray2;
+	}
+	&__price {
+		display: flex;
+		margin-top: 18px;
+		justify-content: center;
+	}
+	&__price_old {
+		font-family: "Roboto Medium";
+		font-size: 13px;
+		text-decoration: line-through;
+		margin-right: 24px;
+	}
+	&__price_new {
+		font-family: "Roboto Medium";
+		font-size: 18px;
+	}
+	.button_content-card {
+		display: block;
+		margin-top: 17px;
+		width: 161px;
+		height: 48px;
+		.border-radius(50px);
+		border: none;
+		background-color: @ColorDark7;
+		color: @ColorWhite;
+		font-family: @FontFamilyFiraSansRegular;
+		font-size: 16px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+.category-content {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 70px;
+	justify-content: space-around;
+}
+

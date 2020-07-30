@@ -1,0 +1,2396 @@
+@charset 'utf-8';
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Конфигурации															*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.JasetConfig(){
+	@ColorWhite:								#ffffff;
+	@ColorBlack:								#000000;
+
+	@ColorBasic:								#4A86E8;
+	@ColorBasicDark:							#3964AB;
+
+	@ColorExtra:								#e67817;
+	@ColorExtraDark:							#e67817;
+
+	@ColorLight1:								#f7f7f7;
+	@ColorLight2:								#e5e5e5;
+	@ColorLight3:								#e9e9e9;
+	@ColorLight4:								#d7e0ee;
+	@ColorLight5:								#c4c4c4;
+
+	@ColorDark1:								#636363;
+	@ColorDark2:								#636363;
+	@ColorDark3:								#19242E;
+	@ColorDark4:								#19242E;
+	@ColorDark5:								#19242E;
+	@ColorDark6:								#161616;
+	@ColorDark7:								#5E5E5E;
+	@ColorDark8:								#504E4E;
+
+	@ColorInfo:									#3379f9;
+	@ColorAlert:								#E5C232;
+	@ColorDanger:								#CC4125;
+	@ColorDone:									#0aac19;
+	@ColorGray:									#19191D;
+	@ColorGray2:								#797979;
+	@ColorGray3:								#C2C2C2;
+	@ColorGray4:								#919191;
+
+	
+	@FontFamily:								sans-serif;
+	@FontFamilySFProTextBold:					"San Francisco Text Bold";
+	@FontFamilySFProTextRegular:				"San Francisco Text Regular";
+	@FontFamilyRobotoRegular:	 				"Roboto Regular";
+	@FontFamilyRobotoMedium:	 				"Roboto Medium";
+	@FontFamilyFiraSansRegular:	 				"Fira Sans Regular";
+	@FontFamilyHouschkaProBold:	 				"HouschkaPro-Bold";
+	@FontIcon: 									sans-serif;
+	@FontSize: 									16px;
+	@LineHeight:								1.6em;
+	@ContainerWidth:							1410px;
+
+	@H1Size:									36px;
+	@H2Size:									35px;
+	@H3Size:									24px;
+	@H4Size:									24px;
+	@H5Size:									22px;
+	@H6Size:									16px;
+
+	@FontHairline:								100;
+	@FontThin:									200;
+	@FontLight:									300;
+	@FontRegular:								400;
+	@FontMedium:								500;
+	@FontSemibold:								600;
+	@FontBold:									700;
+	@FontHeavy:									800;
+	@FontBlack:									900;
+}
+.JasetConfig();
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Анимации																*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.TransitionTiming(){
+	/* linear */
+	@TimingKIT-names:							"linear",
+												"ease",			"ease-in",			"ease-out",
+												"sine",			"sine-in",			"sine-out",
+												"quadratic",	"quadratic-in",		"quadratic-out",
+												"cubic",		"cubic-in",			"cubic-out",
+												"quartic",		"quartic-in",		"quartic-out",
+												"quintic",		"quintic-in",		"quintic-out",
+												"exponential",	"exponential-in",	"exponential-out",
+												"circular",		"circular-in",		"circular-out",
+												"backward",		"backward-in",		"backward-out";
+	/* linear */
+	@TimingKIT-linear:							linear;
+	
+	/* ease */
+	@TimingKIT-ease:							ease-in-out;
+	@TimingKIT-ease-in:							ease-in;
+	@TimingKIT-ease-out:						ease-out;
+	
+	/* sine */
+	@TimingKIT-sine:							cubic-bezier(.45,.05,.55,.95);
+	@TimingKIT-sine-in:							cubic-bezier(.47,0,.74,.71);
+	@TimingKIT-sine-out:						cubic-bezier(.39,.58,.57,1);
+	
+	/* quadratic */
+	@TimingKIT-quadratic:						cubic-bezier(.46,.03,.52,.96);
+	@TimingKIT-quadratic-in:					cubic-bezier(.55,.09,.68,.53);
+	@TimingKIT-quadratic-out:					cubic-bezier(.25,.46,.45,.94);
+	
+	/* cubic */
+	@TimingKIT-cubic:							cubic-bezier(.65,.05,.36,1);
+	@TimingKIT-cubic-in:						cubic-bezier(.55,.06,.68,.19);
+	@TimingKIT-cubic-out:						cubic-bezier(.22,.61,.36,1);
+	
+	/* quartic */
+	@TimingKIT-quartic:							cubic-bezier(.77,0,.18,1);
+	@TimingKIT-quartic-in:						cubic-bezier(.9,.03,.69,.22);
+	@TimingKIT-quartic-out:						cubic-bezier(.17,.84,.44,1);
+	
+	/* quintic */
+	@TimingKIT-quintic:							cubic-bezier(.76,.05,.86,.06);
+	@TimingKIT-quintic-in:						cubic-bezier(.23,1,.32,1);
+	@TimingKIT-quintic-out:						cubic-bezier(.86,0,.07,1);
+	
+	/* exponential */
+	@TimingKIT-exponential:						cubic-bezier(1,0,0,1);
+	@TimingKIT-exponential-in:					cubic-bezier(.95,.05,.8,.04);
+	@TimingKIT-exponential-out:					cubic-bezier(.19,1,.22,1);
+	
+	/* circular */
+	@TimingKIT-circular:						cubic-bezier(.79,.14,.15,.86);
+	@TimingKIT-circular-in:						cubic-bezier(.6,.04,.98,.34);
+	@TimingKIT-circular-out:					cubic-bezier(.08,.82,.17,1);
+	
+	/* backward */
+	@TimingKIT-backward:						cubic-bezier(.68,-0.55,.27,1.55);
+	@TimingKIT-backward-in:						cubic-bezier(.6,-0.28,.74,.05);
+	@TimingKIT-backward-out:					cubic-bezier(.18,.89,.32,1.28);
+}
+.TransitionTiming();
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Умолчания																*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.JasetKit(){
+	/* Units */
+	@JasetKit-Units:							"auto","unset","initial","inherit","%","cm","em","rem","ex","in","mm","pc","pt","px","vh","vw","vmin";
+	
+	/* Styles define */
+	@JasetKit-BorderRadius:						unset;
+	@JasetKit-BoxSizing:						border-box;
+	@JasetKit-Opacity:							unset;
+
+	/* Background define */
+	@JasetKit-BackgroundPosition:				0% 0%;
+	@JasetKit-BackgroundRepeat:					repeat;
+	@JasetKit-BackgroundSize:					auto;
+	@JasetKit-BackgroundAttachment:				scroll;
+	@JasetKit-BackgroundClip:					border-box;
+	@JasetKit-BackgroundOrigin:					padding-box;
+	
+	/* Gradient define */
+	@JasetKit-GradientRepeatingSize:			1px;
+	@JasetKit-GradientRadialPosition:			center;
+	@JasetKit-GradientRadialType:				ellipse;
+	
+	/* Transition define */
+	@JasetKit-TransitionProperty:				all;
+	@JasetKit-TransitionDuration:				300ms;
+	@JasetKit-TransitionTimingFunction:			@TimingKIT-sine;
+	@JasetKit-TransitionDelay:					0ms;
+	
+	/* Transform define */
+	@JasetKit-TransformOrigin:					unset;
+	@JasetKit-TransformPerspective:				0;
+	@JasetKit-TransformTranslateX:				0;
+	@JasetKit-TransformTranslateY:				0;
+	@JasetKit-TransformTranslateZ:				0;
+	@JasetKit-TransformScaleX:					1;
+	@JasetKit-TransformScaleY:					1;
+	@JasetKit-TransformSkewX:					0deg;
+	@JasetKit-TransformSkewY:					0deg;
+	@JasetKit-TransformRotateX:					0deg;
+	@JasetKit-TransformRotateY:					0deg;
+	@JasetKit-TransformRotate3D:				0;
+	@JasetKit-TransformRotate:					0deg;
+	@JasetKit-TransformMatrix:					1, 0, 0, 1, 0, 0;
+	
+	/* Box shadow define */
+	@JasetKit-BoxShadowX:						0px;
+	@JasetKit-BoxShadowY:						0px;
+	@JasetKit-BoxShadowBlur:					0px;
+	@JasetKit-BoxShadowMargin:					0px;
+	@JasetKit-BoxShadowColor:					transparent;
+	
+	/* Text shadow define */
+	@JasetKit-TextShadowX:						0px;
+	@JasetKit-TextShadowY:						0px;
+	@JasetKit-TextShadowBlur:					0px;
+	@JasetKit-TextShadowColor:					transparent;
+	
+	/* Flexbox define */
+	@JasetKit-FlexboxAlignItems:				flex-start;
+	@JasetKit-FlexboxJustifyContent:			flex-start;
+	@JasetKit-FlexboxAlignContent:				flex-start;
+	@JasetKit-FlexboxWrap:						nowrap;
+	@JasetKit-FlexboxDirection:					row;
+	@JasetKit-FlexGrow:							1;
+	@JasetKit-FlexShrink:						1;
+	@JasetKit-FlexBasis:						auto;
+	@JasetKit-FlexOrder:						0;
+	
+	/* ColumnText define */
+	@JasetKit-ColumnTextCount:					1;
+	@JasetKit-ColumnTextGap:					1em;
+	
+	/* Appearance define */
+	@JasetKit-Appearance:						none;
+	
+	/* User Select define */
+	@JasetKit-UserSelect:						auto;
+	
+	/* Touch Action define */
+	@JasetKit-TouchAction:						auto;
+	
+	/* Animation define */
+	@JasetKit-AnimationName:					none;
+	@JasetKit-AnimationDuration:				1000ms;
+	@JasetKit-AnimationTimingFunction:			linear;
+	@JasetKit-AnimationDelay:					0ms;
+	@JasetKit-AnimationIterationCount:			initial;
+	@JasetKit-AnimationDirection:				initial;
+	@JasetKit-AnimationFillMode:				initial;
+	@JasetKit-AnimationPlayState:				initial;
+	
+	/* Box define */
+	@JasetKit-BoxType:							block;
+	@JasetKit-BoxWidth:							auto;
+	@JasetKit-BoxHeight:						auto;
+	@JasetKit-BoxBackground:					none;
+
+
+
+	
+	/* Grid define */
+	@JasetKit-GridCount:						12;
+	@JasetKit-GridTabPadding:					0px 0px 0px 0px;
+	@JasetKit-GridColPadding:					0px 15px 30px 15px;
+	
+	/* SizeBox define */
+	@JasetKit-SizeBoxMax:						1400;
+	@JasetKit-SizeBoxMargin:					20px;
+	@JasetKit-SizeBoxAlignItems:				flex-start;
+	@JasetKit-SizeBoxJustifyContent:			space-between;
+	@JasetKit-SizeBoxAlignContent:				stretch;
+
+	/* Screen define */
+	@FullSize:									1500px;
+	@FullSizeSmall:								1400px;
+	@FullSizeMini:								1300px;
+	@Desktop:									1200px;
+	@DesktopSmall:								1100px;
+	@DesktopMini:								1050px;
+	@Laptop:									1000px;
+	@LaptopSmall:								900px;
+	@LaptopMini:								850px;
+	@Tablet:									800px;
+	@TabletSmall:								700px;
+	@TabletMini:								600px;
+	@Mobile:									500px;
+	@MobileSmall:								400px;
+	@MobileMini:								350px;
+	
+	/* Screen names */
+	@FullSize-Name:								F;
+	@FullSizeSmall-Name:						FS;
+	@FullSizeMini-Name:							FM;
+	@Desktop-Name:								D;
+	@DesktopSmall-Name:							DS;
+	@DesktopMini-Name:							DM;
+	@Laptop-Name:								L;
+	@LaptopSmall-Name:							LS;
+	@LaptopMini-Name:							LM;
+	@Tablet-Name:								T;
+	@TabletSmall-Name:							TS;
+	@TabletMini-Name:							TM;
+	@Mobile-Name:								M;
+	@MobileSmall-Name:							MS;
+	@MobileMini-Name:							ММ;
+}
+.JasetKit();
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Цыклы																	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.for(@i,@n){.-each(@i)}
+.for(@n) when (isnumber(@n)){.for(1, @n)}
+.for(@i, @n) when not (@i = @n){.for((@i + (@n - @i) / abs(@n - @i)), @n);}
+.for(@array) when (default()){.for-impl_(length(@array))}
+.for-impl_(@i) when (@i > 1){.for-impl_((@i - 1))}
+.for-impl_(@i) when (@i > 0){.-each(extract(@array, @i))}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	IsUnitSet																*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.JasetUnitSet(@arg){
+	@JasetFindUnit:@arg;
+	@JasetFindUnitName:replace('@{JasetFindUnit}', '(-?[0-9])', '', 'gi');
+	@JasetFindUnitAuto:replace('@{JasetFindUnitName}', '(auto)', 'auto', 'gi');
+	@JasetFindUnitUnset:replace('@{JasetFindUnitAuto}', '(unset)', 'unset', 'gi');
+	@JasetFindUnitInitial:replace('@{JasetFindUnitUnset}', '(initial)', 'initial', 'gi');
+	@JasetFindUnitInherit:replace('@{JasetFindUnitInitial}', '(inherit)', 'inherit', 'gi');
+	@JasetUnitName:e(@JasetFindUnitInherit);
+	@JasetUnitSet:replace('@{JasetKit-Units}', '(.*)\"(@{JasetUnitName})\"(.*)', '$2', 'gi');
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.border-radius 															*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.border-top-left-radius(...){
+	& when (length(@arguments) = 0){
+		border-top-left-radius:@JasetKit-BorderRadius;
+	}
+	& when (length(@arguments) = 1){
+        border-top-left-radius:extract(@arguments, 1);
+	}
+	& when (length(@arguments) > 1){
+		border-top-left-radius:@JasetKit-BorderRadius;
+	}
+}
+.border-top-right-radius(...){
+	& when (length(@arguments) = 0){
+		border-top-right-radius:@JasetKit-BorderRadius;
+	}
+	& when (length(@arguments) = 1){
+        border-top-right-radius:extract(@arguments, 1);
+	}
+	& when (length(@arguments) > 1){
+		border-top-right-radius:@JasetKit-BorderRadius;
+	}
+}
+.border-bottom-left-radius(...){
+	& when (length(@arguments) = 0){
+		border-bottom-left-radius:@JasetKit-BorderRadius;
+	}
+	& when (length(@arguments) = 1){
+        border-bottom-left-radius:extract(@arguments, 1);
+	}
+	& when (length(@arguments) > 1){
+		border-bottom-left-radius:@JasetKit-BorderRadius;
+	}
+}
+.border-bottom-right-radius(...){
+	& when (length(@arguments) = 0){
+		border-bottom-right-radius:@JasetKit-BorderRadius;
+	}
+	& when (length(@arguments) = 1){
+        border-bottom-right-radius:extract(@arguments, 1);
+	}
+	& when (length(@arguments) > 1){
+		border-bottom-right-radius:@JasetKit-BorderRadius;
+	}
+}
+.border-top-radius(...){
+	& when (length(@arguments) = 0){
+		.border-top-left-radius();
+		.border-top-right-radius();
+	}
+	& when (length(@arguments) = 1){
+		.border-top-left-radius(extract(@arguments, 1));
+		.border-top-right-radius(extract(@arguments, 1));
+	}
+	& when (length(@arguments) = 2){
+		.border-top-left-radius(extract(@arguments, 1));
+		.border-top-right-radius(extract(@arguments, 2));
+	}
+	& when (length(@arguments) > 2){
+		.border-top-left-radius();
+		.border-top-right-radius();
+	}
+}
+.border-left-radius(...){
+	& when (length(@arguments) = 0){
+		.border-top-left-radius();
+		.border-bottom-left-radius();
+	}
+	& when (length(@arguments) = 1){
+		.border-top-left-radius(extract(@arguments, 1));
+		.border-bottom-left-radius(extract(@arguments, 1));
+	}
+	& when (length(@arguments) = 2){
+		.border-top-left-radius(extract(@arguments, 1));
+		.border-bottom-left-radius(extract(@arguments, 2));
+	}
+	& when (length(@arguments) > 2){
+		.border-top-left-radius();
+		.border-bottom-left-radius();
+	}
+}
+.border-right-radius(...){
+	& when (length(@arguments) = 0){
+		.border-top-right-radius();
+		.border-bottom-right-radius();
+	}
+	& when (length(@arguments) = 1){
+		.border-top-right-radius(extract(@arguments, 1));
+		.border-bottom-right-radius(extract(@arguments, 1));
+	}
+	& when (length(@arguments) = 2){
+		.border-top-right-radius(extract(@arguments, 1));
+		.border-bottom-right-radius(extract(@arguments, 2));
+	}
+	& when (length(@arguments) > 2){
+		.border-top-right-radius();
+		.border-bottom-right-radius();
+	}
+}
+.border-bottom-radius(...){
+	& when (length(@arguments) = 0){
+		.border-bottom-left-radius();
+		.border-bottom-right-radius();
+	}
+	& when (length(@arguments) = 1){
+		.border-bottom-left-radius(extract(@arguments, 1));
+		.border-bottom-right-radius(extract(@arguments, 1));
+	}
+	& when (length(@arguments) = 2){
+		.border-bottom-left-radius(extract(@arguments, 1));
+		.border-bottom-right-radius(extract(@arguments, 2));
+	}
+	& when (length(@arguments) > 2){
+		.border-bottom-left-radius();
+		.border-bottom-right-radius();
+	}
+}
+.border-radius(...){
+	& when (length(@arguments) = 0){
+		border-radius:@JasetKit-BorderRadius;
+	}
+	& when (length(@arguments) = 1){
+        border-radius:extract(@arguments, 1);
+	}
+	& when (length(@arguments) = 2){
+		.border-top-left-radius(extract(@arguments, 1));
+		.border-top-right-radius(extract(@arguments, 2));
+		.border-bottom-left-radius(extract(@arguments, 2));
+		.border-bottom-right-radius(extract(@arguments, 1));
+	}
+	& when (length(@arguments) = 3){
+		.border-top-left-radius(extract(@arguments, 1));
+		.border-top-right-radius(extract(@arguments, 2));
+		.border-bottom-left-radius(extract(@arguments, 2));
+		.border-bottom-right-radius(extract(@arguments, 3));
+	}
+	& when (length(@arguments) = 4){
+		.border-top-left-radius(extract(@arguments, 1));
+		.border-top-right-radius(extract(@arguments, 2));
+		.border-bottom-left-radius(extract(@arguments, 4));
+		.border-bottom-right-radius(extract(@arguments, 3));
+	}
+	& when (length(@arguments) > 4){
+		border-radius:@JasetKit-BorderRadius;
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.box-sizing	 															*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.box-sizing(...){
+	& when (length(@arguments) = 0){
+		-webkit-box-sizing:@JasetKit-BoxSizing;
+		-moz-box-sizing:@JasetKit-BoxSizing;
+		box-sizing:@JasetKit-BoxSizing;
+	}
+	& when (length(@arguments) = 1){
+		-webkit-box-sizing:extract(@arguments, 1);
+		-moz-box-sizing:extract(@arguments, 1);
+		box-sizing:extract(@arguments, 1);
+	}
+	& when (length(@arguments) > 1){
+		-webkit-box-sizing:@JasetKit-BoxSizing;
+		-moz-box-sizing:@JasetKit-BoxSizing;
+		box-sizing:@JasetKit-BoxSizing;
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.opacity		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.opacity(...){
+	& when (length(@arguments) = 0){
+		opacity:@JasetKit-Opacity;
+	}
+	& when (length(@arguments) = 1){
+		opacity:extract(@arguments, 1);
+	}
+	& when (length(@arguments) > 1){
+		opacity:@JasetKit-Opacity;
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.gradient		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.gradient(@firstArg; @rest ...){
+	& when (length(@arguments) > 1){
+		@secondArg:extract(@arguments, 2);
+		@thirdArg:extract(@arguments, 3);
+		@fourthArg:extract(@arguments, 4);
+		@lastArg:extract(extract(@arguments, length(@arguments)), 1);
+		@gradient:replace('@{rest}', '([\s]+((#?([a-f0-9]{6}|[a-f0-9]{3}))|((rgb|rgba|hsl)?\((.*?)\)))[\s]+([0-9]{1,3}%?))', ',$1', 'gi');
+		@findColors:replace('@{gradient}', '(img+\((url\((.*?)\)+)\,?(.*?)\))', '', 'gi');
+		@firstColor:extract(@secondArg, 1);
+		@IsImg:replace('@{lastArg}', '(img+\((url\((.*?)\)+)\,?(.*?)\))', 'TRUE', 'gi');
+		@findBg:replace('@{lastArg}', 'img+\((url\((.*?)\)+)\,?(.*?)\)', '$1', 'gi');
+		@BgArg:replace('@{lastArg}', 'img+\((url\((.*?)\)+)\,?(.*?)\)', '$3', 'gi');
+		@BgPosition:replace('@{BgArg}', '([^,]+)\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?', '$1', 'gi');
+		@BgRepeat:replace('@{BgArg}', '([^,]+)\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?', '$2', 'gi');
+		@BgSize:replace('@{BgArg}', '([^,]+)\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?', '$3', 'gi');
+		@BgAttachment:replace('@{BgArg}', '([^,]+)\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?', '$4', 'gi');
+		@BgClip:replace('@{BgArg}', '([^,]+)\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?', '$5', 'gi');
+		@BgOrigin:replace('@{BgArg}', '([^,]+)\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?\,?([^,]+)?', '$6', 'gi');
+		@BgImg:~'@{findBg}';
+		@findRadialPart:extract(extract(@firstArg, length(@firstArg)), 1);
+		@findRadialPosition:replace('@{findRadialPart}', '([^,]+)\,?([^,]+)?', '$1', 'gi');
+		@findRadialType:replace('@{findRadialPart}', '([^,]+)\,?([^,]+)?', '$2', 'gi');
+		@RadialPosition: ~'@{findRadialPosition}';
+		@RadialType: ~'@{findRadialType}';
+		& when (length(@arguments) = 2){
+			& when (iscolor(@firstArg)) and (iscolor(@secondArg)){
+				background-image:-webkit-linear-gradient(90deg, @firstArg 0%, @secondArg 100%);
+				background-image:-moz-linear-gradient(90deg, @firstArg 0%, @secondArg 100%);
+				background-image:linear-gradient(0deg, @firstArg 0%, @secondArg 100%);
+			}
+			& when (iscolor(extract(@firstArg, 1))) and (isnumber(extract(@firstArg, 2))) and (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))){
+				background-image:-webkit-linear-gradient(90deg, extract(@firstArg, 1) extract(@firstArg, 2), extract(@secondArg, 1) extract(@secondArg, 2));
+				background-image:-moz-linear-gradient(90deg, extract(@firstArg, 1) extract(@firstArg, 2), extract(@secondArg, 1) extract(@secondArg, 2));
+				background-image:linear-gradient(0deg, extract(@firstArg, 1) extract(@firstArg, 2), extract(@secondArg, 1) extract(@secondArg, 2));
+			}
+			& when (iscolor(@firstArg)) and (@IsImg = 'TRUE'){
+				background-image:-webkit-linear-gradient(90deg, @firstArg 0%, @firstArg 100%), @BgImg;
+				background-image:-moz-linear-gradient(90deg, @firstArg 0%, @firstArg 100%), @BgImg;
+				background-image:linear-gradient(0deg, @firstArg 0%, @firstArg 100%), @BgImg;
+			}
+			& when (iscolor(extract(@firstArg, 1))) and (isnumber(extract(@firstArg, 2))) and (@IsImg = 'TRUE'){
+				background-image:-webkit-linear-gradient(90deg, extract(@firstArg, 1) 0%, extract(@firstArg, 1) 100%), @BgImg;
+				background-image:-moz-linear-gradient(90deg, extract(@firstArg, 1) 0%, extract(@firstArg, 1) 100%), @BgImg;
+				background-image:linear-gradient(0deg, extract(@firstArg, 1) 0%, extract(@firstArg, 1) 100%), @BgImg;
+			}
+		}
+		& when (length(@arguments) = 3){
+			& when (iscolor(@firstArg)), (iscolor(extract(@firstArg, 1))){
+				& when (iscolor(@firstArg)) and (iscolor(@secondArg)) and (iscolor(@thirdArg)){
+					background-image:-webkit-linear-gradient(90deg, @firstArg 0%, @secondArg 50%, @thirdArg 100%);
+					background-image:-moz-linear-gradient(90deg, @firstArg 0%, @secondArg 50%, @thirdArg 100%);
+					background-image:linear-gradient(0deg, @firstArg 0%, @secondArg 50%, @thirdArg 100%);
+				}
+				& when (iscolor(extract(@firstArg, 1))) and (isnumber(extract(@firstArg, 2))) and (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))){
+					background-image:-webkit-linear-gradient(90deg, extract(@firstArg, 1) extract(@firstArg, 2), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2));
+					background-image:-moz-linear-gradient(90deg, extract(@firstArg, 1) extract(@firstArg, 2), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2));
+					background-image:linear-gradient(0deg, extract(@firstArg, 1) extract(@firstArg, 2), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2));
+				}
+				& when (iscolor(@firstArg)) and (iscolor(@secondArg)) and (@IsImg = 'TRUE'){
+					background-image:-webkit-linear-gradient(90deg, @firstArg 0%, @secondArg 100%), @BgImg;
+					background-image:-moz-linear-gradient(90deg, @firstArg 0%, @secondArg 100%), @BgImg;
+					background-image:linear-gradient(0deg, @firstArg 0%, @secondArg 100%), @BgImg;
+				}
+				& when (iscolor(extract(@firstArg, 1))) and (isnumber(extract(@firstArg, 2))) and (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (@IsImg = 'TRUE'){
+					background-image:-webkit-linear-gradient(90deg, extract(@firstArg, 1) extract(@firstArg, 2), extract(@secondArg, 1) extract(@secondArg, 2)), @BgImg;
+					background-image:-moz-linear-gradient(90deg, extract(@firstArg, 1) extract(@firstArg, 2), extract(@secondArg, 1) extract(@secondArg, 2)), @BgImg;
+					background-image:linear-gradient(0deg, extract(@firstArg, 1) extract(@firstArg, 2), extract(@secondArg, 1) extract(@secondArg, 2)), @BgImg;
+				}
+			}
+			& when (isnumber(@firstArg)){
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)){
+					background-image:-webkit-linear-gradient((@firstArg + 90) * 1deg, @secondArg 0%, @thirdArg 100%);
+					background-image:-moz-linear-gradient((@firstArg + 90) * 1deg, @secondArg 0%, @thirdArg 100%);
+					background-image:linear-gradient(@firstArg * 1deg, @secondArg 0%, @thirdArg 100%);
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))){
+					background-image:-webkit-linear-gradient((@firstArg + 90) * 1deg, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2));
+					background-image:-moz-linear-gradient((@firstArg + 90) * 1deg, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2));
+					background-image:linear-gradient(@firstArg * 1deg, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2));
+				}
+				& when (iscolor(@secondArg)) and (@IsImg = 'TRUE'){
+					background-image:-webkit-linear-gradient((@firstArg + 90) * 1deg, @secondArg 0%, @secondArg 100%), @BgImg;
+					background-image:-moz-linear-gradient((@firstArg + 90) * 1deg, @secondArg 0%, @secondArg 100%), @BgImg;
+					background-image:linear-gradient(@firstArg * 1deg, @secondArg 0%, @secondArg 100%), @BgImg;
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (@IsImg = 'TRUE'){
+					background-image:-webkit-linear-gradient((@firstArg + 90) * 1deg, extract(@secondArg, 1) 0%, extract(@secondArg, 1) 100%), @BgImg;
+					background-image:-moz-linear-gradient((@firstArg + 90) * 1deg, extract(@secondArg, 1) 0%, extract(@secondArg, 1) 100%), @BgImg;
+					background-image:linear-gradient(@firstArg * 1deg, extract(@secondArg, 1) 0%, extract(@secondArg, 1) 100%), @BgImg;
+				}
+			}
+			& when (isnumber(extract(@firstArg, 1))) and (extract(@firstArg, 2) = repeating){
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)){
+					background-image:-webkit-repeating-linear-gradient((extract(@firstArg, 1) + 90) * 1deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2));
+					background-image:-moz-repeating-linear-gradient((extract(@firstArg, 1) + 90) * 1deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2));
+					background-image:repeating-linear-gradient(extract(@firstArg, 1) * 1deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2));
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))){
+					background-image:-webkit-repeating-linear-gradient((extract(@firstArg, 1) + 90) * 1deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2));
+					background-image:-moz-repeating-linear-gradient((extract(@firstArg, 1) + 90) * 1deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2));
+					background-image:repeating-linear-gradient(extract(@firstArg, 1) * 1deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2));
+				}
+			}
+			& when (@firstArg = repeating){
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)){
+					background-image:-webkit-repeating-linear-gradient(90deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2));
+					background-image:-moz-repeating-linear-gradient(90deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2));
+					background-image:repeating-linear-gradient(0deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2));
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))){
+					background-image:-webkit-repeating-linear-gradient(90deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2));
+					background-image:-moz-repeating-linear-gradient(90deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2));
+					background-image:repeating-linear-gradient(0deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2));
+				}
+			}
+			& when (@firstArg = radial){
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)){
+					background-image:-webkit-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, @secondArg, @thirdArg);
+					background-image:-moz-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, @secondArg, @thirdArg);
+					background-image:radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, @secondArg, @thirdArg);
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))){
+					background-image:-webkit-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2));
+					background-image:-moz-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2));
+					background-image:radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2));
+				}
+				& when (iscolor(@secondArg)) and (@IsImg = 'TRUE'){
+					background-image:-webkit-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, @secondArg, @secondArg), @BgImg;
+					background-image:-moz-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, @secondArg, @secondArg), @BgImg;
+					background-image:radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, @secondArg, @secondArg), @BgImg;
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (@IsImg = 'TRUE'){
+					background-image:-webkit-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, extract(@secondArg, 1) extract(@secondArg, 2), extract(@secondArg, 1) extract(@secondArg, 2)), @BgImg;
+					background-image:-moz-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, extract(@secondArg, 1) extract(@secondArg, 2), extract(@secondArg, 1) extract(@secondArg, 2)), @BgImg;
+					background-image:radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, extract(@secondArg, 1) extract(@secondArg, 2), extract(@secondArg, 1) extract(@secondArg, 2)), @BgImg;
+				}
+			}
+			& when (extract(@firstArg, 1) = radial) and not(extract(@firstArg, 2) = repeating) and (isstring(@findRadialPart)){
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)){
+					background-image:-webkit-radial-gradient(@RadialPosition, @RadialType, @secondArg, @thirdArg);
+					background-image:-moz-radial-gradient(@RadialPosition, @RadialType, @secondArg, @thirdArg);
+					background-image:radial-gradient(@RadialType at @RadialPosition, @secondArg, @thirdArg);
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))){
+					background-image:-webkit-radial-gradient(@RadialPosition, @RadialType, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2));
+					background-image:-moz-radial-gradient(@RadialPosition, @RadialType, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2));
+					background-image:radial-gradient(@RadialType at @RadialPosition, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2));
+				}
+				& when (iscolor(@secondArg)) and (@IsImg = 'TRUE'){
+					background-image:-webkit-radial-gradient(@RadialPosition, @RadialType, @secondArg, @secondArg), @BgImg;
+					background-image:-moz-radial-gradient(@RadialPosition, @RadialType, @secondArg, @secondArg), @BgImg;
+					background-image:radial-gradient(@RadialType at @RadialPosition, @secondArg, @secondArg), @BgImg;
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (@IsImg = 'TRUE'){
+					background-image:-webkit-radial-gradient(@RadialPosition, @RadialType, extract(@secondArg, 1) extract(@secondArg, 2), extract(@secondArg, 1) extract(@secondArg, 2)), @BgImg;
+					background-image:-moz-radial-gradient(@RadialPosition, @RadialType, extract(@secondArg, 1) extract(@secondArg, 2), extract(@secondArg, 1) extract(@secondArg, 2)), @BgImg;
+					background-image:radial-gradient(@RadialType at @RadialPosition, extract(@secondArg, 1) extract(@secondArg, 2), extract(@secondArg, 1) extract(@secondArg, 2)), @BgImg;
+				}
+			}
+			& when (extract(@firstArg, 1) = radial) and (extract(@firstArg, 2) = repeating) and not(isstring(@findRadialPart)){
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)){
+					background-image:-webkit-repeating-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2));
+					background-image:-moz-repeating-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2));
+					background-image:repeating-radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2));
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))){
+					background-image:-webkit-repeating-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2));
+					background-image:-moz-repeating-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2));
+					background-image:repeating-radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2));
+				}
+			}
+			& when (extract(@firstArg, 1) = radial) and (extract(@firstArg, 2) = repeating) and (isstring(@findRadialPart)){
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)){
+					background-image:-webkit-repeating-radial-gradient(@RadialPosition, @RadialType, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2));
+					background-image:-moz-repeating-radial-gradient(@RadialPosition, @RadialType, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2));
+					background-image:repeating-radial-gradient(@RadialType at @RadialPosition, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2));
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))){
+					background-image:-webkit-repeating-radial-gradient(@RadialPosition, @RadialType, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2));
+					background-image:-moz-repeating-radial-gradient(@RadialPosition, @RadialType, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2));
+					background-image:repeating-radial-gradient(@RadialType at @RadialPosition, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2));
+				}
+			}
+		}
+		& when (length(@arguments) = 4){
+			& when (iscolor(@firstArg)) and (iscolor(@secondArg)) and (iscolor(@thirdArg)) and (iscolor(@fourthArg)){
+				background-image:-webkit-linear-gradient(90deg, @firstArg 0%, @secondArg 33%, @thirdArg 66%, @fourthArg 100%);
+				background-image:-moz-linear-gradient(90deg, @firstArg 0%, @secondArg 33%, @thirdArg 66%, @fourthArg 100%);
+				background-image:linear-gradient(0deg, @firstArg 0%, @secondArg 33%, @thirdArg 66%, @fourthArg 100%);
+			}
+			& when (iscolor(extract(@firstArg, 1))) and (isnumber(extract(@firstArg, 2))) and (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))) and (iscolor(extract(@fourthArg, 1))) and (isnumber(extract(@fourthArg, 2))){
+				background-image:-webkit-linear-gradient(90deg, extract(@firstArg, 1) extract(@firstArg, 2), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) extract(@fourthArg, 2));
+				background-image:-moz-linear-gradient(90deg, extract(@firstArg, 1) extract(@firstArg, 2), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) extract(@fourthArg, 2));
+				background-image:linear-gradient(0deg, extract(@firstArg, 1) extract(@firstArg, 2), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) extract(@fourthArg, 2));
+			}
+			& when (iscolor(@firstArg)) and (iscolor(@secondArg)) and (iscolor(@thirdArg)) and (@IsImg = 'TRUE'){
+				background-image:-webkit-linear-gradient(90deg, @firstArg 0%, @secondArg 50%, @thirdArg 100%), @BgImg;
+				background-image:-moz-linear-gradient(90deg, @firstArg 0%, @secondArg 50%, @thirdArg 100%), @BgImg;
+				background-image:linear-gradient(0deg, @firstArg 0%, @secondArg 50%, @thirdArg 100%), @BgImg;
+			}
+			& when (iscolor(extract(@firstArg, 1))) and (isnumber(extract(@firstArg, 2))) and (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))) and (@IsImg = 'TRUE'){
+				background-image:-webkit-linear-gradient(90deg, extract(@firstArg, 1) extract(@firstArg, 2), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+				background-image:-moz-linear-gradient(90deg, extract(@firstArg, 1) extract(@firstArg, 2), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+				background-image:linear-gradient(0deg, extract(@firstArg, 1) extract(@firstArg, 2), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+			}
+			& when (isnumber(@firstArg)){
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)) and (iscolor(@fourthArg)){
+					background-image:-webkit-linear-gradient((@firstArg + 90) * 1deg, @secondArg 0%, @thirdArg 50%, @fourthArg 100%);
+					background-image:-moz-linear-gradient((@firstArg + 90) * 1deg, @secondArg 0%, @thirdArg 50%, @fourthArg 100%);
+					background-image:linear-gradient(@firstArg * 1deg, @secondArg 0%, @thirdArg 50%, @fourthArg 100%);
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))) and (iscolor(extract(@fourthArg, 1))) and (isnumber(extract(@fourthArg, 2))){
+					background-image:-webkit-linear-gradient((@firstArg + 90) * 1deg, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) extract(@fourthArg, 2));
+					background-image:-moz-linear-gradient((@firstArg + 90) * 1deg, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) extract(@fourthArg, 2));
+					background-image:linear-gradient(@firstArg * 1deg, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) extract(@fourthArg, 2));
+				}
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)) and (@IsImg = 'TRUE'){
+					background-image:-webkit-linear-gradient((@firstArg + 90) * 1deg, @secondArg 0%, @thirdArg 100%), @BgImg;
+					background-image:-moz-linear-gradient((@firstArg + 90) * 1deg, @secondArg 0%, @thirdArg 100%), @BgImg;
+					background-image:linear-gradient(@firstArg * 1deg, @secondArg 0%, @thirdArg 100%), @BgImg;
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))) and (@IsImg = 'TRUE'){
+					background-image:-webkit-linear-gradient((@firstArg + 90) * 1deg, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+					background-image:-moz-linear-gradient((@firstArg + 90) * 1deg, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+					background-image:linear-gradient(@firstArg * 1deg, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+				}
+			}
+			& when (isnumber(extract(@firstArg, 1))) and (extract(@firstArg, 2) = repeating){
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)) and (iscolor(@fourthArg)){
+					background-image:-webkit-repeating-linear-gradient((extract(@firstArg, 1) + 90) * 1deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @fourthArg (@JasetKit-GradientRepeatingSize*2));
+					background-image:-moz-repeating-linear-gradient((extract(@firstArg, 1) + 90) * 1deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @fourthArg (@JasetKit-GradientRepeatingSize*2));
+					background-image:repeating-linear-gradient(extract(@firstArg, 1) * 1deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @fourthArg (@JasetKit-GradientRepeatingSize*2));
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))) and (iscolor(extract(@fourthArg, 1))) and (isnumber(extract(@fourthArg, 2))){
+					background-image:-webkit-repeating-linear-gradient((extract(@firstArg, 1) + 90) * 1deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) 0, extract(@fourthArg, 1) extract(@fourthArg, 2));
+					background-image:-moz-repeating-linear-gradient((extract(@firstArg, 1) + 90) * 1deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) 0, extract(@fourthArg, 1) extract(@fourthArg, 2));
+					background-image:repeating-linear-gradient(extract(@firstArg, 1) * 1deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) 0, extract(@fourthArg, 1) extract(@fourthArg, 2));
+				}
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)) and (@IsImg = 'TRUE'){
+					background-image:-webkit-repeating-linear-gradient((extract(@firstArg, 1) + 90) * 1deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2)), @BgImg;
+					background-image:-moz-repeating-linear-gradient((extract(@firstArg, 1) + 90) * 1deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2)), @BgImg;
+					background-image:repeating-linear-gradient(extract(@firstArg, 1) * 1deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2)), @BgImg;
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))) and (@IsImg = 'TRUE'){
+					background-image:-webkit-repeating-linear-gradient((extract(@firstArg, 1) + 90) * 1deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+					background-image:-moz-repeating-linear-gradient((extract(@firstArg, 1) + 90) * 1deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+					background-image:repeating-linear-gradient(extract(@firstArg, 1) * 1deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+				}
+			}
+			& when (@firstArg = repeating){
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)) and (iscolor(@fourthArg)){
+					background-image:-webkit-repeating-linear-gradient(90deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @fourthArg (@JasetKit-GradientRepeatingSize*2));
+					background-image:-moz-repeating-linear-gradient(90deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @fourthArg (@JasetKit-GradientRepeatingSize*2));
+					background-image:repeating-linear-gradient(0deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @fourthArg (@JasetKit-GradientRepeatingSize*2));
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))) and (iscolor(extract(@fourthArg, 1))) and (isnumber(extract(@fourthArg, 2))){
+					background-image:-webkit-repeating-linear-gradient(90deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) 0, extract(@fourthArg, 1) extract(@fourthArg, 2));
+					background-image:-moz-repeating-linear-gradient(90deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) 0, extract(@fourthArg, 1) extract(@fourthArg, 2));
+					background-image:repeating-linear-gradient(0deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) 0, extract(@fourthArg, 1) extract(@fourthArg, 2));
+				}
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)) and (@IsImg = 'TRUE'){
+					background-image:-webkit-repeating-linear-gradient(90deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2)), @BgImg;
+					background-image:-moz-repeating-linear-gradient(90deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2)), @BgImg;
+					background-image:repeating-linear-gradient(0deg, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2)), @BgImg;
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))) and (@IsImg = 'TRUE'){
+					background-image:-webkit-repeating-linear-gradient(90deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+					background-image:-moz-repeating-linear-gradient(90deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+					background-image:repeating-linear-gradient(0deg, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+				}
+			}
+			& when (@firstArg = radial){
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)) and (iscolor(@fourthArg)){
+					background-image:-webkit-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, @secondArg 0%, @thirdArg 50%, @fourthArg 100%);
+					background-image:-moz-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, @secondArg 0%, @thirdArg 50%, @fourthArg 100%);
+					background-image:radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, @secondArg 0%, @thirdArg 50%, @fourthArg 100%);
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))) and (iscolor(extract(@fourthArg, 1))) and (isnumber(extract(@fourthArg, 2))){
+					background-image:-webkit-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) extract(@fourthArg, 2));
+					background-image:-moz-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) extract(@fourthArg, 2));
+					background-image:radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) extract(@fourthArg, 2));
+				}
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)) and (@IsImg = 'TRUE'){
+					background-image:-webkit-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, @secondArg 0%, @thirdArg 100%), @BgImg;
+					background-image:-moz-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, @secondArg 0%, @thirdArg 100%), @BgImg;
+					background-image:radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, @secondArg 0%, @thirdArg 100%), @BgImg;
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))) and (@IsImg = 'TRUE'){
+					background-image:-webkit-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+					background-image:-moz-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+					background-image:radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+				}
+			}
+			& when (extract(@firstArg, 1) = radial) and (isstring(@findRadialPart)){
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)) and (iscolor(@fourthArg)){
+					background-image:-webkit-radial-gradient(@RadialPosition, @RadialType, @secondArg 0%, @thirdArg 50%, @fourthArg 100%);
+					background-image:-moz-radial-gradient(@RadialPosition, @RadialType, @secondArg 0%, @thirdArg 50%, @fourthArg 100%);
+					background-image:radial-gradient(@RadialType at @RadialPosition, @secondArg 0%, @thirdArg 50%, @fourthArg 100%);
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))) and (iscolor(extract(@fourthArg, 1))) and (isnumber(extract(@fourthArg, 2))){
+					background-image:-webkit-radial-gradient(@RadialPosition, @RadialType, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) extract(@fourthArg, 2));
+					background-image:-moz-radial-gradient(@RadialPosition, @RadialType, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) extract(@fourthArg, 2));
+					background-image:radial-gradient(@RadialType at @RadialPosition, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) extract(@fourthArg, 2));
+				}
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)) and (@IsImg = 'TRUE'){
+					background-image:-webkit-radial-gradient(@RadialPosition, @RadialType, @secondArg 0%, @thirdArg 100%), @BgImg;
+					background-image:-moz-radial-gradient(@RadialPosition, @RadialType, @secondArg 0%, @thirdArg 100%), @BgImg;
+					background-image:radial-gradient(@RadialType at @RadialPosition, @secondArg 0%, @thirdArg 100%), @BgImg;
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))) and (@IsImg = 'TRUE'){
+					background-image:-webkit-radial-gradient(@RadialPosition, @RadialType, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+					background-image:-moz-radial-gradient(@RadialPosition, @RadialType, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+					background-image:radial-gradient(@RadialType at @RadialPosition, extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+				}
+			}
+			& when (extract(@firstArg, 1) = radial) and (extract(@firstArg, 2) = repeating) and not(isstring(@findRadialPart)){
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)) and (iscolor(@fourthArg)){
+					background-image:-webkit-repeating-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @fourthArg (@JasetKit-GradientRepeatingSize*2));
+					background-image:-moz-repeating-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @fourthArg (@JasetKit-GradientRepeatingSize*2));
+					background-image:repeating-radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @fourthArg (@JasetKit-GradientRepeatingSize*2));
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))) and (iscolor(extract(@fourthArg, 1))) and (isnumber(extract(@fourthArg, 2))){
+					background-image:-webkit-repeating-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) 0, extract(@fourthArg, 1) extract(@fourthArg, 2));
+					background-image:-moz-repeating-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) 0, extract(@fourthArg, 1) extract(@fourthArg, 2));
+					background-image:repeating-radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) 0, extract(@fourthArg, 1) extract(@fourthArg, 2));
+				}
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)) and (@IsImg = 'TRUE'){
+					background-image:-webkit-repeating-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2)), @BgImg;
+					background-image:-moz-repeating-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2)), @BgImg;
+					background-image:repeating-radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2)), @BgImg;
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))) and (@IsImg = 'TRUE'){
+					background-image:-webkit-repeating-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+					background-image:-moz-repeating-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+					background-image:repeating-radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+				}
+			}
+			& when (extract(@firstArg, 1) = radial) and (extract(@firstArg, 2) = repeating) and (isstring(@findRadialPart)){
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)) and (iscolor(@fourthArg)){
+					background-image:-webkit-repeating-radial-gradient(@RadialPosition, @RadialType, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @fourthArg (@JasetKit-GradientRepeatingSize*2));
+					background-image:-moz-repeating-radial-gradient(@RadialPosition, @RadialType, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @fourthArg (@JasetKit-GradientRepeatingSize*2));
+					background-image:repeating-radial-gradient(@RadialType at @RadialPosition, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @fourthArg (@JasetKit-GradientRepeatingSize*2));
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))) and (iscolor(extract(@fourthArg, 1))) and (isnumber(extract(@fourthArg, 2))){
+					background-image:-webkit-repeating-radial-gradient(@RadialPosition, @RadialType, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) 0, extract(@fourthArg, 1) extract(@fourthArg, 2));
+					background-image:-moz-repeating-radial-gradient(@RadialPosition, @RadialType, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) 0, extract(@fourthArg, 1) extract(@fourthArg, 2));
+					background-image:repeating-radial-gradient(@RadialType at @RadialPosition, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2), extract(@fourthArg, 1) 0, extract(@fourthArg, 1) extract(@fourthArg, 2));
+				}
+				& when (iscolor(@secondArg)) and (iscolor(@thirdArg)) and (@IsImg = 'TRUE'){
+					background-image:-webkit-repeating-radial-gradient(@RadialPosition, @RadialType, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2)), @BgImg;
+					background-image:-moz-repeating-radial-gradient(@RadialPosition, @RadialType, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2)), @BgImg;
+					background-image:repeating-radial-gradient(@RadialType at @RadialPosition, @secondArg, @secondArg @JasetKit-GradientRepeatingSize, @thirdArg 0, @thirdArg (@JasetKit-GradientRepeatingSize*2)), @BgImg;
+				}
+				& when (iscolor(extract(@secondArg, 1))) and (isnumber(extract(@secondArg, 2))) and (iscolor(extract(@thirdArg, 1))) and (isnumber(extract(@thirdArg, 2))) and (@IsImg = 'TRUE'){
+					background-image:-webkit-repeating-radial-gradient(@RadialPosition, @RadialType, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+					background-image:-moz-repeating-radial-gradient(@RadialPosition, @RadialType, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+					background-image:repeating-radial-gradient(@RadialType at @RadialPosition, extract(@secondArg, 1), extract(@secondArg, 1) extract(@secondArg, 2), extract(@thirdArg, 1) 0, extract(@thirdArg, 1) extract(@thirdArg, 2)), @BgImg;
+				}
+			}
+		}
+		& when (length(@arguments) > 4){
+			& when (iscolor(extract(@firstArg, 1))) and (isnumber(extract(@firstArg, 2))){
+				& when not(@IsImg = 'TRUE'){
+					background-image:-webkit-linear-gradient(90deg, ~'@{findColors}');
+					background-image:-moz-linear-gradient(90deg, ~'@{findColors}');
+					background-image:linear-gradient(0deg, ~'@{findColors}');
+				}
+				& when (@IsImg = 'TRUE'){
+					background-image:-webkit-linear-gradient(90deg, ~'@{findColors}'), @BgImg;
+					background-image:-moz-linear-gradient(90deg, ~'@{findColors}'), @BgImg;
+					background-image:linear-gradient(0deg, ~'@{findColors}'), @BgImg;
+				}
+			}
+			& when (isnumber(@firstArg)){
+				& when not(@IsImg = 'TRUE'){
+					background-image:-webkit-linear-gradient((@firstArg + 90) * 1deg, ~'@{findColors}');
+					background-image:-moz-linear-gradient((@firstArg + 90) * 1deg, ~'@{findColors}');
+					background-image:linear-gradient(@firstArg * 1deg, ~'@{findColors}');
+				}
+				& when (@IsImg = 'TRUE'){
+					background-image:-webkit-linear-gradient((@firstArg + 90) * 1deg, ~'@{findColors}'), @BgImg;
+					background-image:-moz-linear-gradient((@firstArg + 90) * 1deg, ~'@{findColors}'), @BgImg;
+					background-image:linear-gradient(@firstArg * 1deg, ~'@{findColors}'), @BgImg;
+				}
+			}
+			& when (isnumber(extract(@firstArg, 1))) and (extract(@firstArg, 2) = repeating){
+				& when not(@IsImg = 'TRUE'){
+					background-image:-webkit-repeating-linear-gradient((extract(@firstArg, 1) + 90) * 1deg, ~'@{findColors}');
+					background-image:-moz-repeating-linear-gradient((extract(@firstArg, 1) + 90) * 1deg, ~'@{findColors}');
+					background-image:repeating-linear-gradient(extract(@firstArg, 1) * 1deg, ~'@{findColors}');
+				}
+				& when (@IsImg = 'TRUE'){
+					background-image:-webkit-repeating-linear-gradient((extract(@firstArg, 1) + 90) * 1deg, ~'@{findColors}'), @BgImg;
+					background-image:-moz-repeating-linear-gradient((extract(@firstArg, 1) + 90) * 1deg, ~'@{findColors}'), @BgImg;
+					background-image:repeating-linear-gradient(extract(@firstArg, 1) * 1deg, ~'@{findColors}'), @BgImg;
+				}
+			}
+			& when (@firstArg = repeating){
+				& when not(@IsImg = 'TRUE'){
+					background-image:-webkit-repeating-linear-gradient(90deg, ~'@{findColors}');
+					background-image:-moz-repeating-linear-gradient(90deg, ~'@{findColors}');
+					background-image:repeating-linear-gradient(0deg, ~'@{findColors}');
+				}
+				& when (@IsImg = 'TRUE'){
+					background-image:-webkit-repeating-linear-gradient(90deg, ~'@{findColors}'), @BgImg;
+					background-image:-moz-repeating-linear-gradient(90deg, ~'@{findColors}'), @BgImg;
+					background-image:repeating-linear-gradient(0deg, ~'@{findColors}'), @BgImg;
+				}
+			}
+			& when (@firstArg = radial){
+				& when not(@IsImg = 'TRUE'){
+					background-image:-webkit-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, ~'@{findColors}');
+					background-image:-moz-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, ~'@{findColors}');
+					background-image:radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, ~'@{findColors}');
+				}
+				& when (@IsImg = 'TRUE'){
+					background-image:-webkit-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, ~'@{findColors}'), @BgImg;
+					background-image:-moz-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, ~'@{findColors}'), @BgImg;
+					background-image:radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, ~'@{findColors}'), @BgImg;
+				}
+			}
+			& when (extract(@firstArg, 1) = radial) and (isstring(@findRadialPart)){
+				& when not(@IsImg = 'TRUE'){
+					background-image:-webkit-radial-gradient(@RadialPosition, @RadialType, ~'@{findColors}');
+					background-image:-moz-radial-gradient(@RadialPosition, @RadialType, ~'@{findColors}');
+					background-image:radial-gradient(@RadialType at @RadialPosition, ~'@{findColors}');
+				}
+				& when (@IsImg = 'TRUE'){
+					background-image:-webkit-radial-gradient(@RadialPosition, @RadialType, ~'@{findColors}'), @BgImg;
+					background-image:-moz-radial-gradient(@RadialPosition, @RadialType, ~'@{findColors}'), @BgImg;
+					background-image:radial-gradient(@RadialType at @RadialPosition, ~'@{findColors}'), @BgImg;
+				}
+			}
+			& when (extract(@firstArg, 1) = radial) and (extract(@firstArg, 2) = repeating) and not(isstring(@findRadialPart)){
+				& when not(@IsImg = 'TRUE'){
+					background-image:-webkit-repeating-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, ~'@{findColors}');
+					background-image:-moz-repeating-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, ~'@{findColors}');
+					background-image:repeating-radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, ~'@{findColors}');
+				}
+				& when (@IsImg = 'TRUE'){
+					background-image:-webkit-repeating-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, ~'@{findColors}'), @BgImg;
+					background-image:-moz-repeating-radial-gradient(@JasetKit-GradientRadialPosition, @JasetKit-GradientRadialType, ~'@{findColors}'), @BgImg;
+					background-image:repeating-radial-gradient(@JasetKit-GradientRadialType at @JasetKit-GradientRadialPosition, ~'@{findColors}'), @BgImg;
+				}
+			}
+			& when (extract(@firstArg, 1) = radial) and (extract(@firstArg, 2) = repeating) and (isstring(@findRadialPart)){
+				& when not(@IsImg = 'TRUE'){
+					background-image:-webkit-repeating-radial-gradient(@RadialPosition, @RadialType, ~'@{findColors}');
+					background-image:-moz-repeating-radial-gradient(@RadialPosition, @RadialType, ~'@{findColors}');
+					background-image:repeating-radial-gradient(@RadialType at @RadialPosition, ~'@{findColors}');
+				}
+				& when (@IsImg = 'TRUE'){
+					background-image:-webkit-repeating-radial-gradient(@RadialPosition, @RadialType, ~'@{findColors}'), @BgImg;
+					background-image:-moz-repeating-radial-gradient(@RadialPosition, @RadialType, ~'@{findColors}'), @BgImg;
+					background-image:repeating-radial-gradient(@RadialType at @RadialPosition, ~'@{findColors}'), @BgImg;
+				}
+			}
+		}
+		& when (@IsImg = 'TRUE'){
+			& when (@BgPosition = ''){background-position: @JasetKit-BackgroundPosition;} & when not(@BgPosition = ''){background-position: ~'@{BgPosition}';}
+			& when (@BgRepeat = ''){background-repeat: @JasetKit-BackgroundRepeat;} & when not(@BgRepeat = ''){background-repeat: ~'@{BgRepeat}';}
+			& when (@BgSize = ''){background-size: @JasetKit-BackgroundSize;} & when not(@BgSize = ''){background-size: ~'@{BgSize}';}
+			& when (@BgAttachment = ''){background-attachment: @JasetKit-BackgroundAttachment;} & when not(@BgAttachment = ''){background-attachment: ~'@{BgAttachment}';}
+			& when (@BgClip = ''){background-clip: @JasetKit-BackgroundClip;} & when not(@BgClip = ''){background-clip: ~'@{BgClip}';}
+			& when (@BgOrigin = ''){background-origin: @JasetKit-BackgroundOrigin;} & when not(@BgOrigin = ''){background-origin: ~'@{BgOrigin}';}
+		}
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.sticky		 															*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.sticky(...){
+	@First:extract(@arguments, 1);
+	@Last:extract(@arguments, 2);
+	& when (length(@arguments) = 0){
+		position: -webkit-sticky;
+		position: sticky;
+	}
+	& when (length(@arguments) = 1){
+		top:@First;
+		position: -webkit-sticky;
+		position: sticky;
+	}
+	& when (length(@arguments) = 2){
+		@{First}:@Last;
+		position:-webkit-sticky;
+		position:sticky;
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.transition		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.transition(@firstArg:all; @rest ...){
+	& when (length(@arguments) = 0){
+		-webkit-transition:@JasetKit-TransitionProperty @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+		-moz-transition:@JasetKit-TransitionProperty @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+		transition:@JasetKit-TransitionProperty @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+	}
+	& when (length(@arguments) = 1){
+		@findDuration:@firstArg;
+		@duration:replace('@{findDuration}', '([0-9])', '', 'gi');
+		& when (@duration = 'ms'), (@duration = 's'){
+			-webkit-transition:@JasetKit-TransitionProperty @findDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+			-moz-transition:@JasetKit-TransitionProperty @findDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+			transition:@JasetKit-TransitionProperty @findDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+		}
+		& when not(@duration = 'ms') and not(@duration = 's'){
+			-webkit-transition:@JasetKit-TransitionProperty @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+			-moz-transition:@JasetKit-TransitionProperty @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+			transition:@JasetKit-TransitionProperty @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+		}
+	}
+	& when (length(@arguments) = 2){
+		@findDuration:extract(@rest, 1);
+		@duration:replace('@{findDuration}', '([0-9])', '', 'gi');
+		.for(@firstArg);
+		.-each(@property){
+			& when (@duration = 'ms'), (@duration = 's'){
+				-webkit-transition+:@property @findDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+				-moz-transition+:@property @findDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+				transition+:@property @findDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+			}
+			& when not(@duration = 'ms') and not(@duration = 's'){
+				-webkit-transition+:@property @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+				-moz-transition+:@property @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+				transition+:@property @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+			}
+		}
+	}
+	& when (length(@arguments) = 3){
+		@findDuration:extract(@rest, 1);
+		@duration:replace('@{findDuration}', '([0-9])', '', 'gi');
+		@ruleFind:extract(@rest, 2);
+		@ruleSet:replace('@{ruleFind}', '(.+)', '@{TimingKIT-$1}', 'gi');
+		@timing:replace('@{ruleFind}', '(cubic-bezier)+\((.*?)\,(.*?)\,(.*?)\,(.*?)\)', '$1', 'gi');
+		@isRuleSet:replace('@{TimingKIT-names}', '(.*)\"(@{ruleFind})\"(.*)', '$2', 'gi');
+		.for(@firstArg);
+		.-each(@property){
+			& when (@duration = 'ms'), (@duration = 's'){
+				& when (~'@{timing}' = cubic-bezier){
+					-webkit-transition+:@property @findDuration @ruleFind @JasetKit-TransitionDelay;
+					-moz-transition+:@property @findDuration @ruleFind @JasetKit-TransitionDelay;
+					transition+:@property @findDuration @ruleFind @JasetKit-TransitionDelay;
+				}
+				& when (~'@{isRuleSet}' = ~'@{ruleFind}'){
+					-webkit-transition+:@property @findDuration ~'@{ruleSet}' @JasetKit-TransitionDelay;
+					-moz-transition+:@property @findDuration ~'@{ruleSet}' @JasetKit-TransitionDelay;
+					transition+:@property @findDuration ~'@{ruleSet}' @JasetKit-TransitionDelay;
+				}
+				& when not(~'@{timing}' = cubic-bezier) and not(~'@{isRuleSet}' = ~'@{ruleFind}'){
+					-webkit-transition+:@property @findDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+					-moz-transition+:@property @findDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+					transition+:@property @findDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+				}
+			}
+			& when not(@duration = 'ms') and not(@duration = 's'){
+				& when (~'@{timing}' = cubic-bezier){
+					-webkit-transition+:@property @JasetKit-TransitionDuration @ruleFind @JasetKit-TransitionDelay;
+					-moz-transition+:@property @JasetKit-TransitionDuration @ruleFind @JasetKit-TransitionDelay;
+					transition+:@property @JasetKit-TransitionDuration @ruleFind @JasetKit-TransitionDelay;
+				}
+				& when (~'@{isRuleSet}' = ~'@{ruleFind}'){
+					-webkit-transition+:@property @JasetKit-TransitionDuration ~'@{ruleSet}' @JasetKit-TransitionDelay;
+					-moz-transition+:@property @JasetKit-TransitionDuration ~'@{ruleSet}' @JasetKit-TransitionDelay;
+					transition+:@property @JasetKit-TransitionDuration ~'@{ruleSet}' @JasetKit-TransitionDelay;
+				}
+				& when not(~'@{timing}' = cubic-bezier) and not(~'@{isRuleSet}' = ~'@{ruleFind}'){
+					-webkit-transition+:@property @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+					-moz-transition+:@property @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+					transition+:@property @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+				}
+			}
+		}
+	}
+	& when (length(@arguments) >= 4){
+		@findDuration:extract(@rest, 1);
+		@duration:replace('@{findDuration}', '([0-9])', '', 'gi');
+		@ruleFind:extract(@rest, 2);
+		@ruleSet:replace('@{ruleFind}', '(.+)', '@{TimingKIT-$1}', 'gi');
+		@timing:replace('@{ruleFind}', '(cubic-bezier)+\((.*?)\,(.*?)\,(.*?)\,(.*?)\)', '$1', 'gi');
+		@isRuleSet:replace('@{TimingKIT-names}', '(.*)\"(@{ruleFind})\"(.*)', '$2', 'gi');
+		@findDelay:extract(@rest, 3);
+		@delay:replace('@{findDelay}', '([0-9])', '', 'gi');
+		.for(@firstArg);
+		.-each(@property){
+			& when (@delay = 'ms'), (@delay = 's'){
+				& when (@duration = 'ms'), (@duration = 's'){
+					& when (~'@{timing}' = cubic-bezier){
+						-webkit-transition+:@property @findDuration @ruleFind @findDelay;
+						-moz-transition+:@property @findDuration @ruleFind @findDelay;
+						transition+:@property @findDuration @ruleFind @findDelay;
+					}
+					& when (~'@{isRuleSet}' = ~'@{ruleFind}'){
+						-webkit-transition+:@property @findDuration ~'@{ruleSet}' @findDelay;
+						-moz-transition+:@property @findDuration ~'@{ruleSet}' @findDelay;
+						transition+:@property @findDuration ~'@{ruleSet}' @findDelay;
+					}
+					& when not(~'@{timing}' = cubic-bezier) and not(~'@{isRuleSet}' = ~'@{ruleFind}'){
+						-webkit-transition+:@property @findDuration @JasetKit-TransitionTimingFunction @findDelay;
+						-moz-transition+:@property @findDuration @JasetKit-TransitionTimingFunction @findDelay;
+						transition+:@property @findDuration @JasetKit-TransitionTimingFunction @findDelay;
+					}
+				}
+				& when not(@duration = 'ms') and not(@duration = 's'){
+					& when (~'@{timing}' = cubic-bezier){
+						-webkit-transition+:@property @JasetKit-TransitionDuration @ruleFind @findDelay;
+						-moz-transition+:@property @JasetKit-TransitionDuration @ruleFind @findDelay;
+						transition+:@property @JasetKit-TransitionDuration @ruleFind @findDelay;
+					}
+					& when (~'@{isRuleSet}' = ~'@{ruleFind}'){
+						-webkit-transition+:@property @JasetKit-TransitionDuration ~'@{ruleSet}' @findDelay;
+						-moz-transition+:@property @JasetKit-TransitionDuration ~'@{ruleSet}' @findDelay;
+						transition+:@property @JasetKit-TransitionDuration ~'@{ruleSet}' @findDelay;
+					}
+					& when not(~'@{timing}' = cubic-bezier) and not(~'@{isRuleSet}' = ~'@{ruleFind}'){
+						-webkit-transition+:@property @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @findDelay;
+						-moz-transition+:@property @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @findDelay;
+						transition+:@property @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @findDelay;
+					}
+				}
+			}
+			& when not(@delay = 'ms') and not(@delay = 's'){
+				& when (@duration = 'ms'), (@duration = 's'){
+					& when (~'@{timing}' = cubic-bezier){
+						-webkit-transition+:@property @findDuration @ruleFind @JasetKit-TransitionDelay;
+						-moz-transition+:@property @findDuration @ruleFind @JasetKit-TransitionDelay;
+						transition+:@property @findDuration @ruleFind @JasetKit-TransitionDelay;
+					}
+					& when (~'@{isRuleSet}' = ~'@{ruleFind}'){
+						-webkit-transition+:@property @findDuration ~'@{ruleSet}' @JasetKit-TransitionDelay;
+						-moz-transition+:@property @findDuration ~'@{ruleSet}' @JasetKit-TransitionDelay;
+						transition+:@property @findDuration ~'@{ruleSet}' @JasetKit-TransitionDelay;
+					}
+					& when not(~'@{timing}' = cubic-bezier) and not(~'@{isRuleSet}' = ~'@{ruleFind}'){
+						-webkit-transition+:@property @findDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+						-moz-transition+:@property @findDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+						transition+:@property @findDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+					}
+				}
+				& when not(@duration = 'ms') and not(@duration = 's'){
+					& when (~'@{timing}' = cubic-bezier){
+						-webkit-transition+:@property @JasetKit-TransitionDuration @ruleFind @JasetKit-TransitionDelay;
+						-moz-transition+:@property @JasetKit-TransitionDuration @ruleFind @JasetKit-TransitionDelay;
+						transition+:@property @JasetKit-TransitionDuration @ruleFind @JasetKit-TransitionDelay;
+					}
+					& when (~'@{isRuleSet}' = ~'@{ruleFind}'){
+						-webkit-transition+:@property @JasetKit-TransitionDuration ~'@{ruleSet}' @JasetKit-TransitionDelay;
+						-moz-transition+:@property @JasetKit-TransitionDuration ~'@{ruleSet}' @JasetKit-TransitionDelay;
+						transition+:@property @JasetKit-TransitionDuration ~'@{ruleSet}' @JasetKit-TransitionDelay;
+					}
+					& when not(~'@{timing}' = cubic-bezier) and not(~'@{isRuleSet}' = ~'@{ruleFind}'){
+						-webkit-transition+:@property @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+						-moz-transition+:@property @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+						transition+:@property @JasetKit-TransitionDuration @JasetKit-TransitionTimingFunction @JasetKit-TransitionDelay;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.perspective	(transform)	 											*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.perspective(...){
+	.JasetUnitSet(extract(@arguments, 1));
+	& when (length(@arguments) = 1) and (isnumber(@JasetFindUnit)) and (~'@{JasetUnitSet}' = ~'@{JasetUnitName}') and not(~'@{JasetUnitName}' = '%'){
+		-webkit-transform+_:perspective(@JasetFindUnit);
+		-moz-transform+_:perspective(@JasetFindUnit);
+		-ms-transform+_:perspective(@JasetFindUnit);
+		-o-transform+_:perspective(@JasetFindUnit);
+		transform+_:perspective(@JasetFindUnit);
+	}
+	& when not(length(@arguments) = 1), not(isnumber(@JasetFindUnit)), not(~'@{JasetUnitSet}' = ~'@{JasetUnitName}'), (@JasetUnitName = '%'){
+		-webkit-transform+_:perspective(@JasetKit-TransformTranslateX);
+		-moz-transform+_:perspective(@JasetKit-TransformTranslateX);
+		-ms-transform+_:perspective(@JasetKit-TransformTranslateX);
+		-o-transform+_:perspective(@JasetKit-TransformTranslateX);
+		transform+_:perspective(@JasetKit-TransformTranslateX);
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.translateX .translateY .translateZ .translate	(transform)	 			*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.translateX(...){
+	.JasetUnitSet(extract(@arguments, 1));
+	& when (length(@arguments) = 1) and (isnumber(@JasetFindUnit)) and (~'@{JasetUnitSet}' = ~'@{JasetUnitName}'){
+		-webkit-transform+_:translateX(@JasetFindUnit);
+		-moz-transform+_:translateX(@JasetFindUnit);
+		-ms-transform+_:translateX(@JasetFindUnit);
+		-o-transform+_:translateX(@JasetFindUnit);
+		transform+_:translateX(@JasetFindUnit);
+	}
+	& when not(length(@arguments) = 1), not(isnumber(@JasetFindUnit)), not(~'@{JasetUnitSet}' = ~'@{JasetUnitName}'){
+		-webkit-transform+_:translateX(@JasetKit-TransformTranslateX);
+		-moz-transform+_:translateX(@JasetKit-TransformTranslateX);
+		-ms-transform+_:translateX(@JasetKit-TransformTranslateX);
+		-o-transform+_:translateX(@JasetKit-TransformTranslateX);
+		transform+_:translateX(@JasetKit-TransformTranslateX);
+	}
+}
+.translateY(...){
+    .JasetUnitSet(extract(@arguments, 1));
+	& when (length(@arguments) = 1) and (isnumber(@JasetFindUnit)) and (~'@{JasetUnitSet}' = ~'@{JasetUnitName}'){
+		-webkit-transform+_:translateY(@JasetFindUnit);
+		-moz-transform+_:translateY(@JasetFindUnit);
+		-ms-transform+_:translateY(@JasetFindUnit);
+		-o-transform+_:translateY(@JasetFindUnit);
+		transform+_:translateY(@JasetFindUnit);
+	}
+	& when not(length(@arguments) = 1), not(isnumber(@JasetFindUnit)), not(~'@{JasetUnitSet}' = ~'@{JasetUnitName}'){
+		-webkit-transform+_:translateY(@JasetKit-TransformTranslateY);
+		-moz-transform+_:translateY(@JasetKit-TransformTranslateY);
+		-ms-transform+_:translateY(@JasetKit-TransformTranslateY);
+		-o-transform+_:translateY(@JasetKit-TransformTranslateY);
+		transform+_:translateY(@JasetKit-TransformTranslateY);
+	}
+}
+.translateZ(...){
+	.JasetUnitSet(extract(@arguments, 1));
+	& when (length(@arguments) = 1) and (isnumber(@JasetFindUnit)) and (~'@{JasetUnitSet}' = ~'@{JasetUnitName}'){
+		-webkit-transform+_:translateZ(@JasetFindUnit);
+		-moz-transform+_:translateZ(@JasetFindUnit);
+		-ms-transform+_:translateZ(@JasetFindUnit);
+		-o-transform+_:translateZ(@JasetFindUnit);
+		transform+_:translateZ(@JasetFindUnit);
+	}
+	& when not(length(@arguments) = 1), not(isnumber(@JasetFindUnit)), not(~'@{JasetUnitSet}' = ~'@{JasetUnitName}'){
+		-webkit-transform+_:translateZ(@JasetKit-TransformTranslateZ);
+		-moz-transform+_:translateZ(@JasetKit-TransformTranslateZ);
+		-ms-transform+_:translateZ(@JasetKit-TransformTranslateZ);
+		-o-transform+_:translateZ(@JasetKit-TransformTranslateZ);
+		transform+_:translateZ(@JasetKit-TransformTranslateZ);
+	}
+}
+.translate(...){
+	@findFirstUnit:extract(@arguments, 1);
+	@findSecondUnit:extract(@arguments, 2);
+	@findThirdUnit:extract(@arguments, 3);
+	@UnitFirstName:replace('@{findFirstUnit}', '([\-0-9])', '', 'gi');
+	@UnitSecondName:replace('@{findSecondUnit}', '([\-0-9])', '', 'gi');
+	@UnitThirdName:replace('@{findThirdUnit}', '([\-0-9])', '', 'gi');
+	@isFirstUnitSet:replace('@{JasetKit-Units}', '(.*)\"(@{UnitFirstName})\"(.*)', '$2', 'gi');
+	@isSecondUnitSet:replace('@{JasetKit-Units}', '(.*)\"(@{UnitSecondName})\"(.*)', '$2', 'gi');
+	@isThirdUnitSet:replace('@{JasetKit-Units}', '(.*)\"(@{UnitThirdName})\"(.*)', '$2', 'gi');
+	& when (length(@arguments) = 1){
+		& when (isnumber(@findFirstUnit)) and (~'@{isFirstUnitSet}' = ~'@{UnitFirstName}'){
+			-webkit-transform+_:translate(@findFirstUnit, @JasetKit-TransformTranslateY);
+			-moz-transform+_:translate(@findFirstUnit, @JasetKit-TransformTranslateY);
+			-ms-transform+_:translate(@findFirstUnit, @JasetKit-TransformTranslateY);
+			-o-transform+_:translate(@findFirstUnit, @JasetKit-TransformTranslateY);
+			transform+_:translate(@findFirstUnit, @JasetKit-TransformTranslateY);
+		}
+		& when not(isnumber(@findFirstUnit)), not(~'@{isFirstUnitSet}' = ~'@{UnitFirstName}'){
+			-webkit-transform+_:translate(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY);
+			-moz-transform+_:translate(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY);
+			-ms-transform+_:translate(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY);
+			-o-transform+_:translate(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY);
+			transform+_:translate(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY);
+		}
+	}
+	& when (length(@arguments) = 2){
+		& when (isnumber(@findFirstUnit)) and (~'@{isFirstUnitSet}' = ~'@{UnitFirstName}'){
+			& when (isnumber(@findSecondUnit)) and (~'@{isSecondUnitSet}' = ~'@{UnitSecondName}'){
+				-webkit-transform+_:translate(@findFirstUnit, @findSecondUnit);
+				-moz-transform+_:translate(@findFirstUnit, @findSecondUnit);
+				-ms-transform+_:translate(@findFirstUnit, @findSecondUnit);
+				-o-transform+_:translate(@findFirstUnit, @findSecondUnit);
+				transform+_:translate(@findFirstUnit, @findSecondUnit);
+			}
+			& when not(isnumber(@findSecondUnit)), not(~'@{isSecondUnitSet}' = ~'@{UnitSecondName}'){
+				-webkit-transform+_:translate(@findFirstUnit, @JasetKit-TransformTranslateY);
+				-moz-transform+_:translate(@findFirstUnit, @JasetKit-TransformTranslateY);
+				-ms-transform+_:translate(@findFirstUnit, @JasetKit-TransformTranslateY);
+				-o-transform+_:translate(@findFirstUnit, @JasetKit-TransformTranslateY);
+				transform+_:translate(@findFirstUnit, @JasetKit-TransformTranslateY);
+			}
+		}
+		& when not(isnumber(@findFirstUnit)), not(~'@{isFirstUnitSet}' = ~'@{UnitFirstName}'){
+			& when (isnumber(@findSecondUnit)) and (~'@{isSecondUnitSet}' = ~'@{UnitSecondName}'){
+				-webkit-transform+_:translate(@JasetKit-TransformTranslateX, @findSecondUnit);
+				-moz-transform+_:translate(@JasetKit-TransformTranslateX, @findSecondUnit);
+				-ms-transform+_:translate(@JasetKit-TransformTranslateX, @findSecondUnit);
+				-o-transform+_:translate(@JasetKit-TransformTranslateX, @findSecondUnit);
+				transform+_:translate(@JasetKit-TransformTranslateX, @findSecondUnit);
+			}
+			& when not(isnumber(@findSecondUnit)), not(~'@{isSecondUnitSet}' = ~'@{UnitSecondName}'){
+				-webkit-transform+_:translate(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY);
+				-moz-transform+_:translate(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY);
+				-ms-transform+_:translate(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY);
+				-o-transform+_:translate(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY);
+				transform+_:translate(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY);
+			}
+		}
+	}
+	& when (length(@arguments) = 3){
+		& when (isnumber(@findFirstUnit)) and (~'@{isFirstUnitSet}' = ~'@{UnitFirstName}'){
+			& when (isnumber(@findSecondUnit)) and (~'@{isSecondUnitSet}' = ~'@{UnitSecondName}'){
+				& when (isnumber(@findThirdUnit)) and (~'@{isThirdUnitSet}' = ~'@{UnitThirdName}'){
+					-webkit-transform+_:translate3d(@findFirstUnit, @findSecondUnit, @findThirdUnit);
+					-moz-transform+_:translate3d(@findFirstUnit, @findSecondUnit, @findThirdUnit);
+					-ms-transform+_:translate3d(@findFirstUnit, @findSecondUnit, @findThirdUnit);
+					-o-transform+_:translate3d(@findFirstUnit, @findSecondUnit, @findThirdUnit);
+					transform+_:translate3d(@findFirstUnit, @findSecondUnit, @findThirdUnit);
+				}
+				& when not(isnumber(@findThirdUnit)), not(~'@{isThirdUnitSet}' = ~'@{UnitThirdName}'){
+					-webkit-transform+_:translate3d(@findFirstUnit, @findSecondUnit, @JasetKit-TransformTranslateZ);
+					-moz-transform+_:translate3d(@findFirstUnit, @findSecondUnit, @JasetKit-TransformTranslateZ);
+					-ms-transform+_:translate3d(@findFirstUnit, @findSecondUnit, @JasetKit-TransformTranslateZ);
+					-o-transform+_:translate3d(@findFirstUnit, @findSecondUnit, @JasetKit-TransformTranslateZ);
+					transform+_:translate3d(@findFirstUnit, @findSecondUnit, @JasetKit-TransformTranslateZ);
+				}
+			}
+			& when not(isnumber(@findSecondUnit)), not(~'@{isSecondUnitSet}' = ~'@{UnitSecondName}'){
+				& when (isnumber(@findThirdUnit)) and (~'@{isThirdUnitSet}' = ~'@{UnitThirdName}'){
+					-webkit-transform+_:translate3d(@findFirstUnit, @JasetKit-TransformTranslateY, @findThirdUnit);
+					-moz-transform+_:translate3d(@findFirstUnit, @JasetKit-TransformTranslateY, @findThirdUnit);
+					-ms-transform+_:translate3d(@findFirstUnit, @JasetKit-TransformTranslateY, @findThirdUnit);
+					-o-transform+_:translate3d(@findFirstUnit, @JasetKit-TransformTranslateY, @findThirdUnit);
+					transform+_:translate3d(@findFirstUnit, @JasetKit-TransformTranslateY, @findThirdUnit);
+				}
+				& when not(isnumber(@findThirdUnit)), not(~'@{isThirdUnitSet}' = ~'@{UnitThirdName}'){
+					-webkit-transform+_:translate3d(@findFirstUnit, @JasetKit-TransformTranslateY, @JasetKit-TransformTranslateZ);
+					-moz-transform+_:translate3d(@findFirstUnit, @JasetKit-TransformTranslateY, @JasetKit-TransformTranslateZ);
+					-ms-transform+_:translate3d(@findFirstUnit, @JasetKit-TransformTranslateY, @JasetKit-TransformTranslateZ);
+					-o-transform+_:translate3d(@findFirstUnit, @JasetKit-TransformTranslateY, @JasetKit-TransformTranslateZ);
+					transform+_:translate3d(@findFirstUnit, @JasetKit-TransformTranslateY, @JasetKit-TransformTranslateZ);
+				}
+			}
+		}
+		& when not(isnumber(@findFirstUnit)), not(~'@{isFirstUnitSet}' = ~'@{UnitFirstName}'){
+			& when (isnumber(@findSecondUnit)) and (~'@{isSecondUnitSet}' = ~'@{UnitSecondName}'){
+				& when (isnumber(@findThirdUnit)) and (~'@{isThirdUnitSet}' = ~'@{UnitThirdName}'){
+					-webkit-transform+_:translate3d(@JasetKit-TransformTranslateX, @findSecondUnit, @findThirdUnit);
+					-moz-transform+_:translate3d(@JasetKit-TransformTranslateX, @findSecondUnit, @findThirdUnit);
+					-ms-transform+_:translate3d(@JasetKit-TransformTranslateX, @findSecondUnit, @findThirdUnit);
+					-o-transform+_:translate3d(@JasetKit-TransformTranslateX, @findSecondUnit, @findThirdUnit);
+					transform+_:translate3d(@JasetKit-TransformTranslateX, @findSecondUnit, @findThirdUnit);
+				}
+				& when not(isnumber(@findThirdUnit)), not(~'@{isThirdUnitSet}' = ~'@{UnitThirdName}'){
+					-webkit-transform+_:translate3d(@JasetKit-TransformTranslateX, @findSecondUnit, @JasetKit-TransformTranslateZ);
+					-moz-transform+_:translate3d(@JasetKit-TransformTranslateX, @findSecondUnit, @JasetKit-TransformTranslateZ);
+					-ms-transform+_:translate3d(@JasetKit-TransformTranslateX, @findSecondUnit, @JasetKit-TransformTranslateZ);
+					-o-transform+_:translate3d(@JasetKit-TransformTranslateX, @findSecondUnit, @JasetKit-TransformTranslateZ);
+					transform+_:translate3d(@JasetKit-TransformTranslateX, @findSecondUnit, @JasetKit-TransformTranslateZ);
+				}
+			}
+			& when not(isnumber(@findSecondUnit)), not(~'@{isSecondUnitSet}' = ~'@{UnitSecondName}'){
+				& when (isnumber(@findThirdUnit)) and (~'@{isThirdUnitSet}' = ~'@{UnitThirdName}'){
+					-webkit-transform+_:translate3d(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY, @findThirdUnit);
+					-moz-transform+_:translate3d(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY, @findThirdUnit);
+					-ms-transform+_:translate3d(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY, @findThirdUnit);
+					-o-transform+_:translate3d(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY, @findThirdUnit);
+					transform+_:translate3d(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY, @findThirdUnit);
+				}
+				& when not(isnumber(@findThirdUnit)), not(~'@{isThirdUnitSet}' = ~'@{UnitThirdName}'){
+					-webkit-transform+_:translate3d(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY, @JasetKit-TransformTranslateZ);
+					-moz-transform+_:translate3d(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY, @JasetKit-TransformTranslateZ);
+					-ms-transform+_:translate3d(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY, @JasetKit-TransformTranslateZ);
+					-o-transform+_:translate3d(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY, @JasetKit-TransformTranslateZ);
+					transform+_:translate3d(@JasetKit-TransformTranslateX, @JasetKit-TransformTranslateY, @JasetKit-TransformTranslateZ);
+				}
+			}
+		}
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.scaleX .scaleY .scale	(transform)	 									*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.scaleX(...){
+	@findUnit:extract(@arguments, 1);
+	@UnitFloat:replace('@{findUnit}', '(([0-9])+(\.?)([0-9]?)+)', 'TRUE', 'gi');
+	& when (length(@arguments) = 1) and (isnumber(@findUnit)) and (@UnitFloat = 'TRUE'){
+		-webkit-transform+_:scaleX(@findUnit);
+		-moz-transform+_:scaleX(@findUnit);
+		-ms-transform+_:scaleX(@findUnit);
+		-o-transform+_:scaleX(@findUnit);
+		transform+_:scaleX(@findUnit);
+	}
+	& when not(length(@arguments) = 1), not(isnumber(@findUnit)), not(@UnitFloat = 'TRUE'){
+		-webkit-transform+_:scaleX(@JasetKit-TransformScaleX);
+		-moz-transform+_:scaleX(@JasetKit-TransformScaleX);
+		-ms-transform+_:scaleX(@JasetKit-TransformScaleX);
+		-o-transform+_:scaleX(@JasetKit-TransformScaleX);
+		transform+_:scaleX(@JasetKit-TransformScaleX);
+	}
+}
+.scaleY(...){
+	@findUnit:extract(@arguments, 1);
+	@UnitFloat:replace('@{findUnit}', '(([0-9])+(\.?)([0-9]?)+)', 'TRUE', 'gi');
+	& when (length(@arguments) = 1) and (isnumber(@findUnit)) and (@UnitFloat = 'TRUE'){
+		-webkit-transform+_:scaleY(@findUnit);
+		-moz-transform+_:scaleY(@findUnit);
+		-ms-transform+_:scaleY(@findUnit);
+		-o-transform+_:scaleY(@findUnit);
+		transform+_:scaleY(@findUnit);
+	}
+	& when not(length(@arguments) = 1), not(isnumber(@findUnit)), not(@UnitFloat = 'TRUE'){
+		-webkit-transform+_:scaleY(@JasetKit-TransformScaleY);
+		-moz-transform+_:scaleY(@JasetKit-TransformScaleY);
+		-ms-transform+_:scaleY(@JasetKit-TransformScaleY);
+		-o-transform+_:scaleY(@JasetKit-TransformScaleY);
+		transform+_:scaleY(@JasetKit-TransformScaleY);
+	}
+}
+.scale(...){
+	@findFirstUnit:extract(@arguments, 1);
+	@findSecondUnit:extract(@arguments, 2);
+	@UnitFirstFloat:replace('@{findFirstUnit}', '(([0-9])+(\.?)([0-9]?)+)', 'TRUE', 'gi');
+	@UnitSecondFloat:replace('@{findSecondUnit}', '(([0-9])+(\.?)([0-9]?)+)', 'TRUE', 'gi');
+	& when (length(@arguments) = 1){
+		& when (isnumber(@findFirstUnit)) and (@UnitFirstFloat = 'TRUE'){
+			-webkit-transform+_:scale(@findFirstUnit, @JasetKit-TransformScaleY);
+			-moz-transform+_:scale(@findFirstUnit, @JasetKit-TransformScaleY);
+			-ms-transform+_:scale(@findFirstUnit, @JasetKit-TransformScaleY);
+			-o-transform+_:scale(@findFirstUnit, @JasetKit-TransformScaleY);
+			transform+_:scale(@findFirstUnit, @JasetKit-TransformScaleY);
+		}
+		& when not(isnumber(@findFirstUnit)), not(@UnitFirstFloat = 'TRUE'){
+			-webkit-transform+_:scale(@JasetKit-TransformScaleX, @JasetKit-TransformScaleY);
+			-moz-transform+_:scale(@JasetKit-TransformScaleX, @JasetKit-TransformScaleY);
+			-ms-transform+_:scale(@JasetKit-TransformScaleX, @JasetKit-TransformScaleY);
+			-o-transform+_:scale(@JasetKit-TransformScaleX, @JasetKit-TransformScaleY);
+			transform+_:scale(@JasetKit-TransformScaleX, @JasetKit-TransformScaleY);
+		}
+	}
+	& when (length(@arguments) = 2){
+		& when (isnumber(@findFirstUnit)) and (@UnitFirstFloat = 'TRUE'){
+			& when (isnumber(@findSecondUnit)) and (@UnitSecondFloat = 'TRUE'){
+				-webkit-transform+_:scale(@findFirstUnit, @findSecondUnit);
+				-moz-transform+_:scale(@findFirstUnit, @findSecondUnit);
+				-ms-transform+_:scale(@findFirstUnit, @findSecondUnit);
+				-o-transform+_:scale(@findFirstUnit, @findSecondUnit);
+				transform+_:scale(@findFirstUnit, @findSecondUnit);
+			}
+			& when not(isnumber(@findSecondUnit)), not(@UnitSecondFloat = 'TRUE'){
+				-webkit-transform+_:scale(@findFirstUnit, @JasetKit-TransformScaleY);
+				-moz-transform+_:scale(@findFirstUnit, @JasetKit-TransformScaleY);
+				-ms-transform+_:scale(@findFirstUnit, @JasetKit-TransformScaleY);
+				-o-transform+_:scale(@findFirstUnit, @JasetKit-TransformScaleY);
+				transform+_:scale(@findFirstUnit, @JasetKit-TransformScaleY);
+			}
+		}
+		& when not(isnumber(@findFirstUnit)), not(@UnitFirstFloat = 'TRUE'){
+			& when (isnumber(@findSecondUnit)) and (@UnitSecondFloat = 'TRUE'){
+				-webkit-transform+_:scale(@JasetKit-TransformScaleX, @findSecondUnit);
+				-moz-transform+_:scale(@JasetKit-TransformScaleX, @findSecondUnit);
+				-ms-transform+_:scale(@JasetKit-TransformScaleX, @findSecondUnit);
+				-o-transform+_:scale(@JasetKit-TransformScaleX, @findSecondUnit);
+				transform+_:scale(@JasetKit-TransformScaleX, @findSecondUnit);
+			}
+			& when not(isnumber(@findSecondUnit)), not(@UnitSecondFloat = 'TRUE'){
+				-webkit-transform+_:scale(@JasetKit-TransformScaleX, @JasetKit-TransformScaleY);
+				-moz-transform+_:scale(@JasetKit-TransformScaleX, @JasetKit-TransformScaleY);
+				-ms-transform+_:scale(@JasetKit-TransformScaleX, @JasetKit-TransformScaleY);
+				-o-transform+_:scale(@JasetKit-TransformScaleX, @JasetKit-TransformScaleY);
+				transform+_:scale(@JasetKit-TransformScaleX, @JasetKit-TransformScaleY);
+			}
+		}
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.skewX .skewY .skew	(transform)	 										*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.skewX(...){
+	@findUnit:extract(@arguments, 1);
+	& when (length(@arguments) = 1) and (isnumber(@findUnit)){
+		-webkit-transform+_:skewX(@findUnit*1deg);
+		-moz-transform+_:skewX(@findUnit*1deg);
+		-ms-transform+_:skewX(@findUnit*1deg);
+		-o-transform+_:skewX(@findUnit*1deg);
+		transform+_:skewX(@findUnit*1deg);
+	}
+	& when not(length(@arguments) = 1), not(isnumber(@findUnit)){
+		-webkit-transform+_:skewX(@JasetKit-TransformSkewX);
+		-moz-transform+_:skewX(@JasetKit-TransformSkewX);
+		-ms-transform+_:skewX(@JasetKit-TransformSkewX);
+		-o-transform+_:skewX(@JasetKit-TransformSkewX);
+		transform+_:skewX(@JasetKit-TransformSkewX);
+	}
+}
+.skewY(...){
+	@findUnit:extract(@arguments, 1);
+	& when (length(@arguments) = 1) and (isnumber(@findUnit)){
+		-webkit-transform+_:skewY(@findUnit*1deg);
+		-moz-transform+_:skewY(@findUnit*1deg);
+		-ms-transform+_:skewY(@findUnit*1deg);
+		-o-transform+_:skewY(@findUnit*1deg);
+		transform+_:skewY(@findUnit*1deg);
+	}
+	& when not(length(@arguments) = 1), not(isnumber(@findUnit)){
+		-webkit-transform+_:skewX(@JasetKit-TransformSkewY);
+		-moz-transform+_:skewX(@JasetKit-TransformSkewY);
+		-ms-transform+_:skewX(@JasetKit-TransformSkewY);
+		-o-transform+_:skewX(@JasetKit-TransformSkewY);
+		transform+_:skewX(@JasetKit-TransformSkewY);
+	}
+}
+.skew(...){
+	@findFirstUnit:extract(@arguments, 1);
+	@findSecondUnit:extract(@arguments, 2);
+	& when (length(@arguments) = 1){
+		& when (isnumber(@findFirstUnit)){
+			-webkit-transform+_:skew(@findFirstUnit*1deg, @JasetKit-TransformSkewY);
+			-moz-transform+_:skew(@findFirstUnit*1deg, @JasetKit-TransformSkewY);
+			-ms-transform+_:skew(@findFirstUnit*1deg, @JasetKit-TransformSkewY);
+			-o-transform+_:skew(@findFirstUnit*1deg, @JasetKit-TransformSkewY);
+			transform+_:skew(@findFirstUnit*1deg, @JasetKit-TransformSkewY);
+		}
+		& when not(isnumber(@findFirstUnit)){
+			-webkit-transform+_:skew(@JasetKit-TransformSkewX, @JasetKit-TransformSkewY);
+			-moz-transform+_:skew(@JasetKit-TransformSkewX, @JasetKit-TransformSkewY);
+			-ms-transform+_:skew(@JasetKit-TransformSkewX, @JasetKit-TransformSkewY);
+			-o-transform+_:skew(@JasetKit-TransformSkewX, @JasetKit-TransformSkewY);
+			transform+_:skew(@JasetKit-TransformSkewX, @JasetKit-TransformSkewY);
+		}
+	}
+	& when (length(@arguments) = 2){
+		& when (isnumber(@findFirstUnit)){
+			& when (isnumber(@findSecondUnit)){
+				-webkit-transform+_:skew(@findFirstUnit*1deg, @findSecondUnit*1deg);
+				-moz-transform+_:skew(@findFirstUnit*1deg, @findSecondUnit*1deg);
+				-ms-transform+_:skew(@findFirstUnit*1deg, @findSecondUnit*1deg);
+				-o-transform+_:skew(@findFirstUnit*1deg, @findSecondUnit*1deg);
+				transform+_:skew(@findFirstUnit*1deg, @findSecondUnit*1deg);
+			}
+			& when not(isnumber(@findSecondUnit)){
+				-webkit-transform+_:skew(@findFirstUnit*1deg, @JasetKit-TransformSkewY);
+				-moz-transform+_:skew(@findFirstUnit*1deg, @JasetKit-TransformSkewY);
+				-ms-transform+_:skew(@findFirstUnit*1deg, @JasetKit-TransformSkewY);
+				-o-transform+_:skew(@findFirstUnit*1deg, @JasetKit-TransformSkewY);
+				transform+_:skew(@findFirstUnit*1deg, @JasetKit-TransformSkewY);
+			}
+		}
+		& when not(isnumber(@findFirstUnit)){
+			& when (isnumber(@findSecondUnit)){
+				-webkit-transform+_:skew(@JasetKit-TransformSkewX, @findSecondUnit*1deg);
+				-moz-transform+_:skew(@JasetKit-TransformSkewX, @findSecondUnit*1deg);
+				-ms-transform+_:skew(@JasetKit-TransformSkewX, @findSecondUnit*1deg);
+				-o-transform+_:skew(@JasetKit-TransformSkewX, @findSecondUnit*1deg);
+				transform+_:skew(@JasetKit-TransformSkewX, @findSecondUnit*1deg);
+			}
+			& when not(isnumber(@findSecondUnit)){
+				-webkit-transform+_:skew(@JasetKit-TransformSkewX, @JasetKit-TransformSkewY);
+				-moz-transform+_:skew(@JasetKit-TransformSkewX, @JasetKit-TransformSkewY);
+				-ms-transform+_:skew(@JasetKit-TransformSkewX, @JasetKit-TransformSkewY);
+				-o-transform+_:skew(@JasetKit-TransformSkewX, @JasetKit-TransformSkewY);
+				transform+_:skew(@JasetKit-TransformSkewX, @JasetKit-TransformSkewY);
+			}
+		}
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.rotateX .rotateY .rotate	(transform)	 								*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.rotateX(...){
+	@findUnit:extract(@arguments, 1);
+	& when (length(@arguments) = 1) and (isnumber(@findUnit)){
+		-webkit-transform+_:rotateX(@findUnit*1deg);
+		-moz-transform+_:rotateX(@findUnit*1deg);
+		-ms-transform+_:rotateX(@findUnit*1deg);
+		-o-transform+_:rotateX(@findUnit*1deg);
+		transform+_:rotateX(@findUnit*1deg);
+	}
+	& when not(length(@arguments) = 1), not(isnumber(@findUnit)){
+		-webkit-transform+_:rotateX(@JasetKit-TransformRotateX);
+		-moz-transform+_:rotateX(@JasetKit-TransformRotateX);
+		-ms-transform+_:rotateX(@JasetKit-TransformRotateX);
+		-o-transform+_:rotateX(@JasetKit-TransformRotateX);
+		transform+_:rotateX(@JasetKit-TransformRotateX);
+	}
+}
+.rotateY(...){
+	@findUnit:extract(@arguments, 1);
+	& when (length(@arguments) = 1) and (isnumber(@findUnit)){
+		-webkit-transform+_:rotateY(@findUnit*1deg);
+		-moz-transform+_:rotateY(@findUnit*1deg);
+		-ms-transform+_:rotateY(@findUnit*1deg);
+		-o-transform+_:rotateY(@findUnit*1deg);
+		transform+_:rotateY(@findUnit*1deg);
+	}
+	& when not(length(@arguments) = 1), not(isnumber(@findUnit)){
+		-webkit-transform+_:rotateY(@JasetKit-TransformRotateY);
+		-moz-transform+_:rotateY(@JasetKit-TransformRotateY);
+		-ms-transform+_:rotateY(@JasetKit-TransformRotateY);
+		-o-transform+_:rotateY(@JasetKit-TransformRotateY);
+		transform+_:rotateY(@JasetKit-TransformRotateY);
+	}
+}
+.rotate3d(...){
+	@firstUnit:extract(@arguments, 1);
+	@secondUnit:extract(@arguments, 2);
+	@thirdUnit:extract(@arguments, 3);
+	@fourthUnit:extract(@arguments, 4);
+	& when (length(@arguments) = 1) and (isnumber(@firstUnit)){
+		-webkit-transform+_:rotate3d(0, 0, 0, @findUnit*1deg);
+		-moz-transform+_:rotate3d(0, 0, 0, @findUnit*1deg);
+		-ms-transform+_:rotate3d(0, 0, 0, @findUnit*1deg);
+		-o-transform+_:rotate3d(0, 0, 0, @findUnit*1deg);
+		transform+_:rotate3d(0, 0, 0, @findUnit*1deg);
+	}
+	& when (length(@arguments) = 2) and (isnumber(@firstUnit)) and (isnumber(@secondUnit)){
+		-webkit-transform+_:rotate3d(@firstUnit, @JasetKit-TransformRotate3D, @JasetKit-TransformRotate3D, @secondUnit*1deg);
+		-moz-transform+_:rotate3d(@firstUnit, @JasetKit-TransformRotate3D, @JasetKit-TransformRotate3D, @secondUnit*1deg);
+		-ms-transform+_:rotate3d(@firstUnit, @JasetKit-TransformRotate3D, @JasetKit-TransformRotate3D, @secondUnit*1deg);
+		-o-transform+_:rotate3d(@firstUnit, @JasetKit-TransformRotate3D, @JasetKit-TransformRotate3D, @secondUnit*1deg);
+		transform+_:rotate3d(@firstUnit, @JasetKit-TransformRotate3D, @JasetKit-TransformRotate3D, @secondUnit*1deg);
+	}
+	& when (length(@arguments) = 3) and (isnumber(@firstUnit)) and (isnumber(@secondUnit)) and (isnumber(@thirdUnit)){
+		-webkit-transform+_:rotate3d(@firstUnit, @secondUnit, @JasetKit-TransformRotate3D, @thirdUnit*1deg);
+		-moz-transform+_:rotate3d(@firstUnit, @secondUnit, @JasetKit-TransformRotate3D, @thirdUnit*1deg);
+		-ms-transform+_:rotate3d(@firstUnit, @secondUnit, @JasetKit-TransformRotate3D, @thirdUnit*1deg);
+		-o-transform+_:rotate3d(@firstUnit, @secondUnit, @JasetKit-TransformRotate3D, @thirdUnit*1deg);
+		transform+_:rotate3d(@firstUnit, @secondUnit, @JasetKit-TransformRotate3D, @thirdUnit*1deg);
+	}
+	& when (length(@arguments) = 4) and (isnumber(@firstUnit)) and (isnumber(@secondUnit)) and (isnumber(@thirdUnit)) and (isnumber(@fourthUnit)){
+		-webkit-transform+_:rotate3d(@firstUnit, @secondUnit, @thirdUnit, @fourthUnit*1deg);
+		-moz-transform+_:rotate3d(@firstUnit, @secondUnit, @thirdUnit, @fourthUnit*1deg);
+		-ms-transform+_:rotate3d(@firstUnit, @secondUnit, @thirdUnit, @fourthUnit*1deg);
+		-o-transform+_:rotate3d(@firstUnit, @secondUnit, @thirdUnit, @fourthUnit*1deg);
+		transform+_:rotate3d(@firstUnit, @secondUnit, @thirdUnit, @fourthUnit*1deg);
+	}
+	& when (length(@arguments) > 4), not(isnumber(@firstUnit)){
+		-webkit-transform+_:rotate3d(@JasetKit-TransformRotate3D, @JasetKit-TransformRotate3D, @JasetKit-TransformRotate3D, @JasetKit-TransformRotate);
+		-moz-transform+_:rotate3d(@JasetKit-TransformRotate3D, @JasetKit-TransformRotate3D, @JasetKit-TransformRotate3D, @JasetKit-TransformRotate);
+		-ms-transform+_:rotate3d(@JasetKit-TransformRotate3D, @JasetKit-TransformRotate3D, @JasetKit-TransformRotate3D, @JasetKit-TransformRotate);
+		-o-transform+_:rotate3d(@JasetKit-TransformRotate3D, @JasetKit-TransformRotate3D, @JasetKit-TransformRotate3D, @JasetKit-TransformRotate);
+		transform+_:rotate3d(@JasetKit-TransformRotate3D, @JasetKit-TransformRotate3D, @JasetKit-TransformRotate3D, @JasetKit-TransformRotate);
+	}
+}
+.rotate(...){
+	@findUnit:extract(@arguments, 1);
+	& when (length(@arguments) = 1) and (isnumber(@findUnit)){
+		-webkit-transform+_:rotate(@findUnit*1deg);
+		-moz-transform+_:rotate(@findUnit*1deg);
+		-ms-transform+_:rotate(@findUnit*1deg);
+		-o-transform+_:rotate(@findUnit*1deg);
+		transform+_:rotate(@findUnit*1deg);
+	}
+	& when not(length(@arguments) = 1), not(isnumber(@findUnit)){
+		-webkit-transform+_:rotate(@JasetKit-TransformRotate);
+		-moz-transform+_:rotate(@JasetKit-TransformRotate);
+		-ms-transform+_:rotate(@JasetKit-TransformRotate);
+		-o-transform+_:rotate(@JasetKit-TransformRotate);
+		transform+_:rotate(@JasetKit-TransformRotate);
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.matrix	(transform)	 													*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.matrix(...){
+	@findMatrixA: extract(@arguments, 1);
+	@findMatrixB: extract(@arguments, 2);
+	@findMatrixC: extract(@arguments, 3);
+	@findMatrixD: extract(@arguments, 4);
+	@findMatrixTx: extract(@arguments, 5);
+	@findMatrixTy: extract(@arguments, 6);
+	@MatrixAFloat:replace('@{findMatrixA}', '(([0-9])+(\.?)([0-9]?)+)', 'TRUE', 'gi');
+	@MatrixBFloat:replace('@{findMatrixB}', '(([0-9])+(\.?)([0-9]?)+)', 'TRUE', 'gi');
+	@MatrixCFloat:replace('@{findMatrixC}', '(([0-9])+(\.?)([0-9]?)+)', 'TRUE', 'gi');
+	@MatrixDFloat:replace('@{findMatrixD}', '(([0-9])+(\.?)([0-9]?)+)', 'TRUE', 'gi');
+	@MatrixTxFloat:replace('@{findMatrixTx}', '(([0-9])+(\.?)([0-9]?)+)', 'TRUE', 'gi');
+	@MatrixTyFloat:replace('@{findMatrixTy}', '(([0-9])+(\.?)([0-9]?)+)', 'TRUE', 'gi');
+	& when (length(@arguments) = 6) and (@MatrixAFloat = 'TRUE') and (@MatrixBFloat = 'TRUE') and (@MatrixCFloat = 'TRUE') and (@MatrixDFloat = 'TRUE') and (@MatrixTxFloat = 'TRUE') and (@MatrixTyFloat = 'TRUE'){
+		-webkit-transform+_:matrix(@findMatrixA, @findMatrixB, @findMatrixC, @findMatrixD, @findMatrixTx, @findMatrixTy);
+		-moz-transform+_:matrix(@findMatrixA, @findMatrixB, @findMatrixC, @findMatrixD, @findMatrixTx, @findMatrixTy);
+		-ms-transform+_:matrix(@findMatrixA, @findMatrixB, @findMatrixC, @findMatrixD, @findMatrixTx, @findMatrixTy);
+		-o-transform+_:matrix(@findMatrixA, @findMatrixB, @findMatrixC, @findMatrixD, @findMatrixTx, @findMatrixTy);
+		transform+_:matrix(@findMatrixA, @findMatrixB, @findMatrixC, @findMatrixD, @findMatrixTx, @findMatrixTy);
+	}
+	& when not(length(@arguments) = 6), not(@MatrixAFloat = 'TRUE'), not(@MatrixBFloat = 'TRUE'), not(@MatrixCFloat = 'TRUE'), not(@MatrixDFloat = 'TRUE'), not(@MatrixTxFloat = 'TRUE'), not(@MatrixTyFloat = 'TRUE'){
+		-webkit-transform+_:matrix(@JasetKit-TransformMatrix);
+		-moz-transform+_:matrix(@JasetKit-TransformMatrix);
+		-ms-transform+_:matrix(@JasetKit-TransformMatrix);
+		-o-transform+_:matrix(@JasetKit-TransformMatrix);
+		transform+_:matrix(@JasetKit-TransformMatrix);
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	.transform-origin	(transform)	 										*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.transform-origin(...){
+	& when (length(@arguments) = 1){
+		-webkit-transform-origin:extract(@arguments, 1);
+		-moz-transform-origin:extract(@arguments, 1);
+		-ms-transform-origin:extract(@arguments, 1);
+		-o-transform-origin:extract(@arguments, 1);
+		transform-origin:extract(@arguments, 1);
+	}
+	& when (length(@arguments) = 2){
+		-webkit-transform-origin:extract(@arguments, 1) extract(@arguments, 2);
+		-moz-transform-origin:extract(@arguments, 1) extract(@arguments, 2);
+		-ms-transform-origin:extract(@arguments, 1) extract(@arguments, 2);
+		-o-transform-origin:extract(@arguments, 1) extract(@arguments, 2);
+		transform-origin:extract(@arguments, 1) extract(@arguments, 2);
+	}
+	& when (length(@arguments) < 1), (length(@arguments) > 2){
+		-webkit-transform-origin:@JasetKit-TransformOrigin;
+		-moz-transform-origin:@JasetKit-TransformOrigin;
+		-ms-transform-origin:@JasetKit-TransformOrigin;
+		-o-transform-origin:@JasetKit-TransformOrigin;
+		transform-origin:@JasetKit-TransformOrigin;
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	shadow		 															*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.box-shadow(...){
+	& when (length(@arguments) = 1){
+		-webkit-box-shadow+:extract(@arguments, 1) @JasetKit-BoxShadowY @JasetKit-BoxShadowBlur @JasetKit-BoxShadowMargin @JasetKit-BoxShadowColor;
+		-moz-box-shadow+:extract(@arguments, 1) @JasetKit-BoxShadowY @JasetKit-BoxShadowBlur @JasetKit-BoxShadowMargin @JasetKit-BoxShadowColor;
+		box-shadow+:extract(@arguments, 1) @JasetKit-BoxShadowY @JasetKit-BoxShadowBlur @JasetKit-BoxShadowMargin @JasetKit-BoxShadowColor;
+	}
+	& when (length(@arguments) = 2){
+		-webkit-box-shadow+:extract(@arguments, 1) extract(@arguments, 2) @JasetKit-BoxShadowBlur @JasetKit-BoxShadowMargin @JasetKit-BoxShadowColor;
+		-moz-box-shadow+:extract(@arguments, 1) extract(@arguments, 2) @JasetKit-BoxShadowBlur @JasetKit-BoxShadowMargin @JasetKit-BoxShadowColor;
+		box-shadow+:extract(@arguments, 1) extract(@arguments, 2) @JasetKit-BoxShadowBlur @JasetKit-BoxShadowMargin @JasetKit-BoxShadowColor;
+	}
+	& when (length(@arguments) = 3){
+		-webkit-box-shadow+:extract(@arguments, 1) extract(@arguments, 2) extract(@arguments, 3) @JasetKit-BoxShadowMargin @JasetKit-BoxShadowColor;
+		-moz-box-shadow+:extract(@arguments, 1) extract(@arguments, 2) extract(@arguments, 3) @JasetKit-BoxShadowMargin @JasetKit-BoxShadowColor;
+		box-shadow+:extract(@arguments, 1) extract(@arguments, 2) extract(@arguments, 3) @JasetKit-BoxShadowMargin @JasetKit-BoxShadowColor;
+	}
+	& when (length(@arguments) = 4){
+		-webkit-box-shadow+:extract(@arguments, 1) extract(@arguments, 2) extract(@arguments, 3) extract(@arguments, 4) @JasetKit-BoxShadowColor;
+		-moz-box-shadow+:extract(@arguments, 1) extract(@arguments, 2) extract(@arguments, 3) extract(@arguments, 4) @JasetKit-BoxShadowColor;
+		box-shadow+:extract(@arguments, 1) extract(@arguments, 2) extract(@arguments, 3) extract(@arguments, 4) @JasetKit-BoxShadowColor;
+	}
+	& when (length(@arguments) = 5){
+		-webkit-box-shadow+:extract(@arguments, 1) extract(@arguments, 2) extract(@arguments, 3) extract(@arguments, 4) extract(@arguments, 5);
+		-moz-box-shadow+:extract(@arguments, 1) extract(@arguments, 2) extract(@arguments, 3) extract(@arguments, 4) extract(@arguments, 5);
+		box-shadow+:extract(@arguments, 1) extract(@arguments, 2) extract(@arguments, 3) extract(@arguments, 4) extract(@arguments, 5);
+	}
+	& when (length(@arguments) = 6){
+		-webkit-box-shadow+:extract(@arguments, 1) extract(@arguments, 2) extract(@arguments, 3) extract(@arguments, 4) extract(@arguments, 5) extract(@arguments, 6);
+		-moz-box-shadow+:extract(@arguments, 1) extract(@arguments, 2) extract(@arguments, 3) extract(@arguments, 4) extract(@arguments, 5) extract(@arguments, 6);
+		box-shadow+:extract(@arguments, 1) extract(@arguments, 2) extract(@arguments, 3) extract(@arguments, 4) extract(@arguments, 5) extract(@arguments, 6);
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	text-shadow		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.text-shadow(...){
+	& when (length(@arguments) = 1){
+		text-shadow+:extract(@arguments, 1) @JasetKit-TextShadowY @JasetKit-TextShadowBlur @JasetKit-TextShadowColor;
+	}
+	& when (length(@arguments) = 2){
+		text-shadow+:extract(@arguments, 1) extract(@arguments, 2) @JasetKit-TextShadowBlur @JasetKit-TextShadowColor;
+	}
+	& when (length(@arguments) = 3){
+		text-shadow+:extract(@arguments, 1) extract(@arguments, 2) extract(@arguments, 3) @JasetKit-TextShadowColor;
+	}
+	& when (length(@arguments) = 4){
+		text-shadow+:extract(@arguments, 1) extract(@arguments, 2) extract(@arguments, 3) extract(@arguments, 4);
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	text-shadow3d		 													*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.text-shadow3d(@color:none; @size:10; @direction:down; @this:1){
+	& when (@this <= @size){
+		@DropStep: 100/@size/2*@this;
+		@ShadowStep: 100/@size/4*@this;
+		& when (@direction = up){
+			.text-shadow(0px 0px-@this 0px fade(@color, 100-@DropStep));
+			.text-shadow(0px 0px-@this*2 @this*2+0px fade(@ColorBlack, @ShadowStep));
+		}
+		& when (@direction = up-left){
+			.text-shadow(0px-@this 0px-@this 0px fade(@color, 100-@DropStep));
+			.text-shadow(0px-@this*2 0px-@this*2 @this*2+0px fade(@ColorBlack, @ShadowStep));
+		}
+		& when (@direction = up-right){
+			.text-shadow(@this+0px 0px-@this 0px fade(@color, 100-@DropStep));
+			.text-shadow(@this*2+0px 0px-@this*2 @this*2+0px fade(@ColorBlack, @ShadowStep));
+		}
+		& when (extract(@direction, 1) = down){
+			.text-shadow(0px @this+0px 0px fade(@color, 100-@DropStep));
+			.text-shadow(0px @this*2+0px @this*2+0px fade(@ColorBlack, @ShadowStep));
+		}
+		& when (@direction = down-left){
+			.text-shadow(0px-@this @this+0px 0px fade(@color, 100-@DropStep));
+			.text-shadow(0px-@this*2 @this*2+0px @this*2+0px fade(@ColorBlack, @ShadowStep));
+		}
+		& when (@direction = down-right){
+			.text-shadow(@this+0px @this+0px 0px fade(@color, 100-@DropStep));
+			.text-shadow(@this*2+0px @this*2+0px @this*2+0px fade(@ColorBlack, @ShadowStep));
+		}
+		& when (@direction = left){
+			.text-shadow(0px-@this 0px 0px fade(@color, 100-@DropStep));
+			.text-shadow(0px-@this*2 0px @this*2+0px fade(@ColorBlack, @ShadowStep));
+		}
+		& when (@direction = right){
+			.text-shadow(@this+0px 0px 0px fade(@color, 100-@DropStep));
+			.text-shadow(@this*2+0px 0px @this*2+0px fade(@ColorBlack, @ShadowStep));
+		}
+		.text-shadow3d(@color; @size; @direction; @this + 1);
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	text-overflow		 													*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.text-overflow(...){
+	& when (length(@arguments) = 0){
+		white-space:nowrap;
+		word-wrap:normal;
+		overflow:hidden;
+		text-overflow:ellipsis;
+	}
+	& when (length(@arguments) = 1) and (extract(@arguments, 1) = normal){
+		white-space:normal;
+		word-wrap:normal;
+		overflow:auto;
+		text-overflow:clip;
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	calc				 													*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.calc(...){
+	@Attr:extract(@arguments, 1);
+	@Value:extract(@arguments, 2);
+	& when (length(@arguments) = 2){
+		@{Attr}:-webkit-calc(@Value);
+		@{Attr}:-moz-calc(@Value);
+		@{Attr}:calc(@Value);
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	flexbox																	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.flexbox(...){
+	display:-webkit-flex;
+	display:flex;
+	& when (length(@arguments) = 1){
+		.flexbox-align(extract(@arguments, 1));
+		.flexbox-justify-content();
+		.flexbox-align-content();
+		.flexbox-flow();
+	}
+	& when (length(@arguments) = 2){
+		.flexbox-align(extract(@arguments, 1));
+		.flexbox-justify-content(extract(@arguments, 2));
+		.flexbox-align-content();
+		.flexbox-flow();
+	}
+	& when (length(@arguments) = 3){
+		.flexbox-align(extract(@arguments, 1));
+		.flexbox-justify-content(extract(@arguments, 2));
+		.flexbox-align-content(extract(@arguments, 3));
+		.flexbox-flow();
+	}
+	& when (length(@arguments) = 4){
+		.flexbox-align(extract(@arguments, 1));
+		.flexbox-justify-content(extract(@arguments, 2));
+		.flexbox-align-content(extract(@arguments, 3));
+		.flexbox-flow(extract(@arguments, 4));
+	}
+	& when (length(@arguments) < 1), (length(@arguments) > 4){
+		.flexbox-align();
+		.flexbox-justify-content();
+		.flexbox-align-content();
+		.flexbox-flow();
+	}
+}
+.flexbox-align(...){
+	& when (length(@arguments) >= 1){
+		-webkit-align-items:@arguments;
+		align-items:@arguments;
+	}
+	& when not(length(@arguments) >= 1){
+		-webkit-align-items:@JasetKit-FlexboxAlignItems;
+		align-items:@JasetKit-FlexboxAlignItems;
+	}
+}
+.flexbox-justify-content(...){
+	& when (length(@arguments) >= 1){
+		-webkit-justify-content:@arguments;
+		justify-content:@arguments;
+	}
+	& when not(length(@arguments) >= 1){
+		-webkit-justify-content:@JasetKit-FlexboxJustifyContent;
+		justify-content:@JasetKit-FlexboxJustifyContent;
+	}
+}
+.flexbox-align-content(...){
+	& when (length(@arguments) >= 1){
+		-webkit-align-content:@arguments;
+		align-content:@arguments;
+	}
+	& when not(length(@arguments) >= 1){
+		-webkit-align-content:@JasetKit-FlexboxAlignContent;
+		align-content:@JasetKit-FlexboxAlignContent;
+	}
+}
+.flexbox-flow(...){
+	& when (length(@arguments) = 1){
+		-webkit-flex-flow:extract(@arguments, 1) @JasetKit-FlexboxDirection;
+		flex-flow:extract(@arguments, 1) @JasetKit-FlexboxDirection;
+	}
+	& when (length(@arguments) = 2){
+		-webkit-flex-flow:extract(@arguments, 1) extract(@arguments, 2);
+		flex-flow:extract(@arguments, 1) extract(@arguments, 2);
+	}
+	& when (length(@arguments) < 1), (length(@arguments) > 2){
+		-webkit-flex-flow:@JasetKit-FlexboxWrap @JasetKit-FlexboxDirection;
+		flex-flow:@JasetKit-FlexboxWrap @JasetKit-FlexboxDirection;
+	}
+}
+.flex(...){
+	& when (length(@arguments) = 1){
+		-webkit-flex:extract(@arguments, 1) @JasetKit-FlexShrink @JasetKit-FlexBasis;
+		flex:extract(@arguments, 1) @JasetKit-FlexShrink @JasetKit-FlexBasis;
+	}
+	& when (length(@arguments) = 2){
+		-webkit-flex:extract(@arguments, 1) extract(@arguments, 2) @JasetKit-FlexBasis;
+		flex:extract(@arguments, 1) extract(@arguments, 2) @JasetKit-FlexBasis;
+	}
+	& when (length(@arguments) = 3){
+		-webkit-flex:extract(@arguments, 1) extract(@arguments, 2) extract(@arguments, 3);
+		flex:extract(@arguments, 1) extract(@arguments, 2) extract(@arguments, 3);
+	}
+	& when (length(@arguments) < 1), (length(@arguments) > 3){
+		-webkit-flex:@JasetKit-FlexGrow @JasetKit-FlexShrink @JasetKit-FlexBasis;
+		flex:@JasetKit-FlexGrow @JasetKit-FlexShrink @JasetKit-FlexBasis;
+	}
+}
+.flex-num(...){
+	& when (length(@arguments) >= 1){
+		-webkit-order:extract(@arguments, 1);
+		order:extract(@arguments, 1);
+	}
+	& when not(length(@arguments) >= 1){
+		-webkit-order:@JasetKit-FlexOrder;
+		order:@JasetKit-FlexOrder;
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	clear-fix		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.clear-fix(){
+	&:before, &:after{
+		display:block;
+		content:'';
+	}
+	&:after{
+		clear:both;
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	column-text		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.column-text(...){
+	& when (length(@arguments) = 1){
+		-webkit-column-count:extract(@arguments, 1);
+		-moz-column-count:extract(@arguments, 1);
+		column-count:extract(@arguments, 1);
+		-webkit-column-gap:@JasetKit-ColumnTextGap;
+		-moz-column-gap:@JasetKit-ColumnTextGap;
+		column-gap:@JasetKit-ColumnTextGap;
+	}
+	& when (length(@arguments) = 2){
+		-webkit-column-count:extract(@arguments, 1);
+		-moz-column-count:extract(@arguments, 1);
+		column-count:extract(@arguments, 1);
+		-webkit-column-gap:extract(@arguments, 2);
+		-moz-column-gap:extract(@arguments, 2);
+		column-gap:extract(@arguments, 2);
+		
+	}
+	& when (length(@arguments) < 1), (length(@arguments) > 2){
+		-webkit-column-count:@JasetKit-ColumnTextCount;
+		-moz-column-count:@JasetKit-ColumnTextCount;
+		column-count:@JasetKit-ColumnTextCount;
+		-webkit-column-gap:@JasetKit-ColumnTextGap;
+		-moz-column-gap:@JasetKit-ColumnTextGap;
+		column-gap:@JasetKit-ColumnTextGap;
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Placeholder		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.placeholder(...){
+	& when (length(@arguments) = 2){
+		.placeholder-static(extract(@arguments, 1); extract(@arguments, 2));
+	}
+	& when (length(@arguments) = 3){
+		.placeholder-static(extract(@arguments, 1); extract(@arguments, 2));
+		.placeholder-hover(extract(@arguments, 1); extract(@arguments, 3));
+		.placeholder-focus(extract(@arguments, 1); extract(@arguments, 3));
+	}
+	& when (length(@arguments) = 4){
+		.placeholder-static(extract(@arguments, 1); extract(@arguments, 2));
+		.placeholder-hover(extract(@arguments, 1); extract(@arguments, 3));
+		.placeholder-focus(extract(@arguments, 1); extract(@arguments, 4));
+	}
+}
+.placeholder-static(...){
+	@attr:extract(@arguments, 1);
+	@value:extract(@arguments, 2);
+	& when (length(@arguments) = 2){
+		&::-webkit-input-placeholder{@{attr}:@value;}
+		&:-moz-placeholder{@{attr}:@value;}
+		&::-moz-placeholder{@attr:@value;}
+		&:-ms-input-placeholder{@{attr}: @value;}
+	}
+}
+.placeholder-hover(...){
+	@attr:extract(@arguments, 1);
+	@value:extract(@arguments, 2);
+	& when (length(@arguments) = 2){
+		&:hover::-webkit-input-placeholder{@{attr}: @value;}
+		&:hover:-moz-placeholder{@{attr}: @value;}
+		&:hover::-moz-placeholder {@{attr}: @value;}
+		&:hover:-ms-input-placeholder{@{attr}: @value;}
+	}
+}
+.placeholder-focus(...){
+	@attr:extract(@arguments, 1);
+	@value:extract(@arguments, 2);
+	& when (length(@arguments) = 2){
+		&:focus::-webkit-input-placeholder{@{attr}: @value;}
+		&:focus:-moz-placeholder{@{attr}: @value;}
+		&:focus::-moz-placeholder {@{attr}: @value;}
+		&:focus:-ms-input-placeholder{@{attr}: @value;}
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Background image		 												*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.background-image(...){
+	@img_url:extract(@arguments, 1);
+	@img2_url:extract(@arguments, 2);
+	@repeat:extract(@arguments, 3);
+	@position:extract(@arguments, 4);
+	@size:extract(@arguments, 5);
+	@attachment:extract(@arguments, 6);
+	& when (length(@arguments) = 1){
+		background-image:url(@img_url);
+		background-repeat:@JasetKit-BackgroundRepeat;
+		background-position:@JasetKit-BackgroundPosition;
+		background-size:@JasetKit-BackgroundSize;
+		background-attachment:@JasetKit-BackgroundAttachment;
+		@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5){
+			background-image:url(@img_url);
+		}
+	}
+	& when (length(@arguments) = 2){
+		background-image:url(@img_url);
+		background-repeat:@JasetKit-BackgroundRepeat;
+		background-position:@JasetKit-BackgroundPosition;
+		background-size:@JasetKit-BackgroundSize;
+		background-attachment:@JasetKit-BackgroundAttachment;
+		@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5){
+			background-image:url(@img2_url);
+		}
+	}
+	& when (length(@arguments) = 3){
+		background-image:url(@img_url);
+		background-repeat:@repeat;
+		background-position:@JasetKit-BackgroundPosition;
+		background-size:@JasetKit-BackgroundSize;
+		background-attachment:@JasetKit-BackgroundAttachment;
+		@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5){
+			background-image:url(@img2_url);
+		}
+	}
+	& when (length(@arguments) = 4){
+		background-image:url(@img_url);
+		background-repeat:@repeat;
+		background-position:@position;
+		background-size:@JasetKit-BackgroundSize;
+		background-attachment:@JasetKit-BackgroundAttachment;
+		@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5){
+			background-image:url(@img2_url);
+		}
+	}
+	& when (length(@arguments) = 5){
+		background-image:url(@img_url);
+		background-repeat:@repeat;
+		background-position:@position;
+		background-size:@size;
+		background-attachment:@JasetKit-BackgroundAttachment;
+		@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5){
+			background-image:url(@img2_url);
+		}
+	}
+	& when (length(@arguments) = 6){
+		background-image:url(@img_url);
+		background-repeat:@repeat;
+		background-position:@position;
+		background-size:@size;
+		background-attachment:@attachment;
+		@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5){
+			background-image:url(@img2_url);
+		}
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Appearance		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.appearance(@value: none){
+	& when (length(@arguments) = 0){
+		-webkit-appearance:@JasetKit-Appearance;
+		-moz-appearance:@JasetKit-Appearance;
+		appearance:@JasetKit-Appearance;
+	}
+	& when (length(@arguments) > 0){
+		-webkit-appearance:extract(@arguments, 1);
+		-moz-appearance:extract(@arguments, 1);
+		appearance:extract(@arguments, 1);
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	User Select		 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.user-select(...){
+	& when (length(@arguments) = 0){
+		-webkit-user-select:@JasetKit-UserSelect;
+		-moz-user-select:@JasetKit-UserSelect;
+		-ms-user-select:@JasetKit-UserSelect;
+		user-select:@JasetKit-UserSelect;
+	}
+	& when (length(@arguments) > 0){
+		-webkit-user-select:extract(@arguments, 1);
+		-moz-user-select:extract(@arguments, 1);
+		-ms-user-select:extract(@arguments, 1);
+		user-select:extract(@arguments, 1);
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Selection	 															*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.selection(...){
+	@attr:extract(@arguments, 1);
+	@value:extract(@arguments, 2);
+	& when (length(@arguments) = 2){
+		&::-moz-selection{@{attr}: @value;}
+		&::selection {@{attr}: @value;}
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Touch Action	 														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.touch-action(...){
+	& when (length(@arguments) = 0){
+		-webkit-touch-callout:@JasetKit-TouchAction;
+		-ms-touch-action:@JasetKit-TouchAction;
+		touch-action:@JasetKit-TouchAction;
+	}
+	& when (length(@arguments) > 0){
+		-webkit-touch-callout:extract(@arguments, 1);
+		-ms-touch-action:extract(@arguments, 1);
+		touch-action:extract(@arguments, 1);
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Animation	 															*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.animation(...){
+	& when (length(@arguments) = 1){
+		animation-name:extract(@arguments, 1);
+		animation-duration:@JasetKit-AnimationDuration;
+		animation-timing-function:@JasetKit-AnimationTimingFunction;
+		animation-delay:@JasetKit-AnimationDelay;
+		animation-iteration-count:@JasetKit-AnimationIterationCount;
+		animation-direction:@JasetKit-AnimationDirection;
+		animation-fill-mode:@JasetKit-AnimationFillMode;
+		animation-play-state:@JasetKit-AnimationPlayState;
+	}
+	& when (length(@arguments) = 2){
+		animation-name:extract(@arguments, 1);
+		animation-duration:extract(@arguments, 2);
+		animation-timing-function:@JasetKit-AnimationTimingFunction;
+		animation-delay:@JasetKit-AnimationDelay;
+		animation-iteration-count:@JasetKit-AnimationIterationCount;
+		animation-direction:@JasetKit-AnimationDirection;
+		animation-fill-mode:@JasetKit-AnimationFillMode;
+		animation-play-state:@JasetKit-AnimationPlayState;
+	}
+	& when (length(@arguments) = 3){
+		@ruleFind:extract(@arguments, 3);
+		@ruleSet:replace('@{ruleFind}', '(.+)', '@{TimingKIT-$1}', 'gi');
+		@timing:replace('@{ruleFind}', '(cubic-bezier)+\((.*?)\,(.*?)\,(.*?)\,(.*?)\)', '$1', 'gi');
+		@isRuleSet:replace('@{TimingKIT-names}', '(.*)\"(@{ruleFind})\"(.*)', '$2', 'gi');
+		animation-name:extract(@arguments, 1);
+		animation-duration:extract(@arguments, 2);
+		& when (~'@{timing}' = cubic-bezier){
+			animation-timing-function:@ruleFind;
+		}
+		& when (~'@{isRuleSet}' = ~'@{ruleFind}'){
+			animation-timing-function:~'@{ruleSet}';
+		}
+		& when not(~'@{timing}' = cubic-bezier) and not(~'@{isRuleSet}' = ~'@{ruleFind}'){
+			animation-timing-function:@JasetKit-AnimationTimingFunction;
+		}
+		animation-delay:@JasetKit-AnimationDelay;
+		animation-iteration-count:@JasetKit-AnimationIterationCount;
+		animation-direction:@JasetKit-AnimationDirection;
+		animation-fill-mode:@JasetKit-AnimationFillMode;
+		animation-play-state:@JasetKit-AnimationPlayState;
+	}
+	& when (length(@arguments) = 4){
+		@ruleFind:extract(@arguments, 3);
+		@ruleSet:replace('@{ruleFind}', '(.+)', '@{TimingKIT-$1}', 'gi');
+		@timing:replace('@{ruleFind}', '(cubic-bezier)+\((.*?)\,(.*?)\,(.*?)\,(.*?)\)', '$1', 'gi');
+		@isRuleSet:replace('@{TimingKIT-names}', '(.*)\"(@{ruleFind})\"(.*)', '$2', 'gi');
+		animation-name:extract(@arguments, 1);
+		animation-duration:extract(@arguments, 2);
+		& when (~'@{timing}' = cubic-bezier){
+			animation-timing-function:@ruleFind;
+		}
+		& when (~'@{isRuleSet}' = ~'@{ruleFind}'){
+			animation-timing-function:~'@{ruleSet}';
+		}
+		& when not(~'@{timing}' = cubic-bezier) and not(~'@{isRuleSet}' = ~'@{ruleFind}'){
+			animation-timing-function:@JasetKit-AnimationTimingFunction;
+		}
+		animation-delay:extract(@arguments, 4);
+		animation-iteration-count:@JasetKit-AnimationIterationCount;
+		animation-direction:@JasetKit-AnimationDirection;
+		animation-fill-mode:@JasetKit-AnimationFillMode;
+		animation-play-state:@JasetKit-AnimationPlayState;
+	}
+	& when (length(@arguments) = 5){
+		@ruleFind:extract(@arguments, 3);
+		@ruleSet:replace('@{ruleFind}', '(.+)', '@{TimingKIT-$1}', 'gi');
+		@timing:replace('@{ruleFind}', '(cubic-bezier)+\((.*?)\,(.*?)\,(.*?)\,(.*?)\)', '$1', 'gi');
+		@isRuleSet:replace('@{TimingKIT-names}', '(.*)\"(@{ruleFind})\"(.*)', '$2', 'gi');
+		animation-name:extract(@arguments, 1);
+		animation-duration:extract(@arguments, 2);
+		& when (~'@{timing}' = cubic-bezier){
+			animation-timing-function:@ruleFind;
+		}
+		& when (~'@{isRuleSet}' = ~'@{ruleFind}'){
+			animation-timing-function:~'@{ruleSet}';
+		}
+		& when not(~'@{timing}' = cubic-bezier) and not(~'@{isRuleSet}' = ~'@{ruleFind}'){
+			animation-timing-function:@JasetKit-AnimationTimingFunction;
+		}
+		animation-delay:extract(@arguments, 4);
+		animation-iteration-count:extract(@arguments, 5);
+		animation-direction:@JasetKit-AnimationDirection;
+		animation-fill-mode:@JasetKit-AnimationFillMode;
+		animation-play-state:@JasetKit-AnimationPlayState;
+	}
+	& when (length(@arguments) = 6){
+		@ruleFind:extract(@arguments, 3);
+		@ruleSet:replace('@{ruleFind}', '(.+)', '@{TimingKIT-$1}', 'gi');
+		@timing:replace('@{ruleFind}', '(cubic-bezier)+\((.*?)\,(.*?)\,(.*?)\,(.*?)\)', '$1', 'gi');
+		@isRuleSet:replace('@{TimingKIT-names}', '(.*)\"(@{ruleFind})\"(.*)', '$2', 'gi');
+		animation-name:extract(@arguments, 1);
+		animation-duration:extract(@arguments, 2);
+		& when (~'@{timing}' = cubic-bezier){
+			animation-timing-function:@ruleFind;
+		}
+		& when (~'@{isRuleSet}' = ~'@{ruleFind}'){
+			animation-timing-function:~'@{ruleSet}';
+		}
+		& when not(~'@{timing}' = cubic-bezier) and not(~'@{isRuleSet}' = ~'@{ruleFind}'){
+			animation-timing-function:@JasetKit-AnimationTimingFunction;
+		}
+		animation-delay:extract(@arguments, 4);
+		animation-iteration-count:extract(@arguments, 5);
+		animation-direction:extract(@arguments, 6);
+		animation-fill-mode:@JasetKit-AnimationFillMode;
+		animation-play-state:@JasetKit-AnimationPlayState;
+	}
+	& when (length(@arguments) = 7){
+		@ruleFind:extract(@arguments, 3);
+		@ruleSet:replace('@{ruleFind}', '(.+)', '@{TimingKIT-$1}', 'gi');
+		@timing:replace('@{ruleFind}', '(cubic-bezier)+\((.*?)\,(.*?)\,(.*?)\,(.*?)\)', '$1', 'gi');
+		@isRuleSet:replace('@{TimingKIT-names}', '(.*)\"(@{ruleFind})\"(.*)', '$2', 'gi');
+		animation-name:extract(@arguments, 1);
+		animation-duration:extract(@arguments, 2);
+		& when (~'@{timing}' = cubic-bezier){
+			animation-timing-function:@ruleFind;
+		}
+		& when (~'@{isRuleSet}' = ~'@{ruleFind}'){
+			animation-timing-function:~'@{ruleSet}';
+		}
+		& when not(~'@{timing}' = cubic-bezier) and not(~'@{isRuleSet}' = ~'@{ruleFind}'){
+			animation-timing-function:@JasetKit-AnimationTimingFunction;
+		}
+		animation-delay:extract(@arguments, 4);
+		animation-iteration-count:extract(@arguments, 5);
+		animation-direction:extract(@arguments, 6);
+		animation-fill-mode:extract(@arguments, 7);
+		animation-play-state:@JasetKit-AnimationPlayState;
+	}
+	& when (length(@arguments) = 8){
+		@ruleFind:extract(@arguments, 3);
+		@ruleSet:replace('@{ruleFind}', '(.+)', '@{TimingKIT-$1}', 'gi');
+		@timing:replace('@{ruleFind}', '(cubic-bezier)+\((.*?)\,(.*?)\,(.*?)\,(.*?)\)', '$1', 'gi');
+		@isRuleSet:replace('@{TimingKIT-names}', '(.*)\"(@{ruleFind})\"(.*)', '$2', 'gi');
+		animation-name:extract(@arguments, 1);
+		animation-duration:extract(@arguments, 2);
+		& when (~'@{timing}' = cubic-bezier){
+			animation-timing-function:@ruleFind;
+		}
+		& when (~'@{isRuleSet}' = ~'@{ruleFind}'){
+			animation-timing-function:~'@{ruleSet}';
+		}
+		& when not(~'@{timing}' = cubic-bezier) and not(~'@{isRuleSet}' = ~'@{ruleFind}'){
+			animation-timing-function:@JasetKit-AnimationTimingFunction;
+		}
+		animation-delay:extract(@arguments, 4);
+		animation-iteration-count:extract(@arguments, 5);
+		animation-direction:extract(@arguments, 6);
+		animation-fill-mode:extract(@arguments, 7);
+		animation-play-state:extract(@arguments, 8);
+	}
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Box		 																*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.box(...){
+	& when (length(@arguments) = 0){
+		display:@JasetKit-BoxType;
+		width:@JasetKit-BoxWidth;
+		height:@JasetKit-BoxHeight;
+		background:@JasetKit-BoxBackground;
+	}
+	& when (length(@arguments) = 1){
+		width:extract(@arguments, 1);
+	}
+	& when (length(@arguments) = 2){
+		width:extract(@arguments, 1);
+		height:extract(@arguments, 2);
+	}
+	& when (length(@arguments) = 3){
+		width:extract(@arguments, 1);
+		height:extract(@arguments, 2);
+		background:extract(@arguments, 3);
+	}
+	& when (length(@arguments) = 4){
+		display:extract(@arguments, 1);
+		width:extract(@arguments, 2);
+		height:extract(@arguments, 3);
+		background:extract(@arguments, 4);
+	}
+	& when (length(@arguments) > 4){
+		width:extract(@arguments, 1);
+		height:extract(@arguments, 2);
+		background:extract(@arguments, 3);
+		& when (length(@arguments) = 5){
+			.flexbox(extract(@arguments, 4); extract(@arguments, 5); @JasetKit-FlexboxAlignContent; @JasetKit-FlexboxWrap @JasetKit-FlexboxDirection);
+		}
+		& when (length(@arguments) = 6){
+			.flexbox(extract(@arguments, 4); extract(@arguments, 5); extract(@arguments, 6); @JasetKit-FlexboxWrap @JasetKit-FlexboxDirection);
+		}
+		& when (length(@arguments) = 7){
+			.flexbox(extract(@arguments, 4); extract(@arguments, 5); extract(@arguments, 6); extract(@arguments, 7));
+		}
+	}
+	.box-sizing();
+}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Базовые конструкции														*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.set-air(@start_key:5; @stop_key:100; @interval:5; @is_first:1) when (@start_key <= @stop_key){& when (@is_first = 1){.Air{display:block;width:100%;height:0px;background:none;}}.Air.S@{start_key}{height:@start_key+0px;}.set-air(@start_key + @interval; @stop_key; @interval; 0);}
+
+/*	#################### - Developer flarian.ru - ########################	*/
+/*	Сетка																	*/
+/*	#################### - Developer flarian.ru - ########################	*/
+.Foreach-GridTab(@this:1; @max:16; @screen:F) when (@this <= @max){
+	& when (@this = 1){
+		.GridTab>.GridCol.@{screen}0{display: none;}
+		.GridTab>.GridCol.@{screen}_Auto{display:block;.flex(1; 1; auto);}
+	}
+	.GridTab>.GridCol.@{screen}@{this}{display:block;width:percentage(((100 / @max) * @this)/100);.flex(0; 0; auto);}
+	.Foreach-GridTab(@this + 1; @max; @screen);
+}
