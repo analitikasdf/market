@@ -1683,7 +1683,7 @@ h6 {
   text-align: center;
 }
 .container {
-  width: 1410px;
+  max-width: 1410px;
   margin: 0 auto;
 }
 .content-card {
