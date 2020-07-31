@@ -77,9 +77,9 @@ h2 {
 	font-weight: @FontBold;
 	color: @ColorGray;
 	font-size: @H2Size;
-	display: block;
 	text-align: center;
-	margin-top: 50px;
+	line-height: 36px;
+	padding: 0 20px;
 }
 
 h6 {
@@ -88,8 +88,8 @@ h6 {
 	color: @ColorGray2;
 	font-size: @H6Size;
 	margin-top: 20px;
-	display: block;
 	text-align: center;
+	padding: 0 20px;
 }
 
 .container	{
@@ -97,10 +97,14 @@ h6 {
 	margin: 0 auto;
 }
 
+.category {
+	padding: 50px 0;
+}
+
 .content-card {
 	position: relative;
-	width: 330px;
-	height: 544px;
+	.calc(width; ~'(100% / 4) - 20px');
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -108,6 +112,7 @@ h6 {
 	.border-radius(10px);
 	box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07);
 	margin-bottom: 70px;
+	padding-bottom: 20px;
 	&__label-wrapp {
 		display: flex;
 		position: absolute;	
@@ -136,9 +141,10 @@ h6 {
 		display: block;
 		margin: 0 auto;
 		padding-top: 96px;
+
 	}
 	&__img-wrapp {
-		width: 330px;
+		width: 100%;
 		height: 320px;
 		background: linear-gradient(0deg, @ColorGray3, @ColorGray3);
 		.border-radius(10px);
@@ -193,5 +199,39 @@ h6 {
 	flex-wrap: wrap;
 	margin-top: 70px;
 	justify-content: space-around;
+}
+
+.pagination {
+	.flexbox(center; center; center);
+}
+
+.pagination > .pagination-item {
+	.box(32px; 32px; center; center; center);
+	border: 1px solid @ColorDark1;
+	.border-radius(8px);
+	margin: 0 5px;
+}
+
+.pagination > .pagination-item_active {
+	.box(32px; 32px; @ColorDark1; center; center; center);
+}
+
+
+@media all and (max-width: (@Laptop - 1px)) {
+	.content-card {
+		.calc(width; ~'(100% / 3) - 20px');
+	}
+}
+
+@media all and (max-width: (@TabletSmall - 1px)) {
+	.content-card {
+		.calc(width; ~'(100% / 2) - 20px');
+	}
+}
+
+@media all and (max-width: (@Mobile - 1px)) {
+	.content-card {
+		.calc(width; ~'100% - 20px');
+	}
 }
 
