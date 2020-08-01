@@ -97,6 +97,10 @@ h6 {
 	margin: 0 auto;
 }
 
+section {
+	padding: 50px 0
+}
+
 .category {
 	padding: 50px 0;
 }
@@ -207,8 +211,10 @@ h6 {
 
 .pagination > .pagination-item {
 	.box(32px; 32px; center; center; center);
-	border: 1px solid @ColorDark1;
 	.border-radius(8px);
+	font-family: @FontFamilySFProTextRegular;
+	font-size: 15px;
+	border: 1px solid @ColorDark1;
 	margin: 0 5px;
 }
 
@@ -235,3 +241,46 @@ h6 {
 	}
 }
 
+
+// slider
+
+.slider > .container > .slider-content {
+	.flexbox(center; space-around; center; nowrap row);
+	margin-top: 70px;
+}
+
+.slider > .container > .button-wrapp {
+	.flexbox( center; center; center)
+}
+
+.slider > .container > .button-wrapp button {
+	.box(58px; 58px; @ColorDark1; center; center; center);
+	.border-radius(100%);
+	border: none;
+	margin: 0 5px;
+}
+
+.slider > .container > .button-wrapp button > div {
+	.flexbox( center; center; center);
+	width: 12px;
+	height: 12px;
+	border: solid 1px @ColorDark9;
+	border-right: none;
+	border-bottom: none;
+}
+
+.slider > .container > .button-wrapp .prev  {
+	padding-right: 1px;
+}
+
+.slider > .container > .button-wrapp .next  {
+	padding-left: 1px;
+}
+
+.slider > .container > .button-wrapp .prev > div {
+	.rotate(-45)
+}
+
+.slider > .container > .button-wrapp .next > div {
+	.rotate(135)
+}

@@ -1686,6 +1686,9 @@ h6 {
   max-width: 1410px;
   margin: 0 auto;
 }
+section {
+  padding: 50px 0;
+}
 .category {
   padding: 50px 0;
 }
@@ -1820,8 +1823,10 @@ h6 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border: 1px solid #E3E3E3;
   border-radius: 8px;
+  font-family: "San Francisco Text Regular";
+  font-size: 15px;
+  border: 1px solid #E3E3E3;
   margin: 0 5px;
 }
 .pagination > .pagination-item_active {
@@ -1862,4 +1867,87 @@ h6 {
     width: -moz-calc(100% - 20px);
     width: calc(100% - 20px);
   }
+}
+.slider > .container > .slider-content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-flex-flow: nowrap row;
+  flex-flow: nowrap row;
+  margin-top: 70px;
+}
+.slider > .container > .button-wrapp {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-flex-flow: nowrap row;
+  flex-flow: nowrap row;
+}
+.slider > .container > .button-wrapp button {
+  width: 58px;
+  height: 58px;
+  background: #E3E3E3;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-flex-flow: nowrap row;
+  flex-flow: nowrap row;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: none;
+  margin: 0 5px;
+}
+.slider > .container > .button-wrapp button > div {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-flex-flow: nowrap row;
+  flex-flow: nowrap row;
+  width: 12px;
+  height: 12px;
+  border: solid 1px #171717;
+  border-right: none;
+  border-bottom: none;
+}
+.slider > .container > .button-wrapp .prev {
+  padding-right: 1px;
+}
+.slider > .container > .button-wrapp .next {
+  padding-left: 1px;
+}
+.slider > .container > .button-wrapp .prev > div {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.slider > .container > .button-wrapp .next > div {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
