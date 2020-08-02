@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', function() {
         if (n < 1) {
             slideIndex = slides.length;
         }
-        console.log(n);
+        
         slides.forEach((item) => item.style.display = 'none');
         slides[slideIndex - 1].style.display = 'flex';
         slides[slideIndex].style.display = 'flex';
@@ -41,5 +41,43 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     
- 
+
+    // ofer
+    // ofer
+    // ofer
+    let slideIndex2 = 1,
+        slides2 = document.querySelectorAll('.oferContent'),
+        prev2 = document.querySelector('.oferBtnPrev'),
+        next2 = document.querySelector('.oferBtnNext');
+
+    showSlides2(slideIndex2);
+
+    function showSlides2(n) {
+        
+        if (n > slides2.length) {
+            slideIndex2 = 1;
+        }
+        if (n < 1) {
+            slideIndex2 = slides2.length;
+        }
+
+        slides2.forEach((item) => item.style.display = 'none');
+        slides2[slideIndex2 - 1].style.display = 'block';
+    }
+
+    function plusSlides2(n) {
+        showSlides2(slideIndex2 += n);
+    }
+    function currentSlide2(n) {
+        showSlides2(slideIndex2 = n);
+    }
+
+    prev2.addEventListener('click', function() {
+        plusSlides2(-1);
+    });
+
+    next2.addEventListener('click', function() {
+        plusSlides2(1);
+    
+    });
 })

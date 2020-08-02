@@ -1710,9 +1710,7 @@ section {
   width: -webkit-calc((100% / 4) - 20px);
   width: -moz-calc((100% / 4) - 20px);
   width: calc((100% / 4) - 20px);
-  -webkit-box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07) transparent;
-  -moz-box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07) transparent;
-  box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07) transparent;
+  box-shadow: 0 7px 54px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
 }
 .category > .container > .categoryContent > .contentCard > .contentCardLabelWrapp {
@@ -1887,6 +1885,7 @@ section {
 /*	 слайдер																		*/
 /*	#################### - Developer stebnev-studio.ru - ########################	*/
 .slider > .container > .sliderContent {
+  margin-top: 70px;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -1897,7 +1896,6 @@ section {
   align-content: center;
   -webkit-flex-flow: nowrap row;
   flex-flow: nowrap row;
-  margin-top: 70px;
 }
 .slider > .container > .sliderContent > .contentCard {
   position: relative;
@@ -1911,9 +1909,7 @@ section {
   width: -webkit-calc((100% / 4) - 20px);
   width: -moz-calc((100% / 4) - 20px);
   width: calc((100% / 4) - 20px);
-  -webkit-box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07) transparent;
-  -moz-box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07) transparent;
-  box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07) transparent;
+  box-shadow: 0 7px 54px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
 }
 .slider > .container > .sliderContent > .contentCard > .contentCardLabelWrapp {
@@ -1928,11 +1924,11 @@ section {
   font-size: 15px;
   text-align: center;
   line-height: 50px;
-  background-color: #919191;
   margin-right: 20px;
   text-transform: uppercase;
   width: 50px;
   height: 50px;
+  background: #919191;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1944,11 +1940,11 @@ section {
   font-size: 15px;
   text-align: center;
   line-height: 50px;
-  background-color: #504E4E;
   margin-right: 20px;
   text-transform: uppercase;
   width: 50px;
   height: 50px;
+  background: #504E4E;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2092,15 +2088,16 @@ section {
 /*	 Офер																			*/
 /*	#################### - Developer stebnev-studio.ru - ########################	*/
 .ofer {
-  width: 1920px;
+  width: 100%;
   height: 547px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: #C2C2C2 url('../images/Img_card.png') no-repeat center;
+  margin: 0 auto;
 }
 .ofer > .container > h1 {
-  margin-top: 200px;
+  margin-top: 100px;
   font-family: "San Francisco Text Bold";
   font-size: 54px;
 }
@@ -2216,4 +2213,129 @@ section {
   -ms-transform: rotate(135deg);
   -o-transform: rotate(135deg);
   transform: rotate(135deg);
+}
+@media all and (max-width: 1499px) {
+  .ofer > .container {
+    padding: 0 50px;
+  }
+}
+@media all and (max-width: 1499px) {
+  .ofer > .container {
+    padding: 0 30px;
+  }
+  .ofer > .container > h1 {
+    font-size: 34px;
+  }
+  .ofer > .container > .oferContent {
+    font-size: 14px;
+  }
+}
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+/*	 Материалы																		*/
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+.materials > .container > .materialsContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+.materials > .container > .materialsContent > .contentItem {
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  margin-bottom: 70px;
+  padding-bottom: 20px;
+  width: -webkit-calc((100% / 4) - 20px);
+  width: -moz-calc((100% / 4) - 20px);
+  width: calc((100% / 4) - 20px);
+  border-radius: 10px;
+  box-shadow: 0 7px 54px rgba(0, 0, 0, 0.07);
+}
+.materials > .container > .materialsContent > .contentItem > .imgItem {
+  width: 100%;
+  height: 320px;
+  background: #C2C2C2;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-flex-flow: nowrap row;
+  flex-flow: nowrap row;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.materials > .container > .materialsContent > .contentItem > .dataItem {
+  font-family: "San Francisco Text Regular";
+  font-size: 13px;
+  margin-top: 20px;
+  color: #797979;
+}
+.materials > .container > .materialsContent > .contentItem > .nameItem {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  margin-top: 10px;
+  color: #161616;
+}
+.materials > .container > .materialsContent > .contentItem > .descrItem {
+  font-family: "San Francisco Text Regular";
+  font-size: 16px;
+  margin-top: 14px;
+  color: #797979;
+}
+.materials > .container > .materialsContent > .contentItem > .abautItem {
+  padding: 0 10px;
+  font-family: "Fira Sans Regular";
+  font-size: 14px;
+  margin-top: 14px;
+  color: #5D5D5D;
+  border-bottom: 2px solid #5D5D5D;
+}
+@media all and (max-width: 999px) {
+  .materials > .container > .materialsContent > .contentItem {
+    width: -webkit-calc((100% / 3) - 20px);
+    width: -moz-calc((100% / 3) - 20px);
+    width: calc((100% / 3) - 20px);
+  }
+}
+@media all and (max-width: 699px) {
+  .materials > .container > .materialsContent > .contentItem {
+    width: -webkit-calc((100% / 2) - 20px);
+    width: -moz-calc((100% / 2) - 20px);
+    width: calc((100% / 2) - 20px);
+  }
+}
+@media all and (max-width: 499px) {
+  .materials > .container > .materialsContent > .contentItem {
+    width: -webkit-calc(100% - 20px);
+    width: -moz-calc(100% - 20px);
+    width: calc(100% - 20px);
+  }
+}
+.categotyPath > .container > .pathContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+.categotyPath > .container > .pathContent > .contentItem {
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  margin-bottom: 70px;
+  padding-bottom: 20px;
+  width: -webkit-calc((100% / 4) - 20px);
+  width: -moz-calc((100% / 4) - 20px);
+  width: calc((100% / 4) - 20px);
 }

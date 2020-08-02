@@ -118,7 +118,8 @@ section {
 	margin-bottom: 						70px;
 	padding-bottom: 					20px;
 	.calc(width; ~'(100% / 4) - 20px');
-	.box-shadow(0px 7px 54px rgba(0, 0, 0, 0.07));
+	// .box-shadow(0px 7px 54px rgba(0, 0, 0, 0.07));
+	box-shadow: 0 7px 54px rgba(0,0,0,0.07);
 	.border-radius(10px);
 }
 .category>.container>.categoryContent>.contentCard>.contentCardLabelWrapp {
@@ -207,10 +208,10 @@ section {
 	.flexbox(center; center; center);
 }	
 .category>.container>.pagination>.pagination-item {
-	font-family: 							@FontFamilySFProTextRegular;
-	font-size: 								15px;
-	border: 								1px solid @ColorDark1;
-	margin:									0 5px;
+	font-family: 						@FontFamilySFProTextRegular;
+	font-size: 							15px;
+	border: 							1px solid @ColorDark1;
+	margin:								0 5px;
 	.box(32px; 32px; center; center; center);
 	.border-radius(8px);
 }
@@ -239,99 +240,99 @@ section {
 /*	 слайдер																		*/
 /*	#################### - Developer stebnev-studio.ru - ########################	*/
 .slider>.container>.sliderContent {
-	.flexbox(center; space-around; center; nowrap row);
 	margin-top: 70px;
+	.flexbox(center; space-around; center; nowrap row);
 }
 .slider>.container>.sliderContent>.contentCard {
-	position: 								relative;
-	height: 								auto;
-	display: 								flex;
-	flex-direction:							column;
-	align-items: 							center;
-	background-color: 						@ColorWhite;
-	margin-bottom: 							70px;
-	padding-bottom: 						20px;
+	position: 							relative;
+	height: 							auto;
+	display: 							flex;
+	flex-direction:						column;
+	align-items: 						center;
+	background-color: 					@ColorWhite;
+	margin-bottom: 						70px;
+	padding-bottom: 					20px;
 	.calc(width; ~'(100% / 4) - 20px');
-	.box-shadow(0px 7px 54px rgba(0, 0, 0, 0.07));
+	// .box-shadow(0px 7px 54px rgba(0, 0, 0, 0.07));
+	box-shadow: 0 7px 54px rgba(0,0,0,0.07);
 	.border-radius(10px);
 }
+
 .slider>.container>.sliderContent>.contentCard>.contentCardLabelWrapp {
-	display: 								flex;
-	position: 								absolute;	
-	transform: 								translateY(-50%);
-	left: 									20px;
+	display: 							flex;
+	position: 							absolute;	
+	transform: 							translateY(-50%);
+	left: 								20px;
 }
 .slider>.container>.sliderContent>.contentCard>.contentCardLabelWrapp>.contentCardLabel1 {
-	font-family: 							@FontFamilyHouschkaProBold;
-	color: 									@ColorWhite;
-	font-size: 								15px;
-	text-align: 							center;
-	line-height: 							50px;
-	background-color: 						@ColorGray4;
-	margin-right: 							20px;
-	text-transform: 						uppercase;
-	.box(50px; 50px);
+	font-family: 						@FontFamilyHouschkaProBold;
+	color: 								@ColorWhite;
+	font-size: 							15px;
+	text-align: 						center;
+	line-height: 						50px;
+	margin-right: 						20px;
+	text-transform: 					uppercase;
+	.box(50px; 50px; @ColorGray4);
 	.border-radius(100px);
 }
 .slider>.container>.sliderContent>.contentCard>.contentCardLabelWrapp>.contentCardLabel2 {
-	font-family: 							@FontFamilyHouschkaProBold;
-	color: 									@ColorWhite;
-	font-size: 								15px;
-	text-align: 							center;
-	line-height: 							50px;
-	background-color: 						@ColorDark8;
-	margin-right: 							20px;
-	text-transform: 						uppercase;
-	.box(50px; 50px);
+	font-family: 						@FontFamilyHouschkaProBold;
+	color: 								@ColorWhite;
+	font-size: 							15px;
+	text-align: 						center;
+	line-height: 						50px;
+	margin-right: 						20px;
+	text-transform: 					uppercase;
+	.box(50px; 50px;@ColorDark8);
 	.border-radius(100px);
 } 
 .slider>.container>.sliderContent>.contentCard>.contentCardImgWrapp {
-	background: 							linear-gradient(0deg, @ColorGray3, @ColorGray3);
+	background: 						linear-gradient(0deg, @ColorGray3, @ColorGray3);
 	.border-radius(10px);
-	.box(100%; 320px)
+	.box(100%; 320px; )
 }
 .slider>.container>.sliderContent>.contentCard>.contentCardImgWrapp>.contentCardImg {
-display:									block;
-margin: 									0 auto;
-padding-top: 								96px;
+display:								block;
+margin: 								0 auto;
+padding-top: 							96px;
 }
 .slider>.container>.sliderContent>.contentCard>.contentCardTitle {
-	font-family: 							@FontFamilyRobotoRegular;
-	font-size: 								18px;
-	color: 									@ColorDark6;
-	margin-top: 							20px;
+	font-family: 						@FontFamilyRobotoRegular;
+	font-size: 							18px;
+	color: 								@ColorDark6;
+	margin-top: 						20px;
 }
 .slider>.container>.sliderContent>.contentCard>.contentCardArticle {
-	margin-top: 							5px;
-	text-align: 							center;
-	line-height: 							150%;
-	font-family: 							@FontFamilySFProTextRegular;
-	font-size: 								16px;
-	color: 									@ColorGray2;
+	margin-top: 						5px;
+	text-align: 						center;
+	line-height: 						150%;
+	font-family: 						@FontFamilySFProTextRegular;
+	font-size: 							16px;
+	color: 								@ColorGray2;
 }
 .slider>.container>.sliderContent>.contentCard>.contentCardPrice {
-	margin-top: 							18px;
+	margin-top: 						18px;
 	.flexbox-justify-content(center);
 }
 .slider>.container>.sliderContent>.contentCard>.contentCardPrice>.contentCardPriceOld {
-	font-family: 							@FontFamilyRobotoMedium;
-	font-size: 								13px;
-	text-decoration: 						line-through;
-	margin-right: 							24px;
+	font-family: 						@FontFamilyRobotoMedium;
+	font-size: 							13px;
+	text-decoration: 					line-through;
+	margin-right: 						24px;
 }
 .slider>.container>.sliderContent>.contentCard>.contentCardPrice>.contentCardPriceNew {
-	font-family: 							@FontFamilyRobotoMedium;
-	font-size: 								18px;
+	font-family: 						@FontFamilyRobotoMedium;
+	font-size: 							18px;
 }	
 .slider>.container>.sliderContent>.contentCard>.buttonContentCard {
-	margin-top: 							17px;
-	border: 								none;
-	background-color: 						@ColorDark7;
-	color: 									@ColorWhite;
-	font-family: 							@FontFamilyFiraSansRegular;
-	font-size: 								16px;
-	text-align: 							center;
-	text-transform: 						uppercase;
+	margin-top: 						17px;
+	border: 							none;
+	background-color: 					@ColorDark7;
+	color: 								@ColorWhite;
+	font-family: 						@FontFamilyFiraSansRegular;
+	font-size: 							16px;
+	text-align: 						center;
+	text-transform: 					uppercase;
 	.border-radius(50px);
 	.box(161px; 48px; @ColorDark7);
 }
@@ -340,25 +341,25 @@ padding-top: 								96px;
 }
 
 .slider>.container>.buttonWrapp>button {
-	border: 								none;
-	margin: 								0 5px;
+	border: 							none;
+	margin: 							0 5px;
 	.box(58px; 58px; @ColorDark1; center; center; center);
 	.border-radius(100%);
 }
 
 .slider>.container>.buttonWrapp>button>div {
-	border: 								solid 1px @ColorDark9;
-	border-right: 							none;
-	border-bottom: 							none;
+	border: 							solid 1px @ColorDark9;
+	border-right: 						none;
+	border-bottom: 						none;
 	.box(12px; 12px; none ;center; center; center);
 }
 
 .slider>.container>.buttonWrapp>.Prev  {
-	padding-right: 							1px;
+	padding-right: 						1px;
 }
 
 .slider>.container>.buttonWrapp>.Next  {
-	padding-left: 							1px;
+	padding-left: 						1px;
 }
 
 .slider>.container>.buttonWrapp>.Prev> div {
@@ -375,47 +376,156 @@ padding-top: 								96px;
 /*	 Офер																			*/
 /*	#################### - Developer stebnev-studio.ru - ########################	*/
 .ofer {
-	.box(1920px; 547px);
-	background: 							@ColorGray3 url('../images/Img_card.png') no-repeat center;
+	.box(100%; 547px);
+	background: 						@ColorGray3 url('../images/Img_card.png') no-repeat center;
+	margin: 0 auto;
 }
 .ofer>.container>h1 {
-	margin-top: 							200px;
-	font-family: 							@FontFamilySFProTextBold;
-	font-size: 								54px;
+	margin-top: 						100px;
+	font-family: 						@FontFamilySFProTextBold;
+	font-size: 							54px;
 }
 .ofer>.container>.oferContent {
-	font-family: 							@FontFamilyRobotoRegular;
-	font-size: 								18px;
-	margin-top: 							30px;
+	font-family: 						@FontFamilyRobotoRegular;
+	font-size: 							18px;
+	margin-top: 						30px;
 }
 .ofer>.container>.oferWrap {
-	margin-top: 							70px;
+	margin-top: 						70px;
 	.flexbox(center, flex-start, center)
 }
 .ofer>.container>.oferWrap>.oferBtnPrev {
-	border: 								none;
+	border: 							none;
 	.box(58px; 58px; @ColorDark1 ;center ;center ;center);
 	.border-radius(40px);
 }
 .ofer>.container>.oferWrap>.oferBtnNext {
-	border:									none;
-	margin-left: 							10px;
+	border:								none;
+	margin-left: 						10px;
 	.box(58px; 58px; @ColorDark1 ;center ;center ;center);
 	.border-radius(40px);
 }
 .ofer>.container>.oferWrap>.oferBtnPrev>div {
-	border: 								solid 1px @ColorDark9;
-	border-right: 							none;
-	border-bottom: 							none;
-	padding-right: 							1px;
+	border: 							solid 1px @ColorDark9;
+	border-right: 						none;
+	border-bottom: 						none;
+	padding-right: 						1px;
 	.box(12px; 12px; none ;center; center; center);
 	.rotate(-45);
 }
 .ofer>.container>.oferWrap>.oferBtnNext>div {
-	border: 								solid 1px @ColorDark9;
-	border-right: 							none;
-	border-bottom:							none;
-	padding-left: 							1px;
+	border: 							solid 1px @ColorDark9;
+	border-right: 						none;
+	border-bottom:						none;
+	padding-left: 						1px;
 	.box(12px; 12px; none ;center; center; center);
 	.rotate(135);
 }
+@media all and (max-width: (@FullSize - 1px)) {
+	.ofer>.container> {
+		padding: 0 50px;
+	}
+}
+@media all and (max-width: (@FullSize - 1px)) {
+	.ofer>.container> {
+		padding: 0 30px;
+	}
+	.ofer>.container>h1 {
+		font-size: 34px;
+	}
+	.ofer>.container>.oferContent {
+		font-size: 14px;
+	}
+}
+
+
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+/*	 Материалы																		*/
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+.materials>.container>.materialsContent {
+	display: 							flex;
+	flex-wrap: 							wrap;
+	margin-top: 						70px;
+	justify-content: 					space-around;
+	margin-top: 						70px;
+}
+.materials>.container>.materialsContent>.contentItem {
+	position: 							relative;
+	height: 							auto;
+	display: 							flex;
+	flex-direction:						column;
+	align-items: 						center;
+	background-color: 					@ColorWhite;
+	margin-bottom: 						70px;
+	padding-bottom: 					20px;
+	.calc(width; ~'(100% / 4) - 20px');
+	.border-radius(10px);
+	// .box-shadow(0px 7px 54px rgba(0,0,0,0.07));
+	box-shadow: 0 7px 54px rgba(0,0,0,0.07);
+}
+.materials>.container>.materialsContent>.contentItem>.imgItem {
+	.box(100%; 320px; @ColorGray3; center; center; center);
+	.border-radius(10px);
+}
+.materials>.container>.materialsContent>.contentItem>.dataItem {
+	font-family: 						@FontFamilySFProTextRegular;
+	font-size: 							13px;
+	margin-top: 						20px;
+	color:								@ColorGray2;
+}
+.materials>.container>.materialsContent>.contentItem>.nameItem {
+	font-family: 						@FontFamilyRobotoRegular;
+	font-size: 							18px;
+	margin-top: 						10px;
+	color:								@ColorDark6;
+}
+.materials>.container>.materialsContent>.contentItem>.descrItem {
+	font-family: @FontFamilySFProTextRegular;
+	font-size:							16px;
+	margin-top: 						14px;
+	color:								@ColorGray2;
+}
+.materials>.container>.materialsContent>.contentItem>.abautItem {
+	padding: 0 10px;
+	font-family: 						@FontFamilyFiraSansRegular;
+	font-size: 							14px;
+	margin-top: 						14px;
+	color:								@ColorDark10;
+	border-bottom: 						2px solid @ColorDark10;
+}
+@media all and (max-width: (@Laptop - 1px)) {
+	.materials>.container>.materialsContent>.contentItem> {
+		.calc(width; ~'(100% / 3) - 20px');
+	}
+}
+@media all and (max-width: (@TabletSmall - 1px)) {
+	.materials>.container>.materialsContent>.contentItem> {
+		.calc(width; ~'(100% / 2) - 20px');
+	}
+}
+@media all and (max-width: (@Mobile - 1px)) {
+	.materials>.container>.materialsContent>.contentItem> {
+		.calc(width; ~'100% - 20px');
+	}
+}
+.categotyPath>.container>.pathContent {
+	display: 							flex;
+	flex-wrap: 							wrap;
+	margin-top: 						70px;
+	justify-content: 					space-around;
+	margin-top: 						70px;
+}
+.categotyPath>.container>.pathContent>.contentItem {
+	position: 							relative;
+	height: 							auto;
+	display: 							flex;
+	flex-direction:						column;
+	align-items: 						center;
+	background-color: 					@ColorWhite;
+	margin-bottom: 						70px;
+	padding-bottom: 					20px;
+	.calc(width; ~'(100% / 4) - 20px');
+}
+
+
+
