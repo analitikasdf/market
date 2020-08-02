@@ -2,9 +2,9 @@ window.addEventListener('DOMContentLoaded', function() {
 
     'use strict';
 
-    let prev = document.querySelector('.prev'),
-        next = document.querySelector('.next'),
-        slides = document.querySelectorAll('.slider-item'),
+    let prev = document.querySelector('.Prev'),
+        next = document.querySelector('.Next'),
+        slides = document.querySelectorAll('.sliderItem'),
         slideIndex = 1;
 
 

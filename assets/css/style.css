@@ -1687,71 +1687,90 @@ h6 {
   margin: 0 auto;
 }
 section {
-  padding: 50px 0;
+  padding: 70px 0;
 }
-.category {
-  padding: 50px 0;
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+/*	категории 																		*/
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+.category > .container > .categoryContent {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  justify-content: space-around;
 }
-.content-card {
+.category > .container > .categoryContent > .contentCard {
   position: relative;
-  width: -webkit-calc((100% / 4) - 20px);
-  width: -moz-calc((100% / 4) - 20px);
-  width: calc((100% / 4) - 20px);
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07);
   margin-bottom: 70px;
   padding-bottom: 20px;
+  width: -webkit-calc((100% / 4) - 20px);
+  width: -moz-calc((100% / 4) - 20px);
+  width: calc((100% / 4) - 20px);
+  -webkit-box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07) transparent;
+  -moz-box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07) transparent;
+  box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07) transparent;
+  border-radius: 10px;
 }
-.content-card__label-wrapp {
+.category > .container > .categoryContent > .contentCard > .contentCardLabelWrapp {
   display: flex;
   position: absolute;
   transform: translateY(-50%);
   left: 20px;
 }
-.content-card__label {
+.category > .container > .categoryContent > .contentCard > .contentCardLabelWrapp > .contentCardLabel1 {
+  font-family: "HouschkaPro-Bold";
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #919191;
+  margin-right: 20px;
+  text-transform: uppercase;
   width: 50px;
   height: 50px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 100px;
+}
+.category > .container > .categoryContent > .contentCard > .contentCardLabelWrapp > .contentCardLabel2 {
   font-family: "HouschkaPro-Bold";
   color: #ffffff;
   font-size: 15px;
   text-align: center;
   line-height: 50px;
-}
-.content-card__label_1 {
-  background-color: #919191;
+  background-color: #504E4E;
   margin-right: 20px;
   text-transform: uppercase;
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 100px;
 }
-.content-card__label_2 {
-  background-color: #504E4E;
-}
-.content-card__img {
-  display: block;
-  margin: 0 auto;
-  padding-top: 96px;
-}
-.content-card__img-wrapp {
+.category > .container > .categoryContent > .contentCard > .contentCardImgWrapp {
   width: 100%;
   height: 320px;
   background: linear-gradient(0deg, #C2C2C2, #C2C2C2);
   border-radius: 10px;
 }
-.content-card__title {
+.category > .container > .categoryContent > .contentCard > .contentCardImgWrapp > .contentCardImg {
+  display: block;
+  margin: 0 auto;
+  padding-top: 96px;
+}
+.category > .container > .categoryContent > .contentCard > .contentCardTitle {
   font-family: "Roboto Regular";
   font-size: 18px;
   color: #161616;
   margin-top: 20px;
 }
-.content-card__article {
+.category > .container > .categoryContent > .contentCard > .contentCardArticle {
   margin-top: 5px;
   text-align: center;
   line-height: 150%;
@@ -1759,27 +1778,23 @@ section {
   font-size: 16px;
   color: #797979;
 }
-.content-card__price {
+.category > .container > .categoryContent > .contentCard > .contentCardPrice {
   display: flex;
   margin-top: 18px;
   justify-content: center;
 }
-.content-card__price_old {
+.category > .container > .categoryContent > .contentCard > .contentCardPrice > .contentCardPriceOld {
   font-family: "Roboto Medium";
   font-size: 13px;
   text-decoration: line-through;
   margin-right: 24px;
 }
-.content-card__price_new {
+.category > .container > .categoryContent > .contentCard > .contentCardPrice > .contentCardPriceNew {
   font-family: "Roboto Medium";
   font-size: 18px;
 }
-.content-card .button_content-card {
-  display: block;
+.category > .container > .categoryContent > .contentCard > .buttonContentCard {
   margin-top: 17px;
-  width: 161px;
-  height: 48px;
-  border-radius: 50px;
   border: none;
   background-color: #5E5E5E;
   color: #ffffff;
@@ -1787,14 +1802,14 @@ section {
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
+  border-radius: 50px;
+  width: 161px;
+  height: 48px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.category-content {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 70px;
-  justify-content: space-around;
-}
-.pagination {
+.category > .container > .pagination {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -1806,7 +1821,11 @@ section {
   -webkit-flex-flow: nowrap row;
   flex-flow: nowrap row;
 }
-.pagination > .pagination-item {
+.category > .container > .pagination > .pagination-item {
+  font-family: "San Francisco Text Regular";
+  font-size: 15px;
+  border: 1px solid #E3E3E3;
+  margin: 0 5px;
   width: 32px;
   height: 32px;
   background: center;
@@ -1824,12 +1843,8 @@ section {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 8px;
-  font-family: "San Francisco Text Regular";
-  font-size: 15px;
-  border: 1px solid #E3E3E3;
-  margin: 0 5px;
 }
-.pagination > .pagination-item_active {
+.category > .container > .pagination > .pagination-item_active {
   width: 32px;
   height: 32px;
   background: #E3E3E3;
@@ -1848,27 +1863,30 @@ section {
   box-sizing: border-box;
 }
 @media all and (max-width: 999px) {
-  .content-card {
+  .contentCard {
     width: -webkit-calc((100% / 3) - 20px);
     width: -moz-calc((100% / 3) - 20px);
     width: calc((100% / 3) - 20px);
   }
 }
 @media all and (max-width: 699px) {
-  .content-card {
+  .contentCard {
     width: -webkit-calc((100% / 2) - 20px);
     width: -moz-calc((100% / 2) - 20px);
     width: calc((100% / 2) - 20px);
   }
 }
 @media all and (max-width: 499px) {
-  .content-card {
+  .contentCard {
     width: -webkit-calc(100% - 20px);
     width: -moz-calc(100% - 20px);
     width: calc(100% - 20px);
   }
 }
-.slider > .container > .slider-content {
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+/*	 слайдер																		*/
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+.slider > .container > .sliderContent {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -1881,7 +1899,122 @@ section {
   flex-flow: nowrap row;
   margin-top: 70px;
 }
-.slider > .container > .button-wrapp {
+.slider > .container > .sliderContent > .contentCard {
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  margin-bottom: 70px;
+  padding-bottom: 20px;
+  width: -webkit-calc((100% / 4) - 20px);
+  width: -moz-calc((100% / 4) - 20px);
+  width: calc((100% / 4) - 20px);
+  -webkit-box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07) transparent;
+  -moz-box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07) transparent;
+  box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07) transparent;
+  border-radius: 10px;
+}
+.slider > .container > .sliderContent > .contentCard > .contentCardLabelWrapp {
+  display: flex;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 20px;
+}
+.slider > .container > .sliderContent > .contentCard > .contentCardLabelWrapp > .contentCardLabel1 {
+  font-family: "HouschkaPro-Bold";
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #919191;
+  margin-right: 20px;
+  text-transform: uppercase;
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+.slider > .container > .sliderContent > .contentCard > .contentCardLabelWrapp > .contentCardLabel2 {
+  font-family: "HouschkaPro-Bold";
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #504E4E;
+  margin-right: 20px;
+  text-transform: uppercase;
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+.slider > .container > .sliderContent > .contentCard > .contentCardImgWrapp {
+  background: linear-gradient(0deg, #C2C2C2, #C2C2C2);
+  border-radius: 10px;
+  width: 100%;
+  height: 320px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.slider > .container > .sliderContent > .contentCard > .contentCardImgWrapp > .contentCardImg {
+  display: block;
+  margin: 0 auto;
+  padding-top: 96px;
+}
+.slider > .container > .sliderContent > .contentCard > .contentCardTitle {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #161616;
+  margin-top: 20px;
+}
+.slider > .container > .sliderContent > .contentCard > .contentCardArticle {
+  margin-top: 5px;
+  text-align: center;
+  line-height: 150%;
+  font-family: "San Francisco Text Regular";
+  font-size: 16px;
+  color: #797979;
+}
+.slider > .container > .sliderContent > .contentCard > .contentCardPrice {
+  margin-top: 18px;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.slider > .container > .sliderContent > .contentCard > .contentCardPrice > .contentCardPriceOld {
+  font-family: "Roboto Medium";
+  font-size: 13px;
+  text-decoration: line-through;
+  margin-right: 24px;
+}
+.slider > .container > .sliderContent > .contentCard > .contentCardPrice > .contentCardPriceNew {
+  font-family: "Roboto Medium";
+  font-size: 18px;
+}
+.slider > .container > .sliderContent > .contentCard > .buttonContentCard {
+  margin-top: 17px;
+  border: none;
+  background-color: #5E5E5E;
+  color: #ffffff;
+  font-family: "Fira Sans Regular";
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 50px;
+  width: 161px;
+  height: 48px;
+  background: #5E5E5E;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.slider > .container > .buttonWrapp {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -1893,7 +2026,9 @@ section {
   -webkit-flex-flow: nowrap row;
   flex-flow: nowrap row;
 }
-.slider > .container > .button-wrapp button {
+.slider > .container > .buttonWrapp > button {
+  border: none;
+  margin: 0 5px;
   width: 58px;
   height: 58px;
   background: #E3E3E3;
@@ -1911,10 +2046,14 @@ section {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 100%;
-  border: none;
-  margin: 0 5px;
 }
-.slider > .container > .button-wrapp button > div {
+.slider > .container > .buttonWrapp > button > div {
+  border: solid 1px #171717;
+  border-right: none;
+  border-bottom: none;
+  width: 12px;
+  height: 12px;
+  background: none;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -1925,26 +2064,153 @@ section {
   align-content: center;
   -webkit-flex-flow: nowrap row;
   flex-flow: nowrap row;
-  width: 12px;
-  height: 12px;
-  border: solid 1px #171717;
-  border-right: none;
-  border-bottom: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.slider > .container > .button-wrapp .prev {
+.slider > .container > .buttonWrapp > .Prev {
   padding-right: 1px;
 }
-.slider > .container > .button-wrapp .next {
+.slider > .container > .buttonWrapp > .Next {
   padding-left: 1px;
 }
-.slider > .container > .button-wrapp .prev > div {
+.slider > .container > .buttonWrapp > .Prev > div {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-.slider > .container > .button-wrapp .next > div {
+.slider > .container > .buttonWrapp > .Next > div {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+/*	 Офер																			*/
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+.ofer {
+  width: 1920px;
+  height: 547px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #C2C2C2 url('../images/Img_card.png') no-repeat center;
+}
+.ofer > .container > h1 {
+  margin-top: 200px;
+  font-family: "San Francisco Text Bold";
+  font-size: 54px;
+}
+.ofer > .container > .oferContent {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  margin-top: 30px;
+}
+.ofer > .container > .oferWrap {
+  margin-top: 70px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-flex-flow: nowrap row;
+  flex-flow: nowrap row;
+}
+.ofer > .container > .oferWrap > .oferBtnPrev {
+  border: none;
+  width: 58px;
+  height: 58px;
+  background: #E3E3E3;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-flex-flow: nowrap row;
+  flex-flow: nowrap row;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 40px;
+}
+.ofer > .container > .oferWrap > .oferBtnNext {
+  border: none;
+  margin-left: 10px;
+  width: 58px;
+  height: 58px;
+  background: #E3E3E3;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-flex-flow: nowrap row;
+  flex-flow: nowrap row;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 40px;
+}
+.ofer > .container > .oferWrap > .oferBtnPrev > div {
+  border: solid 1px #171717;
+  border-right: none;
+  border-bottom: none;
+  padding-right: 1px;
+  width: 12px;
+  height: 12px;
+  background: none;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-flex-flow: nowrap row;
+  flex-flow: nowrap row;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.ofer > .container > .oferWrap > .oferBtnNext > div {
+  border: solid 1px #171717;
+  border-right: none;
+  border-bottom: none;
+  padding-left: 1px;
+  width: 12px;
+  height: 12px;
+  background: none;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-flex-flow: nowrap row;
+  flex-flow: nowrap row;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -ms-transform: rotate(135deg);

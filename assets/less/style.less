@@ -71,216 +71,351 @@ html,body{
 	font-weight:						@FontRegular;
 	color: 								@ColorDark3;
 }
-
 h2 {
-	font-family: @FontFamilySFProTextBold;
-	font-weight: @FontBold;
-	color: @ColorGray;
-	font-size: @H2Size;
-	text-align: center;
-	line-height: 36px;
-	padding: 0 20px;
+	font-family:						@FontFamilySFProTextBold;
+	font-weight:					 	@FontBold;
+	color:								@ColorGray;
+	font-size:							@H2Size;
+	text-align:							center;
+	line-height:						36px;
+	padding:							0 20px;
 }
-
 h6 {
-	font-family: @FontFamilySFProTextRegular;
-	font-weight: @FontRegular;
-	color: @ColorGray2;
-	font-size: @H6Size;
-	margin-top: 20px;
-	text-align: center;
-	padding: 0 20px;
+	font-family:						@FontFamilySFProTextRegular;
+	font-weight:						@FontRegular;
+	color:								@ColorGray2;
+	font-size:							@H6Size;
+	margin-top:							20px;
+	text-align:							center;
+	padding:							0 20px;
 }
-
 .container	{
-	max-width: @ContainerWidth;
-	margin: 0 auto;
+	max-width: 							@ContainerWidth;
+	margin:								0 auto;
 }
-
 section {
-	padding: 50px 0
+	padding: 							70px 0
 }
 
-.category {
-	padding: 50px 0;
-}
 
-.content-card {
-	position: relative;
+
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+/*	категории 																		*/
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+.category>.container>.categoryContent {
+	display: 							flex;
+	flex-wrap: 							wrap;
+	margin-top: 						70px;
+	justify-content: 					space-around;
+}
+.category>.container>.categoryContent>.contentCard {
+	position: 							relative;
+	height: 							auto;
+	display: 							flex;
+	flex-direction:						column;
+	align-items: 						center;
+	background-color: 					@ColorWhite;
+	margin-bottom: 						70px;
+	padding-bottom: 					20px;
 	.calc(width; ~'(100% / 4) - 20px');
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: @ColorWhite;
+	.box-shadow(0px 7px 54px rgba(0, 0, 0, 0.07));
 	.border-radius(10px);
-	box-shadow: 0px 7px 54px rgba(0, 0, 0, 0.07);
-	margin-bottom: 70px;
-	padding-bottom: 20px;
-	&__label-wrapp {
-		display: flex;
-		position: absolute;	
-		transform: translateY(-50%);
-		left: 20px;
-		
-	}
-	&__label {
-		.box(50px; 50px);
-		.border-radius(100px);
-		font-family: @FontFamilyHouschkaProBold;
-		color: @ColorWhite;
-		font-size: 15px;
-		text-align: center;
-		line-height: 50px;
-		&_1 {
-			background-color: @ColorGray4;
-			margin-right: 20px;
-			text-transform: uppercase;
-		}
-		&_2 {
-			background-color: @ColorDark8;
-		}
-	} 
-	&__img {
-		display: block;
-		margin: 0 auto;
-		padding-top: 96px;
-
-	}
-	&__img-wrapp {
-		width: 100%;
-		height: 320px;
-		background: linear-gradient(0deg, @ColorGray3, @ColorGray3);
-		.border-radius(10px);
-	}
-	&__title {
-		font-family: @FontFamilyRobotoRegular;
-		font-size: 18px;
-		color: @ColorDark6;
-		margin-top: 20px;
-	}
-	&__article {
-		margin-top: 5px;
-		text-align: center;
-		line-height: 150%;
-		font-family: @FontFamilySFProTextRegular;
-		font-size: 16px;
-		color: @ColorGray2;
-	}
-	&__price {
-		display: flex;
-		margin-top: 18px;
-		justify-content: center;
-	}
-	&__price_old {
-		font-family: "Roboto Medium";
-		font-size: 13px;
-		text-decoration: line-through;
-		margin-right: 24px;
-	}
-	&__price_new {
-		font-family: "Roboto Medium";
-		font-size: 18px;
-	}
-	.button_content-card {
-		display: block;
-		margin-top: 17px;
-		width: 161px;
-		height: 48px;
-		.border-radius(50px);
-		border: none;
-		background-color: @ColorDark7;
-		color: @ColorWhite;
-		font-family: @FontFamilyFiraSansRegular;
-		font-size: 16px;
-		text-align: center;
-		text-transform: uppercase;
-	}
 }
-
-.category-content {
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 70px;
-	justify-content: space-around;
+.category>.container>.categoryContent>.contentCard>.contentCardLabelWrapp {
+	display: 							flex;
+	position: 							absolute;	
+	transform: 							translateY(-50%);
+	left: 								20px;
 }
-
-.pagination {
+.category>.container>.categoryContent>.contentCard>.contentCardLabelWrapp>.contentCardLabel1 {
+	font-family: 						@FontFamilyHouschkaProBold;
+	color: 								@ColorWhite;
+	font-size: 							15px;
+	text-align: 						center;
+	line-height: 						50px;
+	background-color: 					@ColorGray4;
+	margin-right: 						20px;
+	text-transform: 					uppercase;
+	.box(50px; 50px);
+	.border-radius(100px);
+}
+.category>.container>.categoryContent>.contentCard>.contentCardLabelWrapp>.contentCardLabel2 {
+	font-family: 						@FontFamilyHouschkaProBold;
+	color: 								@ColorWhite;
+	font-size: 							15px;
+	text-align: 						center;
+	line-height: 						50px;
+	background-color: 					@ColorDark8;
+	margin-right: 						20px;
+	text-transform: 					uppercase;
+	.box(50px; 50px);
+	.border-radius(100px);
+} 
+.category>.container>.categoryContent>.contentCard>.contentCardImgWrapp {
+	width: 								100%;
+	height: 							320px;
+	background: 						linear-gradient(0deg, @ColorGray3, @ColorGray3);
+	.border-radius(10px);
+}
+.category>.container>.categoryContent>.contentCard>.contentCardImgWrapp>.contentCardImg {
+	display:							block;
+	margin: 							0 auto;
+	padding-top: 						96px;
+}
+.category>.container>.categoryContent>.contentCard>.contentCardTitle {
+	font-family: 						@FontFamilyRobotoRegular;
+	font-size: 							18px;
+	color: 										@ColorDark6;
+	margin-top: 						20px;
+}
+.category>.container>.categoryContent>.contentCard>.contentCardArticle {
+	margin-top: 						5px;
+	text-align: 						center;
+	line-height: 						150%;
+	font-family: 						@FontFamilySFProTextRegular;
+	font-size: 							16px;
+	color: 								@ColorGray2;
+}
+.category>.container>.categoryContent>.contentCard>.contentCardPrice {
+	display: 							flex;
+	margin-top: 						18px;
+	justify-content: 					center;
+}
+.category>.container>.categoryContent>.contentCard>.contentCardPrice>.contentCardPriceOld {
+	font-family: 						@FontFamilyRobotoMedium;
+	font-size: 							13px;
+	text-decoration: 					line-through;
+	margin-right: 						24px;
+}
+.category>.container>.categoryContent>.contentCard>.contentCardPrice>.contentCardPriceNew {
+	font-family: 					"Roboto Medium";
+	font-size: 						18px;
+}	
+.category>.container>.categoryContent>.contentCard>.buttonContentCard {
+	margin-top: 						17px;
+	border: 							none;
+	background-color: 					@ColorDark7;
+	color: 								@ColorWhite;
+	font-family: 						@FontFamilyFiraSansRegular;
+	font-size: 							16px;
+	text-align: 						center;
+	text-transform: 					uppercase;
+	.border-radius(50px);
+	.box(161px; 48px);
+}
+.category>.container>.pagination {
 	.flexbox(center; center; center);
-}
-
-.pagination > .pagination-item {
+}	
+.category>.container>.pagination>.pagination-item {
+	font-family: 							@FontFamilySFProTextRegular;
+	font-size: 								15px;
+	border: 								1px solid @ColorDark1;
+	margin:									0 5px;
 	.box(32px; 32px; center; center; center);
 	.border-radius(8px);
-	font-family: @FontFamilySFProTextRegular;
-	font-size: 15px;
-	border: 1px solid @ColorDark1;
-	margin: 0 5px;
 }
-
-.pagination > .pagination-item_active {
+.category>.container>.pagination>.pagination-item_active {
 	.box(32px; 32px; @ColorDark1; center; center; center);
 }
-
-
 @media all and (max-width: (@Laptop - 1px)) {
-	.content-card {
+	.contentCard {
 		.calc(width; ~'(100% / 3) - 20px');
 	}
 }
-
 @media all and (max-width: (@TabletSmall - 1px)) {
-	.content-card {
+	.contentCard {
 		.calc(width; ~'(100% / 2) - 20px');
 	}
 }
-
 @media all and (max-width: (@Mobile - 1px)) {
-	.content-card {
+	.contentCard {
 		.calc(width; ~'100% - 20px');
 	}
 }
 
 
-// slider
 
-.slider > .container > .slider-content {
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+/*	 слайдер																		*/
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+.slider>.container>.sliderContent {
 	.flexbox(center; space-around; center; nowrap row);
 	margin-top: 70px;
 }
-
-.slider > .container > .button-wrapp {
+.slider>.container>.sliderContent>.contentCard {
+	position: 								relative;
+	height: 								auto;
+	display: 								flex;
+	flex-direction:							column;
+	align-items: 							center;
+	background-color: 						@ColorWhite;
+	margin-bottom: 							70px;
+	padding-bottom: 						20px;
+	.calc(width; ~'(100% / 4) - 20px');
+	.box-shadow(0px 7px 54px rgba(0, 0, 0, 0.07));
+	.border-radius(10px);
+}
+.slider>.container>.sliderContent>.contentCard>.contentCardLabelWrapp {
+	display: 								flex;
+	position: 								absolute;	
+	transform: 								translateY(-50%);
+	left: 									20px;
+}
+.slider>.container>.sliderContent>.contentCard>.contentCardLabelWrapp>.contentCardLabel1 {
+	font-family: 							@FontFamilyHouschkaProBold;
+	color: 									@ColorWhite;
+	font-size: 								15px;
+	text-align: 							center;
+	line-height: 							50px;
+	background-color: 						@ColorGray4;
+	margin-right: 							20px;
+	text-transform: 						uppercase;
+	.box(50px; 50px);
+	.border-radius(100px);
+}
+.slider>.container>.sliderContent>.contentCard>.contentCardLabelWrapp>.contentCardLabel2 {
+	font-family: 							@FontFamilyHouschkaProBold;
+	color: 									@ColorWhite;
+	font-size: 								15px;
+	text-align: 							center;
+	line-height: 							50px;
+	background-color: 						@ColorDark8;
+	margin-right: 							20px;
+	text-transform: 						uppercase;
+	.box(50px; 50px);
+	.border-radius(100px);
+} 
+.slider>.container>.sliderContent>.contentCard>.contentCardImgWrapp {
+	background: 							linear-gradient(0deg, @ColorGray3, @ColorGray3);
+	.border-radius(10px);
+	.box(100%; 320px)
+}
+.slider>.container>.sliderContent>.contentCard>.contentCardImgWrapp>.contentCardImg {
+display:									block;
+margin: 									0 auto;
+padding-top: 								96px;
+}
+.slider>.container>.sliderContent>.contentCard>.contentCardTitle {
+	font-family: 							@FontFamilyRobotoRegular;
+	font-size: 								18px;
+	color: 									@ColorDark6;
+	margin-top: 							20px;
+}
+.slider>.container>.sliderContent>.contentCard>.contentCardArticle {
+	margin-top: 							5px;
+	text-align: 							center;
+	line-height: 							150%;
+	font-family: 							@FontFamilySFProTextRegular;
+	font-size: 								16px;
+	color: 									@ColorGray2;
+}
+.slider>.container>.sliderContent>.contentCard>.contentCardPrice {
+	margin-top: 							18px;
+	.flexbox-justify-content(center);
+}
+.slider>.container>.sliderContent>.contentCard>.contentCardPrice>.contentCardPriceOld {
+	font-family: 							@FontFamilyRobotoMedium;
+	font-size: 								13px;
+	text-decoration: 						line-through;
+	margin-right: 							24px;
+}
+.slider>.container>.sliderContent>.contentCard>.contentCardPrice>.contentCardPriceNew {
+	font-family: 							@FontFamilyRobotoMedium;
+	font-size: 								18px;
+}	
+.slider>.container>.sliderContent>.contentCard>.buttonContentCard {
+	margin-top: 							17px;
+	border: 								none;
+	background-color: 						@ColorDark7;
+	color: 									@ColorWhite;
+	font-family: 							@FontFamilyFiraSansRegular;
+	font-size: 								16px;
+	text-align: 							center;
+	text-transform: 						uppercase;
+	.border-radius(50px);
+	.box(161px; 48px; @ColorDark7);
+}
+.slider>.container>.buttonWrapp {
 	.flexbox( center; center; center)
 }
 
-.slider > .container > .button-wrapp button {
+.slider>.container>.buttonWrapp>button {
+	border: 								none;
+	margin: 								0 5px;
 	.box(58px; 58px; @ColorDark1; center; center; center);
 	.border-radius(100%);
-	border: none;
-	margin: 0 5px;
 }
 
-.slider > .container > .button-wrapp button > div {
-	.flexbox( center; center; center);
-	width: 12px;
-	height: 12px;
-	border: solid 1px @ColorDark9;
-	border-right: none;
-	border-bottom: none;
+.slider>.container>.buttonWrapp>button>div {
+	border: 								solid 1px @ColorDark9;
+	border-right: 							none;
+	border-bottom: 							none;
+	.box(12px; 12px; none ;center; center; center);
 }
 
-.slider > .container > .button-wrapp .prev  {
-	padding-right: 1px;
+.slider>.container>.buttonWrapp>.Prev  {
+	padding-right: 							1px;
 }
 
-.slider > .container > .button-wrapp .next  {
-	padding-left: 1px;
+.slider>.container>.buttonWrapp>.Next  {
+	padding-left: 							1px;
 }
 
-.slider > .container > .button-wrapp .prev > div {
-	.rotate(-45)
+.slider>.container>.buttonWrapp>.Prev> div {
+	.rotate(-45);
 }
 
-.slider > .container > .button-wrapp .next > div {
-	.rotate(135)
+.slider>.container>.buttonWrapp>.Next> div {
+	.rotate(135);
+}
+
+
+
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+/*	 Офер																			*/
+/*	#################### - Developer stebnev-studio.ru - ########################	*/
+.ofer {
+	.box(1920px; 547px);
+	background: 							@ColorGray3 url('../images/Img_card.png') no-repeat center;
+}
+.ofer>.container>h1 {
+	margin-top: 							200px;
+	font-family: 							@FontFamilySFProTextBold;
+	font-size: 								54px;
+}
+.ofer>.container>.oferContent {
+	font-family: 							@FontFamilyRobotoRegular;
+	font-size: 								18px;
+	margin-top: 							30px;
+}
+.ofer>.container>.oferWrap {
+	margin-top: 							70px;
+	.flexbox(center, flex-start, center)
+}
+.ofer>.container>.oferWrap>.oferBtnPrev {
+	border: 								none;
+	.box(58px; 58px; @ColorDark1 ;center ;center ;center);
+	.border-radius(40px);
+}
+.ofer>.container>.oferWrap>.oferBtnNext {
+	border:									none;
+	margin-left: 							10px;
+	.box(58px; 58px; @ColorDark1 ;center ;center ;center);
+	.border-radius(40px);
+}
+.ofer>.container>.oferWrap>.oferBtnPrev>div {
+	border: 								solid 1px @ColorDark9;
+	border-right: 							none;
+	border-bottom: 							none;
+	padding-right: 							1px;
+	.box(12px; 12px; none ;center; center; center);
+	.rotate(-45);
+}
+.ofer>.container>.oferWrap>.oferBtnNext>div {
+	border: 								solid 1px @ColorDark9;
+	border-right: 							none;
+	border-bottom:							none;
+	padding-left: 							1px;
+	.box(12px; 12px; none ;center; center; center);
+	.rotate(135);
 }
