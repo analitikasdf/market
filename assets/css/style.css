@@ -1861,21 +1861,21 @@ section {
   box-sizing: border-box;
 }
 @media all and (max-width: 999px) {
-  .contentCard {
+  .category > .container > .categoryContent > .contentCard {
     width: -webkit-calc((100% / 3) - 20px);
     width: -moz-calc((100% / 3) - 20px);
     width: calc((100% / 3) - 20px);
   }
 }
 @media all and (max-width: 699px) {
-  .contentCard {
+  .category > .container > .categoryContent > .contentCard {
     width: -webkit-calc((100% / 2) - 20px);
     width: -moz-calc((100% / 2) - 20px);
     width: calc((100% / 2) - 20px);
   }
 }
 @media all and (max-width: 499px) {
-  .contentCard {
+  .category > .container > .categoryContent > .contentCard {
     width: -webkit-calc(100% - 20px);
     width: -moz-calc(100% - 20px);
     width: calc(100% - 20px);
