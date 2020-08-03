@@ -2303,6 +2303,7 @@ section {
   margin-top: 14px;
   color: #5D5D5D;
   border-bottom: 2px solid #5D5D5D;
+  text-decoration: none;
 }
 @media all and (max-width: 999px) {
   .materials > .container > .materialsContent > .contentItem {
