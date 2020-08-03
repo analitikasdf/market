@@ -12,18 +12,19 @@ window.addEventListener('DOMContentLoaded', function() {
 
     function showSlides(n) {
     
-        if (n > slides.length - 3) {
+        if (n > 3) {
             slideIndex = 1;
         }
         if (n < 1) {
-            slideIndex = slides.length;
+            slideIndex = 2;
         }
         
         slides.forEach((item) => item.style.display = 'none');
-        slides[slideIndex - 1].style.display = 'flex';
-        slides[slideIndex].style.display = 'flex';
-        slides[slideIndex + 1].style.display = 'flex';
-        slides[slideIndex + 2].style.display = 'flex';
+        
+        for (let i = 0; i < 4; i++) { 
+            slides[slideIndex + (i - 1)].style.display = 'flex';
+            console.log(n);
+            }
     }
     
 
