@@ -1885,17 +1885,14 @@ section {
 /*	 слайдер																		*/
 /*	#################### - Developer stebnev-studio.ru - ########################	*/
 .slider > .container > .sliderContent {
-  margin-top: 70px;
-  display: -webkit-flex;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
   display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 70px;
   justify-content: space-around;
-  -webkit-align-content: center;
-  align-content: center;
-  -webkit-flex-flow: nowrap row;
-  flex-flow: nowrap row;
 }
 .slider > .container > .sliderContent > .contentCard {
   position: relative;
@@ -2085,6 +2082,27 @@ section {
   -o-transform: rotate(135deg);
   transform: rotate(135deg);
 }
+@media all and (max-width: 999px) {
+  .slider > .container > .sliderContent > .contentCard {
+    width: -webkit-calc((100% / 3) - 20px);
+    width: -moz-calc((100% / 3) - 20px);
+    width: calc((100% / 3) - 20px);
+  }
+}
+@media all and (max-width: 699px) {
+  .slider > .container > .sliderContent > .contentCard {
+    width: -webkit-calc((100% / 2) - 20px);
+    width: -moz-calc((100% / 2) - 20px);
+    width: calc((100% / 2) - 20px);
+  }
+}
+@media all and (max-width: 499px) {
+  .slider > .container > .sliderContent > .contentCard {
+    width: -webkit-calc(100% - 20px);
+    width: -moz-calc(100% - 20px);
+    width: calc(100% - 20px);
+  }
+}
 /*	#################### - Developer stebnev-studio.ru - ########################	*/
 /*	 Офер																			*/
 /*	#################### - Developer stebnev-studio.ru - ########################	*/
@@ -2101,6 +2119,12 @@ section {
   margin-top: 100px;
   font-family: "San Francisco Text Bold";
   font-size: 54px;
+}
+.ofer > .container > .oferSlides {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 .ofer > .container > .oferContent {
   font-family: "Roboto Regular";
@@ -2121,6 +2145,7 @@ section {
   flex-flow: nowrap row;
 }
 .ofer > .container > .oferWrap > .oferBtnPrev {
+  outline: none;
   border: none;
   width: 58px;
   height: 58px;
@@ -2141,6 +2166,7 @@ section {
   border-radius: 40px;
 }
 .ofer > .container > .oferWrap > .oferBtnNext {
+  outline: none;
   border: none;
   margin-left: 10px;
   width: 58px;
@@ -2214,6 +2240,22 @@ section {
   -ms-transform: rotate(135deg);
   -o-transform: rotate(135deg);
   transform: rotate(135deg);
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media all and (max-width: 1499px) {
   .ofer > .container {

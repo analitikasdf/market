@@ -241,7 +241,15 @@ section {
 /*	#################### - Developer stebnev-studio.ru - ########################	*/
 .slider>.container>.sliderContent {
 	margin-top: 						70px;
-	.flexbox(center; space-around; center; nowrap row);
+	-webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+	animation-duration: 1.5s;
+	display: 							flex;
+	flex-wrap: 							wrap;
+	margin-top: 						70px;
+	justify-content: 					space-around;
+	
 }
 .slider>.container>.sliderContent>.contentCard {
 	position: 							relative;
@@ -338,7 +346,6 @@ padding-top: 							96px;
 .slider>.container>.buttonWrapp {
 	.flexbox( center; center; center)
 }
-
 .slider>.container>.buttonWrapp>button {
 	border: 							none;
 	margin: 							0 5px;
@@ -346,28 +353,38 @@ padding-top: 							96px;
 	.box(58px; 58px; @ColorDark1; center; center; center);
 	.border-radius(100%);
 }
-
 .slider>.container>.buttonWrapp>button>div {
 	border: 							solid 1px @ColorDark9;
 	border-right: 						none;
 	border-bottom: 						none;
 	.box(12px; 12px; none ;center; center; center);
 }
-
 .slider>.container>.buttonWrapp>.Prev  {
 	padding-right: 						1px;
 }
-
 .slider>.container>.buttonWrapp>.Next  {
 	padding-left: 						1px;
 }
-
 .slider>.container>.buttonWrapp>.Prev> div {
 	.rotate(-45);
 }
-
 .slider>.container>.buttonWrapp>.Next> div {
 	.rotate(135);
+}
+@media all and (max-width: (@Laptop - 1px)) {
+	.slider>.container>.sliderContent>.contentCard {
+		.calc(width; ~'(100% / 3) - 20px');
+	}
+}
+@media all and (max-width: (@TabletSmall - 1px)) {
+	.slider>.container>.sliderContent>.contentCard {
+		.calc(width; ~'(100% / 2) - 20px');
+	}
+}
+@media all and (max-width: (@Mobile - 1px)) {
+	.slider>.container>.sliderContent>.contentCard {
+		.calc(width; ~'100% - 20px');
+	}
 }
 
 
@@ -386,6 +403,12 @@ padding-top: 							96px;
 	font-family: 						@FontFamilySFProTextBold;
 	font-size: 							54px;
 }
+.ofer>.container>.oferSlides {
+	-webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
 .ofer>.container>.oferContent {
 	font-family: 						@FontFamilyRobotoRegular;
 	font-size: 							18px;
@@ -396,11 +419,13 @@ padding-top: 							96px;
 	.flexbox(center, flex-start, center)
 }
 .ofer>.container>.oferWrap>.oferBtnPrev {
+	outline: 							none;
 	border: 							none;
 	.box(58px; 58px; @ColorDark1 ;center ;center ;center);
 	.border-radius(40px);
 }
 .ofer>.container>.oferWrap>.oferBtnNext {
+	outline: 							none;
 	border:								none;
 	margin-left: 						10px;
 	.box(58px; 58px; @ColorDark1 ;center ;center ;center);
@@ -421,6 +446,22 @@ padding-top: 							96px;
 	padding-left: 						1px;
 	.box(12px; 12px; none ;center; center; center);
 	.rotate(135);
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+	}
 }
 @media all and (max-width: (@FullSize - 1px)) {
 	.ofer>.container> {
