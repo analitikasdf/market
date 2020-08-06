@@ -2115,23 +2115,20 @@ section {
   background: #C2C2C2 url('../images/Img_card.png') no-repeat center;
   margin: 0 auto;
 }
-.ofer > .container > h1 {
+.ofer > .container > .swiper-container > .swiper-wrapper > .swiper-slide > h1 {
+  padding: 0 50px;
   margin-top: 100px;
   font-family: "San Francisco Text Bold";
   font-size: 54px;
 }
-.ofer > .container > .oferSlides {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-.ofer > .container > .oferContent {
+.ofer > .container > .swiper-container > .swiper-wrapper > .swiper-slide > .oferContent {
+  padding: 0 50px;
   font-family: "Roboto Regular";
   font-size: 18px;
   margin-top: 30px;
 }
 .ofer > .container > .oferWrap {
+  padding: 0 50px;
   margin-top: 70px;
   display: -webkit-flex;
   display: flex;
@@ -2240,38 +2237,6 @@ section {
   -ms-transform: rotate(135deg);
   -o-transform: rotate(135deg);
   transform: rotate(135deg);
-}
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@media all and (max-width: 1499px) {
-  .ofer > .container {
-    padding: 0 50px;
-  }
-}
-@media all and (max-width: 1499px) {
-  .ofer > .container {
-    padding: 0 30px;
-  }
-  .ofer > .container > h1 {
-    font-size: 34px;
-  }
-  .ofer > .container > .oferContent {
-    font-size: 14px;
-  }
 }
 /*	#################### - Developer stebnev-studio.ru - ########################	*/
 /*	 Материалы																		*/
@@ -2424,4 +2389,8 @@ section {
     width: -moz-calc(100% - 20px);
     width: calc(100% - 20px);
   }
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
 }

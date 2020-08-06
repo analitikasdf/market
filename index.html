@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/assets/swiper/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -580,37 +582,43 @@
     </section>
     <section class="ofer">
         <div class="container">
-            <div class="oferSlides">
-                <h1>H1 Оффер</h1>
-                <div class="oferContent">
-                    H7  11111 Headline Сайт рыбатекст поможет дизайнеру, верстальщику,<br>
-                    вебмастеру сгенерировать несколько абзацев более менее 
-                </div>
-            </div>
-            <div class="oferSlides">
-                <h1>H2 Оффер</h1>
-                <div class="oferContent">
-                    H7  22222 Headline Сайт рыбатекст поможет дизайнеру, верстальщику,<br>
-                    вебмастеру сгенерировать несколько абзацев более менее 
-                </div>
-            </div>
-            <div class="oferSlides">
-                <h1>H3 Оффер</h1>
-                <div class="oferContent">
-                    H7  33333 Headline Сайт рыбатекст поможет дизайнеру, верстальщику,<br>
-                    вебмастеру сгенерировать несколько абзацев более менее 
-                </div>
-            </div>
-            <div class="oferSlides">
-                <h1>H4 Оффер</h1>
-                <div class="oferContent">
-                    H7  44444 Headline Сайт рыбатекст поможет дизайнеру, верстальщику,<br>
-                    вебмастеру сгенерировать несколько абзацев более менее 
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <h1>H1 Оффер</h1>
+                        <div class="oferContent">
+                            H7  11111 Headline Сайт рыбатекст поможет дизайнеру, верстальщику,<br>
+                            вебмастеру сгенерировать несколько абзацев более менее 
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>H2 Оффер</h1>
+                        <div class="oferContent">
+                            H7  22222 Headline Сайт рыбатекст поможет дизайнеру, верстальщику,<br>
+                            вебмастеру сгенерировать несколько абзацев более менее 
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>H3 Оффер</h1>
+                        <div class="oferContent">
+                            H7  33333 Headline Сайт рыбатекст поможет дизайнеру, верстальщику,<br>
+                            вебмастеру сгенерировать несколько абзацев более менее 
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>H4 Оффер</h1>
+                        <div class="oferContent">
+                            H7  44444 Headline Сайт рыбатекст поможет дизайнеру, верстальщику,<br>
+                            вебмастеру сгенерировать несколько абзацев более менее 
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="oferWrap">
-                <button class="oferBtnPrev"><div></div></button>
-                <button class="oferBtnNext"><div></div></button>
+                <div class="oferBtnPrev"><div></div></div>
+                <div class="oferBtnNext"><div></div></div>
             </div>
         </div>
     </section>
@@ -879,7 +887,8 @@
         </div>
     </section>
 
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
