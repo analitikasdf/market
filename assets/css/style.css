@@ -2108,14 +2108,16 @@ section {
 /*	#################### - Developer stebnev-studio.ru - ########################	*/
 .ofer {
   width: 100%;
-  height: 547px;
+  height: auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: #C2C2C2 url('../images/Img_card.png') no-repeat center;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 .ofer > .container > .swiper-container > .swiper-wrapper > .swiper-slide > h1 {
+  line-height: 50px;
   padding: 0 50px;
   margin-top: 100px;
   font-family: "San Francisco Text Bold";

@@ -4,3 +4,9 @@ var swiper = new Swiper('.swiper-container', {
       prevEl: '.oferBtnPrev',
     },
   });
+var swiper = new Swiper2('.swiper-container', {
+    navigation: {
+      nextEl: '.oferBtnNext',
+      prevEl: '.oferBtnPrev',
+    },
+  });
